@@ -295,6 +295,24 @@ def build_bsa(archive_exe, dir_source, bsa_target,
         os.remove(path_bsl)
 
 
+def version_plugins(dir_source: str, old_version: str):
+    path = os.path.join(dir_source, "Fomod", "Info.xml")
+    root = xml.etree.ElementTree.parse(path).getroot()
+    new_version = root.find("Version").text
+    old_stamp = bytes("Version: {}".format(old_version), "utf-8")
+    new_stamp = bytes("Version: {}".format(new_version), "utf-8")
+    for path in os.listdir(dir_source):
+        path_abs = os.path.join(dir_source, path)
+        if os.path.isdir(path_abs):
+            for plugin in find_plugins(path_abs):
+                path_plugin = os.path.join(path_abs, plugin)
+                with open(path_plugin, "rb") as fh:
+                    plugin_data = fh.read()
+                plugin_data = plugin_data.replace(old_stamp, new_stamp, 1)
+                with open(path_plugin, "wb") as fh:
+                    fh.write(plugin_data)
+
+
 def find_plugins(source_dir):
     """Find all plugins in a directory. Does not search in subdirectories."""
     files = os.listdir(source_dir)
