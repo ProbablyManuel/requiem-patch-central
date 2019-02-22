@@ -54,7 +54,7 @@ def build_release(dir_source, dir_target, archive_exe=None,
     """
     logger = logging.getLogger(build_release.__name__)
     logger.setLevel(logging.INFO)
-    handler = logging.FileHandler("{}.log".format(build_release.__name__))
+    handler = logging.FileHandler("{}.log".format(build_release.__name__), "w")
     formatter = logging.Formatter("%(asctime)s %(levelname)s %(message)s")
     handler.setFormatter(formatter)
     logger.addHandler(handler)
