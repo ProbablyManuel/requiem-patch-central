@@ -84,30 +84,9 @@ def build_release(dir_source, dir_target, archive_exe=None,
     if archive_exe and os.path.basename(archive_exe) != "Archive.exe":
         logger.error("{} does not point to Archive.exe".format(archive_exe))
         exit()
-    # Get required subdirectories from ModuleConfig.xml
+    # Get required files from ModuleConfig.xml
     path = os.path.join(dir_source_fomod, "ModuleConfig.xml")
-    root = xml.etree.ElementTree.parse(path).getroot()
-    sub_dirs = list()
-    loose_files = list()
-    for installSteps in root.iterfind("installSteps"):
-        for installStep in installSteps.iterfind("installStep"):
-            for fileGroups in installStep.iterfind("optionalFileGroups"):
-                for group in fileGroups.iterfind("group"):
-                    for plugins in group.iterfind("plugins"):
-                        for plugin in plugins.iterfind("plugin"):
-                            for files in plugin.iterfind("files"):
-                                for folder in files.iterfind("folder"):
-                                    sub_dirs.append(folder.get("source"))
-                                for file in files.iterfind("file"):
-                                    loose_files.append(file.get("source"))
-    for conditionalFileInstalls in root.iterfind("conditionalFileInstalls"):
-        for patterns in conditionalFileInstalls.iterfind("patterns"):
-            for pattern in patterns.iterfind("pattern"):
-                for files in pattern.iterfind("files"):
-                    for folder in files.iterfind("folder"):
-                        sub_dirs.append(folder.get("source"))
-                    for file in files.iterfind("file"):
-                        loose_files.append(file.get("source"))
+    sub_dirs, loose_files = parse_module_config(path)
     # Validate subdirectories
     logger.info("Subdirectories required by the Fomod installer:")
     for sub_dir in sub_dirs:
@@ -311,6 +290,37 @@ def version_plugins(dir_source: str, old_version: str):
                 plugin_data = plugin_data.replace(old_stamp, new_stamp, 1)
                 with open(path_plugin, "wb") as fh:
                     fh.write(plugin_data)
+
+
+def parse_module_config(path: str) -> (list, list):
+    """Extract required folders and loose files from ModuleConfig.xml.
+
+    Args:
+        path: Path to ModuleConfig.xml.
+    """
+    root = xml.etree.ElementTree.parse(path).getroot()
+    sub_dirs = list()
+    loose_files = list()
+    for installSteps in root.iterfind("installSteps"):
+        for installStep in installSteps.iterfind("installStep"):
+            for fileGroups in installStep.iterfind("optionalFileGroups"):
+                for group in fileGroups.iterfind("group"):
+                    for plugins in group.iterfind("plugins"):
+                        for plugin in plugins.iterfind("plugin"):
+                            for files in plugin.iterfind("files"):
+                                for folder in files.iterfind("folder"):
+                                    sub_dirs.append(folder.get("source"))
+                                for file in files.iterfind("file"):
+                                    loose_files.append(file.get("source"))
+    for conditionalFileInstalls in root.iterfind("conditionalFileInstalls"):
+        for patterns in conditionalFileInstalls.iterfind("patterns"):
+            for pattern in patterns.iterfind("pattern"):
+                for files in pattern.iterfind("files"):
+                    for folder in files.iterfind("folder"):
+                        sub_dirs.append(folder.get("source"))
+                    for file in files.iterfind("file"):
+                        loose_files.append(file.get("source"))
+    return (sub_dirs, loose_files)
 
 
 def find_plugins(source_dir):
