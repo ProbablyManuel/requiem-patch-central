@@ -1,0 +1,53 @@
+Info:
+
+This is an all-in-one patch for WAFR, CCF, CCOR, KFR, COR, AOS and Requiem.
+If you don't use all of them, install the modular patches from AOS.
+This makes the Requiem, WAFR and GDO patch from the AOS installer redundant. Do NOT install any of these patches.
+
+
+
+Changelog:
+
+2.09
+
+Updated to Requiem 2.0.2.
+
+
+2.00
+
+Updated to Requiem 2.0.1.
+
+
+1.50
+
+Updated to Requiem 1.9.4.
+
+
+1.47
+
+Small fix to HorseRace.
+
+
+1.40
+
+Updated to Requiem 1.9.3 and USLEEP 3.0.0.
+
+
+1.37
+
+Updated to Requiem 1.9.3.
+
+
+1.32
+
+Updated to KFR 2.0.
+
+
+1.13
+
+Updated to AOS 2.5.
+
+
+1.11	Initial Release
+
+Fixed conflicts between AOS, USKP, WAFR and Requiem.

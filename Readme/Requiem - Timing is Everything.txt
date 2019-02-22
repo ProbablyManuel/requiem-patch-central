@@ -1,0 +1,47 @@
+Info:
+
+Dragonborn and The Ebony Warrior are disabled by default because Requiem doesn't support the Dragonborn DLC yet.
+
+
+
+Changelog:
+
+2.08
+
+Requiem's level requirement for The House of Horros can be configured in the MCM of Timing is Everything.
+
+
+2.06
+
+The Ebony Warrior is disabled by default.
+
+
+2.00
+
+Updated to Requiem 2.0.1.
+
+
+1.50
+
+Added Requiem.esp as master.
+
+Updated to NRM Dragonborn.
+
+
+1.49
+
+Hearthfire now starts at level 20 as intended. This time for real! This fix isn't retroactive.
+
+
+1.47
+
+Hearthfire now starts at level 20 as intended. This fix isn't retroactive.
+
+
+1.46	Initial Release
+
+Patched direct conflicts.
+
+Updated the MCM to use Requiem's default level requirements.
+
+By default Hearthfire starts at level 20 and the Ebony Warrior appears at level 40.

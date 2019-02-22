@@ -1,0 +1,40 @@
+Changelog:
+
+2.00
+
+Updated to Requiem 2.0.1.
+
+
+1.56
+
+Update to Campfire 1.9.
+
+Added a Campfire cooking recipe for raw meat.
+
+Added salt as requirement to meat cooked at campfire.
+
+
+1.48
+
+Updated to Campfire 1.7.1.
+
+
+1.44
+
+Updated to Campfire 1.6.
+
+
+1.41
+
+Updated to Campfire 1.5.2.
+
+
+1.36	Initial Release
+
+Reqtified everything (armors, weapons, ammunition and recipes).
+
+Cloaks can't be enchanted.
+
+Reduced carry weight bonus offered by backpacks to 35.
+
+Changed most messages to a first-person view.

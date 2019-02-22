@@ -1,0 +1,34 @@
+Changelog:
+
+2.13
+
+Removed Enhancement module. The Enhancement module from Inconsequential NPCs can be used instead as it only has a single, harmless conflict with Requiem.
+
+
+2.08
+
+Synchronized with USLEEP 3.0.13a.
+
+
+2.06
+
+Maven's Bodyguard carries an unenchanted but better tempered orcish greatsword.
+
+
+2.00
+
+Updated to Requiem 2.0.1.
+
+
+1.43
+
+Internal changes to make merging my patches easier.
+
+
+1.33	Initial Release
+
+Added appropriate perks and equipment to combat NPCs.
+
+Changed messages to a first person view.
+
+Reqtified tempering recipes.

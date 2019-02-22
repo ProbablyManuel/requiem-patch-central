@@ -1,0 +1,1858 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://qconsulting.ca/fo3/ModConfig5.0.xsd">
+	<moduleName>Requiem Patches</moduleName>
+	<installSteps order="Explicit">
+		<installStep name="Unofficial Patches">
+			<optionalFileGroups order="Explicit">
+				<group name="Cutting Room Floor" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Cutting Room Floor">
+							<description>
+								Requires Cutting Room Floor.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Cutting Room Floor" destination=""/>
+								<file source="Readme\Requiem - Cutting Room Floor.txt" destination="Requiem Patches - Readme\Requiem - Cutting Room Floor.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Cutting Room Floor">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="Cutting Room Floor.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>	
+				</group>
+				<group name="WM Flora Fixes" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="WM Flora Fixes">
+							<description>
+								Requires WM Flora Fixes.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - WM Flora Fixes" destination=""/>
+								<file source="Readme\Requiem - WM Flora Fixes.txt" destination="Requiem Patches - Readme\Requiem - WM Flora Fixes.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="WM Flora Fixes">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="WM Flora Fixes.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>	
+				</group>
+			</optionalFileGroups>
+		</installStep>
+		<installStep name="Audio">
+			<optionalFileGroups order="Explicit">
+				<group name="Audio Overhaul for Skyrim" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Audio Overhaul for Skyrim">
+							<description>
+								Requires Audio Overhaul for Skyrim.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Audio Overhaul for Skyrim" destination=""/>
+								<file source="Readme\Requiem - Audio Overhaul for Skyrim.txt" destination="Requiem Patches - Readme\Requiem - Audio Overhaul for Skyrim.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Audio Overhaul for Skyrim">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="AOS.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+				<group name="Immersive Sounds Compendium" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Immersive Sounds Compendium">
+							<description>
+								Requires Immersive Sounds Compendium and Complete Crafting Overhaul Remade.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Immersive Sounds Compendium" destination=""/>
+								<file source="Readme\Requiem - Immersive Sounds Compendium.txt" destination="Requiem Patches - Readme\Requiem - Immersive Sounds Compendium.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Immersive Sounds Compendium">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="Immersive Sounds - Compendium.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+			</optionalFileGroups>
+		</installStep>
+		<installStep name="Immersion">
+			<optionalFileGroups order="Explicit">
+				<group name="Campfire" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Campfire">
+							<description>
+								Requires Campfire.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Campfire" destination=""/>
+								<file source="Readme\Requiem - Campfire.txt" destination="Requiem Patches - Readme\Requiem - Campfire.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Campfire">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="Campfire.esm" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+				<group name="Frostfall" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Frostfall">
+							<description>
+								Requires Frostfall.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Frostfall" destination=""/>
+								<file source="Readme\Requiem - Frostfall.txt" destination="Requiem Patches - Readme\Requiem - Frostfall.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Frostfall">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="Frostfall.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+			</optionalFileGroups>
+		</installStep>
+		<installStep name="Gameplay">
+			<optionalFileGroups order="Explicit">
+				<group name="Dragon Combat Overhaul" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Dragon Combat Overhaul">
+							<description>
+								Requires Dragon Combat Overhaul.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Dragon Combat Overhaul" destination=""/>
+								<file source="Readme\Requiem - Dragon Combat Overhaul.txt" destination="Requiem Patches - Readme\Requiem - Dragon Combat Overhaul.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Dragon Combat Overhaul">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="Dragon Combat Overhaul.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+				<group name="Trade and Barter" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Trade and Barter">
+							<description>
+								Requires Trade and Barter. You need the Hearthfire version.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Trade and Barter" destination=""/>
+								<file source="Readme\Requiem - Trade and Barter.txt" destination="Requiem Patches - Readme\Requiem - Trade and Barter.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Trade and Barter">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="TradeBarter.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>	
+				</group>
+				<group name="VioLens - A Killmove Mod" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="VioLens">
+							<description>
+								Requires VioLens.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - VioLens" destination=""/>
+								<file source="Readme\Requiem - VioLens.txt" destination="Requiem Patches - Readme\Requiem - VioLens.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="VioLens">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="VioLens.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>	
+				</group>
+			</optionalFileGroups>
+		</installStep>
+		<installStep name="Animals">
+			<optionalFileGroups order="Explicit">
+				<group name="Animallica" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Animallica">
+							<description>
+								Requires Animallica - Skyrim Wildlife Overhaul. You need the lore friendly version.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Animallica" destination=""/>
+								<file source="Readme\Requiem - Animallica.txt" destination="Requiem Patches - Readme\Requiem - Animallica.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Animallica">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="Animallica.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+				<group name="SkyTEST - Realistic Animals &amp; Predators" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Skytest">
+							<description>
+								Requires SkyTEST - Realistic Animals &amp; Predators.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - SkyTEST" destination=""/>
+								<file source="Readme\Requiem - SkyTEST.txt" destination="Requiem Patches - Readme\Requiem - SkyTEST.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="SkyTEST">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="SkyTEST-RealisticAnimals&amp;Predators.esm" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+				<group name="Wild World" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Wild World">
+							<description>
+								Requires Wild World.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Wild World" destination=""/>
+								<file source="Readme\Requiem - Wild World.txt" destination="Requiem Patches - Readme\Requiem - Wild World.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Wild World">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="Wild World.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+			</optionalFileGroups>
+		</installStep>
+		<installStep name="Horses">
+			<optionalFileGroups order="Explicit">
+				<group name="Immersive Horses" type="SelectAtMostOne">
+					<plugins order="Explicit">
+						<plugin name="Immersive Horses">
+							<description>
+								Requires Immersive Horses.
+
+It's highly recommend to use Craftable Horse Barding too.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Immersive Horses" destination=""/>
+								<file source="Readme\Requiem - Immersive Horses.txt" destination="Requiem Patches - Readme\Requiem - Immersive Horses.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Immersive Horses">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="Immersive Horses.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+						<plugin name="Immersive Horses - SkyTEST compatible">
+							<description>
+								Requires Immersive Horses and SkyTEST.
+
+It's highly recommend to use Craftable Horse Barding too.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Immersive Horses - SkyTEST" destination=""/>
+								<file source="Readme\Requiem - Immersive Horses.txt" destination="Requiem Patches - Readme\Requiem - Immersive Horses.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Immersive Horses - SkyTEST">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="Immersive Horses.esp" state="Active"/>
+												<fileDependency file="SkyTEST-RealisticAnimals&amp;Predators.esm" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+				<group name="Craftable Horse Barding" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Craftable Horse Barding">
+							<description>
+								Requires Craftable Horse Barding and Immersive Horses.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Craftable Horse Barding" destination=""/>
+								<file source="Readme\Requiem - Craftable Horse Barding.txt" destination="Requiem Patches - Readme\Requiem - Craftable Horse Barding.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Craftable Horse Barding">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="Craftable Horse Barding.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+			</optionalFileGroups>
+		</installStep>
+		<installStep name="Creatures">
+			<optionalFileGroups order="Explicit">
+				<group name="83Willows 101BugsHD" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="83Willow's Bugs">
+							<description>
+								Requires 83Willows 101BugsHD. You need the normal version, i.e. not the HighSpawn version.
+
+DISABLE/DELETE "83Willows_101BUGS_V4_HighRes.esp" and "83Willows_101BUGS_V4_LowRes.esp".
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - 83Willows 101Bugs" destination=""/>
+								<file source="Readme\Requiem - 83Willows 101Bugs.txt" destination="Requiem Patches - Readme\Requiem - 83Willows 101Bugs.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="83Willows 101Bugs">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="Or">
+												<fileDependency file="83Willows_101BUGS_V4_HighRes.esp" state="Active"/>
+												<fileDependency file="83Willows_101BUGS_V4_LowRes.esp" state="Active"/>
+												<fileDependency file="Requiem - 83Willows 101Bugs.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+				<group name="Deadly Dragons" type="SelectAtMostOne">
+					<plugins order="Explicit">
+						<plugin name="Deadly Dragons">
+							<description>
+								Requires Deadly Dragons.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Deadly Dragons" destination=""/>
+								<file source="Readme\Requiem - Deadly Dragons.txt" destination="Requiem Patches - Readme\Requiem - Deadly Dragons.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Deadly Dragons">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="DeadlyDragons.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+						<plugin name="Deadly Dragons - AOS compatible">
+							<description>
+								Requires Deadly Dragons and Audio Overhaul for Skyrim. This replaces the Deadly Dragons patch from AOS.
+
+DISABLE/DELETE "AOS2_DD Patch.esp".
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Deadly Dragons - AOS" destination=""/>
+								<file source="Readme\Requiem - Deadly Dragons.txt" destination="Requiem Patches - Readme\Requiem - Deadly Dragons.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Deadly Dragons - AOS">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="DeadlyDragons.esp" state="Active"/>
+												<flagDependency flag="Audio Overhaul for Skyrim" value="On"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+			</optionalFileGroups>
+		</installStep>
+		<installStep name="NPCs">
+			<optionalFileGroups order="Explicit">
+				<group name="Immersive Patrols" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Immersive Patrols">
+							<description>
+								Requires Immersive Patrols.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Immersive Patrols" destination=""/>
+								<file source="Readme\Requiem - Immersive Patrols.txt" destination="Requiem Patches - Readme\Requiem - Immersive Patrols.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Immersive Patrols">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="Immersive Patrols II.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+				<group name="Inconsequential NPCs" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Inconsequential NPCs">
+							<description>
+								Requires Inconsequential NPCs.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Inconsequential NPCs" destination=""/>
+								<file source="Readme\Requiem - Inconsequential NPCs.txt" destination="Requiem Patches - Readme\Requiem - Inconsequential NPCs.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Inconsequential NPCs">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="Inconsequential NPCs.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>	
+				</group>
+				<group name="RS Children Overhaul" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="RS Children Overhaul">
+							<description>
+								Requires RS Children Overhaul.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - RS Children Overhaul" destination=""/>
+								<file source="Readme\Requiem - RS Children Overhaul.txt" destination="Requiem Patches - Readme\Requiem - RS Children Overhaul.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="RS Children Overhaul">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="RSkyrimChildren.esm" state="Active"/>
+												<fileDependency file="RSChildren.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+			</optionalFileGroups>
+		</installStep>
+		<installStep name="Follower">
+			<optionalFileGroups order="Explicit">
+				<group name="Arissa - The Wandering Rogue" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Arissa">
+							<description>
+								Requires Arissa.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Arissa" destination=""/>
+								<file source="Readme\Requiem - Arissa.txt" destination="Requiem Patches - Readme\Requiem - Arissa.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Arissa">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="CompanionArissa.esm" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>	
+				</group>
+				<group name="INIGO" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Inigo">
+							<description>
+								Requires Inigo.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Inigo" destination=""/>
+								<file source="Readme\Requiem - Inigo.txt" destination="Requiem Patches - Readme\Requiem - Inigo.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Inigo">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="INIGO.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+				<group name="Lucien" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Lucien">
+							<description>
+								Requires Lucien.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Lucien" destination=""/>
+								<file source="Readme\Requiem - Lucien.txt" destination="Requiem Patches - Readme\Requiem - Lucien.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Lucien">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="Lucien.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+				<group name="Vilja in Skyrim" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Vilja">
+							<description>
+								Requires Vilja.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Vilja" destination=""/>
+								<file source="Readme\Requiem - Vilja.txt" destination="Requiem Patches - Readme\Requiem - Vilja.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Vilja">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="EMCompViljaSkyrim.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>	
+				</group>
+				<group name="Hoth" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Hoth">
+							<description>
+								Requires Hoth.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Hoth" destination=""/>
+								<file source="Readme\Requiem - Hoth.txt" destination="Requiem Patches - Readme\Requiem - Hoth.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Hoth">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="HothFollower.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>	
+				</group>
+			</optionalFileGroups>
+		</installStep>
+		<installStep name="Factions">
+			<optionalFileGroups order="Explicit">
+				<group name="Enhanced Skyrim Factions - The Companions Guild" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="ESF Companions">
+							<description>
+								Requires ESF Companions full version.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - ESF Companions" destination=""/>
+								<file source="Readme\Requiem - ESF Companions.txt" destination="Requiem Patches - Readme\Requiem - ESF Companions.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="ESF Companions">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="ESFCompanions.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+				<group name="Immersive College of Winterhold" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Immersive College of Winterhold">
+							<description>
+								Requires Immersive College of Winterhold.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Immersive College of Winterhold" destination=""/>
+								<file source="Readme\Requiem - Immersive College of Winterhold.txt" destination="Requiem Patches - Readme\Requiem - Immersive College of Winterhold.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Immersive College of Winterhold">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="CollegeOfWinterholdImmersive.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>	
+				</group>
+			</optionalFileGroups>
+		</installStep>
+		<installStep name="Quests">
+			<optionalFileGroups order="Explicit">
+				<group name="Alternate Start - Live Another Life" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Live Another Life">
+							<description>
+								Requires Alternate Start - Live Another Life.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Live Another Life" destination=""/>
+								<file source="Readme\Requiem - Live Another Life.txt" destination="Requiem Patches - Readme\Requiem - Live Another Life.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Live Another Life">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="Alternate Start - Live Another Life.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+				<group name="Timing is Everything - Quest Delay and Timing Control" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Timing is Everything">
+							<description>
+								Requires Timing is Everything.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Timing is Everything" destination=""/>
+								<file source="Readme\Requiem - Timing is Everything.txt" destination="Requiem Patches - Readme\Requiem - Timing is Everything.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Timing is Everything">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="TimingIsEverything.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>	
+				</group>
+				<group name="Skyrim Unlocked" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Skyrim Unlocked">
+							<description>
+								Requires Skyrim Unlocked.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Skyrim Unlocked" destination=""/>
+								<file source="Readme\Requiem - Skyrim Unlocked.txt" destination="Requiem Patches - Readme\Requiem - Skyrim Unlocked.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Skyrim Unlocked">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="Skyrim Unlocked.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+			</optionalFileGroups>
+		</installStep>
+		<installStep name="Visuals">
+			<optionalFileGroups order="Explicit">
+				<group name="Unique Uniques" type="SelectAtMostOne">
+					<plugins order="Explicit">
+						<plugin name="Unique Uniques">
+							<description>
+								Requires Unique Uniques.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Unique Uniques" destination=""/>
+								<file source="Readme\Requiem - Unique Uniques.txt" destination="Requiem Patches - Readme\Requiem - Unique Uniques.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Unique Uniques">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="Unique Uniques.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+						<plugin name="Unique Uniques - AOS compatible">
+							<description>
+								Requires Unique Uniques and Audio Overhaul for Skyrim.
+							</description>
+								<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Unique Uniques - AOS" destination=""/>
+								<file source="Readme\Requiem - Unique Uniques.txt" destination="Requiem Patches - Readme\Requiem - Unique Uniques.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Unique Uniques - AOS">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="Unique Uniques.esp" state="Active"/>
+												<flagDependency flag="Audio Overhaul for Skyrim" value="On"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>	
+				</group>
+				<group name="RUSTIC SOULGEMS" type="SelectAtMostOne">
+					<plugins order="Explicit">
+						<plugin name="RUSTIC SOULGEMS">
+							<description>
+								Requires RUSTIC SOULGEMS.
+
+DISABLE/DELETE "RUSTIC SOULGEMS - Sorted.esp" and "RUSTIC SOULGEMS - Unsorted.esp".
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Rustic Soulgems" destination=""/>
+								<file source="Readme\Requiem - Rustic Soulgems.txt" destination="Requiem Patches - Readme\Requiem - Rustic Soulgems.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Rustic Soulgems">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="Or">
+												<fileDependency file="RUSTIC SOULGEMS - Sorted.esp" state="Active"/>
+												<fileDependency file="RUSTIC SOULGEMS - Unsorted.esp" state="Active"/>
+												<fileDependency file="Requiem - Rustic Soulgems.esp" state="Active"/>
+												<fileDependency file="Requiem - Rustic Soulgems - ISC.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+						<plugin name="RUSTIC SOULGEMS - ISC compatible">
+							<description>
+								Requires RUSTIC SOULGEMS and Immersive Sounds Compendium.
+
+DISABLE/DELETE "RUSTIC SOULGEMS - Sorted.esp" and "RUSTIC SOULGEMS - Unsorted.esp".
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Rustic Soulgems - ISC" destination=""/>
+								<file source="Readme\Requiem - Rustic Soulgems.txt" destination="Requiem Patches - Readme\Requiem - Rustic Soulgems.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Rustic Soulgems - ISC">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<flagDependency flag="Immersive Sounds Compendium" value="On"/>
+												<dependencies operator="Or">
+													<fileDependency file="RUSTIC SOULGEMS - Sorted.esp" state="Active"/>
+													<fileDependency file="RUSTIC SOULGEMS - Unsorted.esp" state="Active"/>
+													<fileDependency file="Requiem - Rustic Soulgems.esp" state="Active"/>
+													<fileDependency file="Requiem - Rustic Soulgems - ISC.esp" state="Active"/>
+												</dependencies>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+			</optionalFileGroups>
+		</installStep>
+		<installStep name="Books">
+			<optionalFileGroups order="Explicit">
+				<group name="Book Covers Skyrim" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Book Covers Skyrim">
+							<description>
+								Requires Book Covers Skyrim.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Book Covers Skyrim" destination=""/>
+								<file source="Readme\Requiem - Book Covers Skyrim.txt" destination="Requiem Patches - Readme\Requiem - Book Covers Skyrim.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Book Covers Skyrim">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="Book Covers Skyrim.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>	
+				</group>
+				<group name="Book Covers Skyrim - Lost Library" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Lost Library">
+							<description>
+								Requires Book Covers Skyrim - Lost Library.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Lost Library" destination=""/>
+								<file source="Readme\Requiem - Lost Library.txt" destination="Requiem Patches - Readme\Requiem - Lost Library.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Lost Library">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="Book Covers Skyrim - Lost Library.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>	
+				</group>
+			</optionalFileGroups>
+		</installStep>
+		<installStep name="Armors">
+			<optionalFileGroups order="Explicit">
+				<group name="Black Mage Armor" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Black Mage Armor">
+							<description>
+								Requires Black Mage Armor.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Black Mage Armor" destination=""/>
+								<file source="Readme\Requiem - Black Mage Armor.txt" destination="Requiem Patches - Readme\Requiem - Black Mage Armor.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Black Mage Armor">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="Black Mage Armor.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+				<group name="Immersive Armors" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Immersive Armors">
+							<description>
+								Requires Immersive Armors.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Immersive Armors" destination=""/>
+								<file source="Readme\Requiem - Immersive Armors.txt" destination="Requiem Patches - Readme\Requiem - Immersive Armors.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Immersive Armors">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="Hothtrooper44_ArmorCompilation.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+				<group name="Improved Closefaced Helmets" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Improved Closefaced Helmets">
+							<description>
+								Requires Improved Closefaced Helmets. You need the main file and the Silver Knight Armor patch.
+
+DISABLE/DELETE "imp_helm_legend.esp" and "ICH - Silver Knight Patch.esp".
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Improved Closefaced Helmets" destination=""/>
+								<file source="Readme\Requiem - Improved Closefaced Helmets.txt" destination="Requiem Patches - Readme\Requiem - Improved Closefaced Helmets.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Improved Closefaced Helmets">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="Or">
+												<fileDependency file="imp_helm_legend.esp" state="Active"/>
+												<fileDependency file="Requiem - Improved Closefaced Helmets.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+				<group name="Common Clothes and Armors" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Common Clothes and Armors">
+							<description>
+								Requires Common Clothes and Armors.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Common Clothes and Armors" destination=""/>
+								<file source="Readme\Requiem - Common Clothes and Armors.txt" destination="Requiem Patches - Readme\Requiem - Common Clothes and Armors.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Common Clothes and Armors">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="Common Clothes and Armors.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+			</optionalFileGroups>
+		</installStep>
+		<installStep name="Weapons">
+			<optionalFileGroups order="Explicit">
+				<group name="Immersive Weapons" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Immersive Weapons">
+							<description>
+								Requires Immersive Weapons.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Immersive Weapons" destination=""/>
+								<file source="Readme\Requiem - Immersive Weapons.txt" destination="Requiem Patches - Readme\Requiem - Immersive Weapons.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Immersive Weapons">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="Immersive Weapons.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+				<group name="Heavy Armory - New Weapons" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Heavy Armory">
+							<description>
+								Requires Heavy Armory.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Heavy Armory" destination=""/>
+								<file source="Readme\Requiem - Heavy Armory.txt" destination="Requiem Patches - Readme\Requiem - Heavy Armory.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Heavy Armory">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="PrvtI_HeavyArmory.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+				<group name="Scoped Bows" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Scoped Bows">
+							<description>
+								Requires Scoped Bows.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Scoped Bows" destination=""/>
+								<file source="Readme\Requiem - Scoped Bows.txt" destination="Requiem Patches - Readme\Requiem - Scoped Bows.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Scoped Bows">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="ScopedBows.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+				<group name="Faction Crossbows" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Faction Crossbows">
+							<description>
+								Requires Faction Crossbows.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Faction Crossbows" destination=""/>
+								<file source="Readme\Requiem - Faction Crossbows.txt" destination="Requiem Patches - Readme\Requiem - Faction Crossbows.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Faction Crossbows">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="Faction Crossbows.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+			</optionalFileGroups>
+		</installStep>
+		<installStep name="Modgroups">
+			<optionalFileGroups order="Explicit">
+				<group name="Modgroups" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Modgroups">
+							<description>
+								Modgroups for all installed patches. If you don't know what modgroups are, you shouldn't select this.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<conditionFlags>
+								<flag name="Modgroups">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<type name="Optional"/>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+			</optionalFileGroups>
+		</installStep>
+	</installSteps>
+	<conditionalFileInstalls>
+		<patterns>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Cutting Room Floor" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Cutting Room Floor.modgroups" destination="Requiem - Cutting Room Floor.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="WM Flora Fixes" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - WM Flora Fixes.modgroups" destination="Requiem - WM Flora Fixes.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Audio Overhaul for Skyrim" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Audio Overhaul for Skyrim.modgroups" destination="Requiem - Audio Overhaul for Skyrim.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Immersive Sounds Compendium" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Immersive Sounds Compendium.modgroups" destination="Requiem - Immersive Sounds Compendium.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Campfire" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Campfire.modgroups" destination="Requiem - Campfire.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Frostfall" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Frostfall.modgroups" destination="Requiem - Frostfall.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Dragon Combat Overhaul" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Dragon Combat Overhaul.modgroups" destination="Requiem - Dragon Combat Overhaul.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Trade and Barter" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Trade and Barter.modgroups" destination="Requiem - Trade and Barter.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="VioLens" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - VioLens.modgroups" destination="Requiem - VioLens.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Animallica" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Animallica.modgroups" destination="Requiem - Animallica.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="SkyTEST" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - SkyTEST.modgroups" destination="Requiem - SkyTEST.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Wild World" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Wild World.modgroups" destination="Requiem - Wild World.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Immersive Horses" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Immersive Horses.modgroups" destination="Requiem - Immersive Horses.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Immersive Horses - SkyTEST" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Immersive Horses - SkyTEST.modgroups" destination="Requiem - Immersive Horses - SkyTEST.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Craftable Horse Barding" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Craftable Horse Barding.modgroups" destination="Requiem - Craftable Horse Barding.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="83Willows 101Bugs" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - 83Willows 101Bugs.modgroups" destination="Requiem - 83Willows 101Bugs.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Deadly Dragons" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Deadly Dragons.modgroups" destination="Requiem - Deadly Dragons.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Deadly Dragons - AOS" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Deadly Dragons - AOS.modgroups" destination="Requiem - Deadly Dragons - AOS.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Immersive Patrols" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Immersive Patrols.modgroups" destination="Requiem - Immersive Patrols.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Inconsequential NPCs" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Inconsequential NPCs.modgroups" destination="Requiem - Inconsequential NPCs.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="RS Children Overhaul" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - RS Children Overhaul.modgroups" destination="Requiem - RS Children Overhaul.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Arissa" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Arissa.modgroups" destination="Requiem - Arissa.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Inigo" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Inigo.modgroups" destination="Requiem - Inigo.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Lucien" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Lucien.modgroups" destination="Requiem - Lucien.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Vilja" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Vilja.modgroups" destination="Requiem - Vilja.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Hoth" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Hoth.modgroups" destination="Requiem - Hoth.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="ESF Companions" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - ESF Companions.modgroups" destination="Requiem - ESF Companions.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Immersive College of Winterhold" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Immersive College of Winterhold.modgroups" destination="Requiem - Immersive College of Winterhold.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Live Another Life" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Live Another Life.modgroups" destination="Requiem - Live Another Life.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Timing is Everything" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Timing is Everything.modgroups" destination="Requiem - Timing is Everything.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Skyrim Unlocked" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Skyrim Unlocked.modgroups" destination="Requiem - Skyrim Unlocked.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Unique Uniques" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Unique Uniques.modgroups" destination="Requiem - Unique Uniques.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Unique Uniques - AOS" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Unique Uniques - AOS.modgroups" destination="Requiem - Unique Uniques - AOS.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Rustic Soulgems" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Rustic Soulgems.modgroups" destination="Requiem - Rustic Soulgems.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Rustic Soulgems - ISC" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Rustic Soulgems - ISC.modgroups" destination="Requiem - Rustic Soulgems - ISC.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Book Covers Skyrim" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Book Covers Skyrim.modgroups" destination="Requiem - Book Covers Skyrim.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Lost Library" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Lost Library.modgroups" destination="Requiem - Lost Library.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Black Mage Armor" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Black Mage Armor.modgroups" destination="Requiem - Black Mage Armor.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Immersive Armors" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Immersive Armors.modgroups" destination="Requiem - Immersive Armors.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Improved Closefaced Helmets" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Improved Closefaced Helmets.modgroups" destination="Requiem - Improved Closefaced Helmets.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Common Clothes and Armors" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Common Clothes and Armors.modgroups" destination="Requiem - Common Clothes and Armors.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Immersive Weapons" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Immersive Weapons.modgroups" destination="Requiem - Immersive Weapons.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Heavy Armory" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Heavy Armory.modgroups" destination="Requiem - Heavy Armory.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Scoped Bows" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Scoped Bows.modgroups" destination="Requiem - Scoped Bows.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Faction Crossbows" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Faction Crossbows.modgroups" destination="Requiem - Faction Crossbows.modgroups"/>
+				</files>
+			</pattern>
+		</patterns>
+	</conditionalFileInstalls>
+</config>

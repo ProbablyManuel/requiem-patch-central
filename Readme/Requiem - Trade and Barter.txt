@@ -1,0 +1,54 @@
+Info:
+
+The patch requires the Hearthfire version of Trade and Barter. It doesn't work with the vanilla version of Trade and Barter.
+
+The current situation with the MCM sliders for merchant gold is suboptimal because they don't represent the actual value.
+The shown value is multiplied by a constant factor that is set individually for each merchant by Requiem.
+However you can go down to very low values and they're proportional so I'm leaving it the way it is.
+
+
+
+Changelog:
+
+2.08
+
+Requiem's penalty for shopping naked can be configured in the MCM of Trade and Barter.
+
+
+2.05
+
+Updated to Requiem 2.0.2.
+
+
+2.00
+
+Updated to Requiem 2.0.1.
+
+
+1.57
+
+Reverted my changes from 1.56. Turns out Trade & Barter doesn't offer the same funtionality.
+
+
+1.56
+
+Reverted Requiem's edit that increase merchant gold because Trade & Barter offers the same funtionality.
+
+
+1.37
+
+Updated to Requiem 1.9.3.
+
+
+1.29
+
+Updated to Requiem 1.9.2.
+
+
+1.12	Initial Release
+
+Patched direct conflicts.
+
+Included fixes from USKP.
+
+Changed many options in the MCM menu to match Requiem.

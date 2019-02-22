@@ -1,0 +1,15 @@
+Changelog:
+
+2.00
+
+Updated to Requiem 2.0.1.
+
+
+1.56
+
+Updated to Fozar's Dragonborn patch. Fozar's Dragonborn patch isn't required to use this patch.
+
+
+1.41	Initial Release
+
+Patched direct conflicts between Requiem and WM Flora Fixes.

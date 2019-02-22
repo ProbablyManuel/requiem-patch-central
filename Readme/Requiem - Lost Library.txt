@@ -1,0 +1,5 @@
+2.09	Initial Release
+
+Resolved direct conflicts.
+
+Removed duplicate books.

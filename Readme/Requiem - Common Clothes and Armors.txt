@@ -1,0 +1,18 @@
+Changelog:
+
+2.11
+
+Updated to Common Clothes and Armors 1.1.0.
+
+
+2.10	Initial Release
+
+Resolved direct conflicts.
+
+Added armors to Requiem's bandit leveled lists.
+
+Added perk requirements to tempering recipes.
+
+Reduced armor rating of steel plate armors by 3 and increased armor rating of dwarven armors by 3 to match Requiem.
+
+Reduced weight of iron armors by 7 and weight of steel armors by 5 to match Minor Arcana.

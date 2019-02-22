@@ -1,0 +1,22 @@
+Info:
+
+The patch replaces the original plugin because the original plugin is fully overwritten and thus a waste of a plugin slot.
+You have to disable or delete "RUSTIC SOULGEMS - Sorted.esp" and "RUSTIC SOULGEMS - Unsorted.esp".
+
+
+
+Changelog:
+
+2.00
+
+Updated to Requiem 2.0.1.
+
+
+1.52
+
+Added a file that is compatible with Immersive Sounds Compendium.
+
+
+1.29	Initial Release
+
+Patched direct conflicts.

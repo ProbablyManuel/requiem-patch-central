@@ -1,0 +1,33 @@
+Info:
+
+The patch requires the normal version that is listed under the miscellaneous files. The HighSpawn version isn't supported.
+
+The patch replaces the original plugin because it contains several errors and is rather small.
+You have to disable or delete "83Willows_101BUGS_V4_HighRes.esp" and "83Willows_101BUGS_V4_LowRes.esp".
+
+
+
+Changelog:
+
+2.00
+
+Updated to Requiem 2.0.1.
+
+
+1.50
+
+Added Requiem.esp as master.
+
+
+1.48
+
+Buffed several effects.
+
+
+1.47	Initial Release
+
+Fixed several errors in the original plugin.
+
+All ingredients can be sold in alchemy shops.
+
+Reqtified all new ingredients. Prices and effects have been adjusted.

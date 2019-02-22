@@ -1,0 +1,42 @@
+Changelog:
+
+2.00
+
+Updated to Requiem 2.0.1.
+
+
+1.61
+
+Mage Coat spells and scrolls are now consistently buffed by Improved Mage Armor. This effect isn't visisble in the UI.
+
+
+1.58
+
+Updated to Frostfall 3.3.1.
+
+
+1.52
+
+Updated to Frostfall 3.2.
+
+
+1.50
+
+Added Requiem.esp as master.
+
+
+1.48
+
+Updated to Frostfall 3.0.2.
+
+
+1.41
+
+Updated to Frostfall 3.0.1.
+
+
+1.36	Initial Release
+
+Reqtified everything (spells and scrolls)
+
+Changed most messages to a first-person view.

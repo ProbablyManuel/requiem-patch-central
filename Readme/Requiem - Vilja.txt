@@ -1,0 +1,24 @@
+Changelog:
+
+2.02
+
+Registered Vilja for the new lockpicking system from Requiem 2.0.
+
+
+2.00
+
+Updated to Requiem 2.0.1.
+
+
+1.43
+
+Updated to Vilja 4.2.
+
+
+1.30 	Initial Release
+
+Reqtified everything (races, tempering recipes, food, weapons, spells, perks)
+
+Gave Vilja some perks.
+
+Hid Vilja's topic for damage dealing and receiving.

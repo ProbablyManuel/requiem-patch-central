@@ -1,0 +1,59 @@
+Info:
+
+Requires the main file from Improved Closefaced Helmets and the Silver Knight Armor patch.
+
+The patch replaces the original plugin because it contains a few errors and ITMs and is rather small.
+You have to disable or delete "imp_helm_legend.esp" and "ICH - Silver Knight Patch.esp".
+
+
+
+Changelog:
+
+2.12
+
+Improved closefaced Legendary Plate Helmet. This requires the Silver Knight Armor patch from ICH.
+
+Converted the patch to a replacer plugin. You have to disable or delete "imp_helm_legend.esp" and "ICH - Silver Knight Patch.esp".
+
+It's no longer possible to wear circlets and helmets at the same time.
+
+Updated to Fozar's Dragonborn patch 2.2.
+
+
+2.00
+
+Updated to Requiem 2.0.1.
+
+
+1.47
+
+Small fixes to an unplayable version of the Nightingale Helmet.
+
+
+1.46
+
+Updated to KFR 2.0.
+
+
+1.32
+
+Updated to KFR 2.0.
+
+
+1.11
+
+Updated to ICH 1.57 and WAF 5.1.
+
+
+1.05
+
+Aligned stats with KFR.
+
+
+1.0	Initial Release
+
+Patched direct conflicts.
+
+Included fixes and keywords from USKP/UDGP/UDBP/WAFR/CCF.
+
+Used stats from NRM dragonborn - requiem patch.

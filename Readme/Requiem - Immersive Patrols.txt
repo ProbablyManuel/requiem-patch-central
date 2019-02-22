@@ -1,0 +1,52 @@
+Changelog:
+
+2.06
+
+Updated to Immersive Patrols 2.2.0.
+
+
+2.00
+
+Updated to Requiem 2.0.1.
+
+
+1.64
+
+Updated to Immersive Patrols 2.1.0.
+
+
+1.60
+
+Fixed naked reavers if using Fozar's dragonborn patch.
+
+
+1.51
+
+Fixed the mess that I caused in 1.50.
+
+Immersive Patrols now use tempered equipment and are leveled by the same rules as the player.
+
+The battles between Stormcloaks and Imperials should be much more balanced.
+
+Removed Stormcloak mages.
+
+
+1.50
+
+Major rework of the patch. Most actors have their stats tweaked and several minor bugs have been fixed.
+
+Reqtified the travelling merchants' inventories.
+
+
+1.26
+
+Thalmor/Stormcloak Aggression fixed.
+
+
+1.24	Initial Release
+
+Based on azirok's patch. Updated to Requiem 1.9 and Immersive Patrols 2.0.3.
+
+Adapted the bandits from Immersive Patrols to the Requiem 1.8 bandits.
+
+Distributed some perks to everyone.

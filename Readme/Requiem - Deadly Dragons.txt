@@ -1,0 +1,45 @@
+Info:
+
+The patch requires the normal version of Deadly Dragons. It doesn't work with the loremonger version.
+
+
+
+Changelog:
+
+2.00
+
+Updated to Requiem 2.0.1.
+
+
+1.46
+
+Updated to Deadly Dragons 6.4.0.
+
+The artificial subdivision into five archtypes has been removed:
+ - Dragons are resistant to their element and take extra damage from opposite elements.
+ - Undead dragons are immune to poison and disease but vulnerable to silver.
+ - Dragons that use use poison attacks are immune to it.
+ - Other dragons have no passive (de)buffs.
+
+Reqtifies Draugr spawned by the Bone Dragon.
+
+
+1.25
+
+Fixed some stuff (mostly attributes).
+
+Added AOS compatible file. The Deadly Dragons patch from AOS is no longer needed.
+
+
+
+1.0	Initial Release
+
+Patched direct conflicts.
+
+Gave back full control over all dragons via MCM.
+
+Deleveled the dragons addded by Deadly Dragons.
+
+Removed Mechadon from leveled lists because of the lore. If you want Dwarven Dragons get Immersive Creatures.
+
+Renamed all Dragons to Dragon. Exception: Aspect of Alduin.

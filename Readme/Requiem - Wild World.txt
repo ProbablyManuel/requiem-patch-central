@@ -1,0 +1,25 @@
+Changelog:
+
+2.08
+
+Updated to Wild World 1.40.
+
+
+2.07
+
+Updated to Wild World 1.34.
+
+
+2.05
+
+Updated to Requiem 2.0.2.
+
+
+2.02
+
+Updated to Wild World 1.26.
+
+
+2.01	Initial Release
+
+Patched direct conflicts between Requiem and Wild World.

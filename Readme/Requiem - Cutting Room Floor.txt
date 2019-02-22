@@ -1,0 +1,103 @@
+Info:
+
+Do NOT install the Cutting Room Floor patch from Even Better Quest Objectives. It's fully included in this patch.
+
+
+
+Changelog:
+
+2.11
+
+Restored unique shader effects for Mage Armor On Self and changed them to only show on skin.
+
+
+2.06
+
+Removed edits to Forsworn to improve compatibility with Minor Arcana.
+
+
+2.00
+
+Updated to Requiem 2.0.1.
+
+
+1.66
+
+Updated the quest descriptions to Even Better Quest Objectives 1.6.0.
+
+
+1.64
+
+Updated to Cutting Room Floor 2.0.7.
+
+
+1.63
+
+Updated to Cutting Room Floor 2.0.5.
+
+
+1.52
+
+Included descriptions from Even Better Quest Objectives. This makes the CRF patch from Even Better Quest Objectives redundant.
+
+
+1.50
+
+Updated to Cutting Room Floor 2.0.2.
+
+
+1.48
+
+Updated to Cutting Room Floor 2.0.1.
+
+Replaced Spectral Arrow from CRF with the one from Requiem. This fix isn't retroactive.
+
+Reqtified merchant inventories from CRF.
+
+
+1.46
+
+Updated to KFR 2.0.
+
+
+1.43
+
+Added bash tags.
+
+
+1.40
+
+Updated to Requiem 1.9.3 and USLEEP 3.0.0.
+
+
+1.37
+
+Updated to Requiem 1.9.3.
+
+
+1.32
+
+Updated to KFR 2.0.
+
+
+1.22
+
+Updated to Cutting Room Floor 1.1.4.
+
+Tweaked some NPC's skill values.
+
+Increased Briarheart Geis' extra damage to Nords from 10 to 15.
+
+
+1.2
+
+Updated to Requiem 1.9.
+
+
+1.13	Initial Release
+
+Patched direct conflicts.
+
+Reqtified content from Cutting Room Floor (e.g. it adds perks to NPCs).
+
+Does NOT use the new mage armor visuals from CRF.

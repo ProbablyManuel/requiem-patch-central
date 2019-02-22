@@ -1,0 +1,14 @@
+Changelog:
+
+2.00
+
+Updated to Requiem 2.0.1.
+
+
+1.44	Initial Release
+
+Distributed perks to Hoth.
+
+Reqtified Hoth's equipment.
+
+Hoth's Bonestaff can be taken by the player.

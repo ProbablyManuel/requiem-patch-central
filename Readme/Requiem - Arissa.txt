@@ -1,0 +1,19 @@
+Changelog:
+
+2.02
+
+Registered Arissa for the new lockpicking system from Requiem 2.0.
+
+
+2.00
+
+Updated to Requiem 2.0.1.
+
+
+1.30	Initial Release
+
+Gave Arissa some perks.
+
+Adjusted Gunnher to the Requiem 1.8 bandits.
+
+Changed messages to a first-person view.

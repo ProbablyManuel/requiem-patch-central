@@ -1,0 +1,19 @@
+Info:
+
+The patch requires the full version of ESF Companions.
+The requirements-only version is fully compatible with Requiem and doesn't require a patch.
+
+
+
+Changelog:
+
+2.00
+
+Updated to Requiem 2.0.1.
+
+
+1.42	Initial Release
+
+Patched direct conflicts.
+
+Reqtified everything (recipes, races, magic effects).

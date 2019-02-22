@@ -1,0 +1,62 @@
+Changelog:
+
+2.00
+
+Updated to Requiem 2.0.1.
+
+
+1.58
+
+Updated to Skytest 1.56.03.
+
+
+1.57
+
+Updated to Skytest 1.51.15.
+
+Added a replacer plugin for "SkyTEST-RealisticAnimals&Predators.esm".
+
+
+1.53
+
+Updated to Skytest 1.48b. No longer requires Dragonborn.
+
+
+1.40
+
+Updated to Requiem 1.9.3 and USLEEP 3.0.0.
+
+
+1.2
+
+Updated to Requiem 1.9.
+
+Removed the file for Dawnguard only.
+
+
+1.0	Initial release
+
+Renamed all creatures to their generic name:
+Cave Bear 	--> Bear
+Snowy Sabre Cat --> Sabre Cat
+Snow Fox 	--> Fox
+
+
+Fixes all conflicts:
+
+Only one mod alters a vanilla record 	--->	altered value wins
+Both mods alter a vanilly record	---> 	following conflict resolution:
+
+Skill values			Requiem > Skytest
+Health/Stamina			Requiem > Skytest
+Damage				Requiem > Skytest
+Speed				Skytest > Requiem
+Behaviour			Skytest > Requiem
+Factions			SKytest > Requiem
+Loot				Common Sense
+
+Legendary version requires Hearthfire, Dawnguard, Dragonborn and the Skytest Dawnguard and Dragonborn addons.
+
+Deleves leveled lists.
+
+Uses stats from NRM dragonborn - requiem patch (http://www.nexusmods.com/skyrim/mods/60508/?)

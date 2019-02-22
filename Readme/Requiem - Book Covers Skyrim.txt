@@ -1,0 +1,15 @@
+Changelog:
+
+2.09
+
+Synchronized with USLEEP 3.0.13a.
+
+
+2.08
+
+Removed edits to Light Armor Forging.
+
+
+2.02	Initial Release
+
+Updated DanielCoffey's patch to Requiem 2.0.1.

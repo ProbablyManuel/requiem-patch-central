@@ -1,0 +1,55 @@
+Info:
+
+Do NOT install the Faction Crossbows Compatibility patch for WAFR/CCOR. It's fully included in this patch.
+
+
+
+Changelog:
+
+2.00
+
+Updated to Requiem 2.0.1.
+
+
+1.51
+
+Updated the content of the books and makes them normal books instead of skill books.
+
+Reintroduced the Dawnguard book allowing the Dawnguard Crossbow to be crafted without joining the Dawnguard.
+
+Rebalanced some of the crossbows and bolts.
+
+
+1.50
+
+Updated to Requiem 1.50.
+
+Reintroduced the Dark Brotherhood, Thieves Guild, Imperial and Stormcloak books. You must read them before you can craft these crossbows and bolts.
+
+
+1.49
+
+The Dawnguard bolts now count as silver ammunition.
+
+Fixed several wrong inventory conditions.
+
+
+1.46
+
+Updated to KFR 2.0.
+
+
+1.28
+
+Replaced the unreliable faction conditions on crafting recipes with quest conditions.
+
+
+1.23 Initial Release
+
+Reqtified everything.
+
+Removed the books.
+
+Included fixes and keywords from WAFR/KFR.
+
+Built-in support for CCOR.

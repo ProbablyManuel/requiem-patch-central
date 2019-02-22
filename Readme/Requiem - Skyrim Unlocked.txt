@@ -1,0 +1,30 @@
+Changelog:
+
+2.05
+
+Updated to Requiem 2.0.2.
+
+
+2.00
+
+Updated to Requiem 2.0.1.
+
+
+1.55
+
+Disabled the Saarthal Emergency Supplies until "Under Saarthal" has started.
+
+
+1.53
+
+Disabled the Bag of Holding in Riftweald Manor until "The Pursuit" has started.
+
+
+1.49
+
+Added a Requiem - Skyrim Unlocked - Open Cities Skyrim patch.
+
+
+1.42	Initial Release
+
+Patched direct conflicts.

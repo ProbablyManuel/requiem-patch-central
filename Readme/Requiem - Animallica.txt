@@ -1,0 +1,31 @@
+Info:
+
+The patch requires the lore-friendly version of Animallica.
+
+
+
+Changelog:
+
+2.00
+
+Updated to Requiem 2.0.1.
+
+
+1.05
+
+Leveled Lists are now correctly deleved. For real this time. I triple checked.
+
+Renamed all creatures to their generic name.
+
+Fixed some minor things.
+
+
+1.0	Initial Release
+
+Removed many dirty/unecessary edits.
+
+Leveled list are now correctly deleveled.
+
+Sabre Cat races know how to swim again.
+
+Otherwise identical to hunterrock's patch.

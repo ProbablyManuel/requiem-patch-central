@@ -1,0 +1,129 @@
+Info:
+
+This patch is meant to be used alongside Craftable Horse Barding.
+
+Do NOT install the Hearthfire patch from Immersive Horses. It's fully included in this patch.
+
+The "open inventory" option from Immersive Horses acts just like the "search" option from Requiem (when used on a horse). Use whatever method you prefer.
+
+Saddles, that hide a horse's mane AND are already equipped when you claim the horse, will disappear forever when you close the menu. This is a bug in Immersive Horses and not caused by the patch.
+This bug doesn't occur if you use the Craftable Horse Barding patch because horses only wear basic saddles when you claim them.
+
+
+Changelog:
+
+2.06
+
+Carried over Requiem's changes to biped objects on the horse race.
+
+
+2.00
+
+Updated to Requiem 2.0.1.
+
+
+1.65
+
+Excluded Ghostly Steed from all advanced features of Immersive Horses.
+
+Fixed Requiem's saddles automatically unequipping when closing the inventory.
+
+
+1.63
+
+Reqtified Hearthfire horses. The Hearthfire patch from Immersive Horses is no longer needed.
+
+
+1.62
+
+Updated to Immersive Horses 2.5.
+
+
+1.60
+
+(SkyTEST compatible file) Resolved conflicting edits to the horse race.
+
+
+1.58
+
+Updated to Immersive Horses 2.3.
+
+
+1.53
+
+Updated to Immersive Horses 2.0.
+
+Added SkyTEST compatible file.
+
+
+1.52
+
+Set the weapon range for mounted combat to 100 (previously 175).
+
+Enabled permastolen horses by default.
+
+
+1.50
+
+Updated to Requiem 1.9.4.
+
+Nerfed saddle bags so that their armor rating no longer exceeds the absolute armor cap.
+
+
+1.49
+
+Updated to Immersive Horses 1.8.
+
+
+1.48
+
+Updated to Immersive Horses 1.7.
+
+
+1.47
+
+Small fix to HorseRace.
+
+
+1.45
+
+Updated to Immersive Horses 1.6.
+
+Tweaked all horse stats.
+
+
+1.31
+
+Updated to Immersive Horses 1.5.
+
+
+1.27
+
+Updated to Immersive Horses 1.4.
+
+1.25
+
+Now by default fully compatible with AOS.
+
+
+1.22
+
+Updated to Immersive Horses 1.3.
+
+
+1.14
+
+Updated to Immersive Horses 1.2.
+
+Added Dragonbone saddle to the world.
+
+Further improvements and tweaks.
+
+
+1.12	Initial release
+
+Patched direct conflicts.
+
+Included fixes from USKP/UDGP.
+
+Changed stats to match the intentions of both mods.

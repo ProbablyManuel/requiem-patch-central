@@ -1,0 +1,33 @@
+Info:
+
+Do NOT install the USLEEP patch from RS Children Overhaul. It's fully included in this patch.
+
+
+
+Changelog:
+
+2.00
+
+Updated to Requiem 2.0.1.
+
+
+1.61
+
+Updated to RS Children Overhaul 1.2.
+
+
+1.42
+
+Fixed an error reported by TES5Edit.
+
+
+1.40
+
+Updated to Requiem 1.9.3 and USLEEP 3.0.0.
+
+
+1.32	Initial Release
+
+Merged changes from RS Children Overhaul and Requiem.
+
+Included fixes from USKP.

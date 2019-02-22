@@ -1,0 +1,35 @@
+Info:
+
+I know you can aquire a powerful bow for free with this mod but I won't change that. If you want to rob Inigio of his bow, that's your choice.
+
+
+
+Changelog:
+
+2.02
+
+Registered Inigo for the new lockpicking system from Requiem 2.0.
+
+
+2.00
+
+Updated to Requiem 2.0.1.
+
+
+1.50
+
+Updated to Inigo 2.3 and makes some minor improvements.
+
+
+1.43
+
+Internal changes to make merging my patches easier.
+
+Added bash tags.
+
+
+1.30	Initial Release
+
+Reqtified everything (NPCs, tempering recipes, leveled lists, food, weapons)
+
+Removed the chest with low level gear for Inigo.

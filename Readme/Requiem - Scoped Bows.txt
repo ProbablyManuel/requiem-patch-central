@@ -1,0 +1,150 @@
+Info:
+
+Do NOT install the Better Eagle Eye and Faster Arrows tweak. They don't work with Requiem.
+
+The Stealth Meter Tweak conflicts with Requiem's option that hides the Activate button.
+If you intend to make extensive edits to the UI, you should consider using a dedicated UI mod such as Less Intrusive HUD II.
+
+Scoped Bows have the same stats as their Requiem counterpart +0.5 weight.
+
+
+
+Changelog:
+
+2.05
+
+Fixed various inconsistencies.
+
+Decreased weight of scoped bows by 0.5 and set the price of scoped bows to the same as their counterpart.
+
+Removed edits to Aela the Huntress and the Ebony Warrior.
+
+Copied over hide lace recipe from COR and fur plate recipes from CCOR.
+
+
+2.00
+
+Updated to Requiem 2.0.1.
+
+
+1.66
+
+Updated to Scoped Bows 4.0.
+
+Synchronized with latest version of KFR, COR and Fozar's Dragonborn patch.
+
+
+1.50
+
+Updated to Requiem 1.9.4 and Scoped Bows 3.1.
+
+
+1.49
+
+Updated to Scoped Bows 3.0.1.
+
+
+1.48
+
+Updated to Scoped Bows 3.0.
+
+Reduced the chance that "Corrupted Shades" wield a scoped bow to 20%.
+
+Added tempering recipes for "Drainspell Bow - Scoped" and "Dwarven Sniper Prototype".
+
+Removed 2 ITMs.
+
+
+1.46
+
+Added "Falmer Strong Bow - Scoped".
+
+Renamed "Daedric Wraith" to "Daedric Bow - Scoped".
+
+Removed the scoped Daedric Bow from the world because it could obtained too early. Ill Met By Moonlight has no level requirement like most other daedric quests.
+
+Updated to KFR 2.0.
+
+
+1.43
+
+Internal changes to make merging my patches easier.
+
+
+1.40
+
+Updated to Requiem 1.9.3 and USLEEP 3.0.0.
+
+
+1.35
+
+Updated to Scoped Bows 2.2.1 and COR 2.0.
+
+
+1.32
+
+Updated to KFR 2.0.
+
+Bandits have a small chance of using scoped bows.
+
+
+1.24
+
+Updated to Scoped Bows 2.2.
+
+The handplaced Glass/Ebony/Daedric/Dragonbone Bows are now tempered (like the bandits' equipment since Requiem 1.8).
+
+
+1.22
+
+Updated to Scoped Bows 2.1.
+
+
+1.21
+
+Updated to Scoped Bows 2.0.
+
+
+1.2
+
+Updated to Requiem 1.9.
+
+Removes redundant Immersive Weapons file.
+
+
+1.06
+
+No longer requires NRM dragonborn - requiem patch. The patch is still the same, only a technical detail has changed.
+
+
+1.04
+
+Aligned stats with UnimeiX's "Kryptopyr's Fixes Reqtified".
+
+Optional file for Immersive Weapons added.
+
+
+1.02
+
+Added low level bows to leveled list. They are rarer than normal bows though.
+
+Added high level bows (glass and above) to unique locations or NPCs. For spoilers about their location scroll down.
+
+"Silver Dwarven Sniper" and "Dark Dwarven Sniper" have increased stats and are no longer craftable.
+
+Renamed "Daedric Bow - Scoped" to "Daedric Wraith" and "Dwarven Sniper" to "Dwarven Bow - Scoped"
+
+Made some minor tweaks.
+
+Now with built-in CCO support.
+
+NRM dragonborn - requiem patch is now required.
+
+
+1.0	Initial release
+
+Patched direct conflicts.
+
+Used stats and keywords from USKP and WAFR if available.
+
+Reworked Crafting recipes. Smithing perks are now required for crafting.

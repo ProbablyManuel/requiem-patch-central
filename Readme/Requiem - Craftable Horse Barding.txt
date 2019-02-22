@@ -1,0 +1,55 @@
+Changelog:
+
+2.06
+
+Removed leftover arrow resistance perk from Frost.
+
+
+2.00
+
+Updated to Requiem 2.0.1.
+
+
+1.65
+
+Frost now wears the basic saddle because there is a bug in Immersive Horses that would remove his special saddle.
+
+
+1.63
+
+Adjusted armor rating of saddles such that: Leather (Mail) < Stormcloak < Imperial Mail.
+
+Shadowmere now wears the basic Dark Brotherhood saddle because there is a bug in Immersive Horses that would remove her daedric saddle.
+
+
+1.62
+
+Updated to Craftable Horse Barding 3.4.
+
+
+1.58
+
+Updated to Craftable Horse Barding 3.0.
+
+
+1.54
+
+Updated to Craftable Horse Barding 2.11.
+
+Removed "Requiem - Immersive Horses.esp" as a master.
+
+
+1.52
+
+All buyable horses wear basic saddles.
+
+Rebalanced all basic saddles.
+
+
+1.50	Initial Release
+
+Reqtified everything (armors, recipes, merchants' inventories, etc).
+
+Made all saddles available somewhere in the world.
+
+Hostlers are no longer blacksmiths but buy/sell only saddles and crafting materials.

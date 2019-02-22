@@ -1,0 +1,27 @@
+Info:
+This is an all-in-one patch for WAFR, CCF, CCOR, KFR, COR, Immersive Sounds Compendium and Requiem.
+If you don't use all of them, install the modular patches from Immersive Sounds Compendium.
+This makes the Requiem, WAFR, CCF and CCOR patch from the Immersive Sounds Compendium installer redundant. Do NOT install any of these patches.
+
+
+
+Changelog:
+
+2.11
+
+Restored unique shader effects for Mage Armor On Self and changed them to only show on skin.
+
+
+2.00
+
+Updated to Requiem 2.0.1.
+
+
+1.52
+
+Reverted the model of the Rueful Axe to be consistent with KFR.
+
+
+1.50	Initial Release
+
+Patched conflicts between WAFR, CCF, CCOR, KFR, COR, ISC and Requiem.

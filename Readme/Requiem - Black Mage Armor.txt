@@ -1,0 +1,105 @@
+Changelog:
+
+2.00
+
+Updated to Requiem 2.0.1.
+
+
+1.1
+
+Everything except the armored Arch-Mage armors can be found in Skyrim. For spoilers about their location scroll down.
+
+Black (Arch)Mage Plate Armors have 25% lower weight and slightly lower armor rating. Useful for Battlemages.
+
+Minor tweaks to the armors and recipes.
+
+Built-in support for CCOR.
+
+Included fixes from the USKP.
+
+
+1.08	Initial Release
+
+Removed illogical armors (e.g. light armored plate armor), renamed armors and reworked recipes:
+
+Black Mage Robes			Craftmanship					no armor rating
+Black Mage Armor (light armor)		Advanced Light Armors				similiar stats to scaled armor
+Black Mage Plate Armor			Advanced Blacksmithing				similiar stats to steel plate armor
+Black Arch-Mage's Robes			Being Arch-Mage, Craftmanship			no armor rating
+Black Arch-Mage's Armor (light armor)	Being Arch-Mage, Advanced Light Armors		similar stats to glass armor
+Black Arch-Mage's Plate Armor		Being Arch-Mage, Advanced Blacksmithing		smiliar stats to ebony armor
+
+The crafting system around the Black Mage Focusing Gem has been removed.
+
+Black Arch-Mage's chest and feet pieces can be "enchanted" with the standard Arch-Mage robes enchanment.
+Found at the forge, requires the standard Arch-Mage's robes or boots and the correspondening Black Arch-Mage's piece.
+Keep in mind that you lose the standard Arch-Mage's robes if you do this!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Black Mages Robes:
+Worn by Kornalus, Drelas and Silvia.
+
+Black Mage Armor:
+Worn by Sild the Warlock.
+
+Black Mage Plate Armor:
+Worn by Bashnag.
+
+Black Armage Robes:
+Worn by the Caller.
+
+Black Arch-Mage Plate Armor:
+Worn by Gauldur (not obtainable).

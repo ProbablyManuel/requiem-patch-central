@@ -1,0 +1,32 @@
+Changelog:
+
+2.03
+
+Updated to Immersive College of Winterhold 5.0.
+
+
+2.00
+
+Updated to Requiem 2.0.1.
+
+
+1.45
+
+Updated to Immersive College of Winterhold 4.0.1.
+
+
+1.43
+
+Updated to Immersive College of Winterhold 4.0.
+
+
+1.42
+
+Updated to Immersive College of Winterhold 3.0.2.
+
+
+1.41	Initial Release
+
+Reqtified everything (temper recipes, merchants, spell tomes, races, enemies, spells and weapons).
+
+Changed most messages to a first-person view.
