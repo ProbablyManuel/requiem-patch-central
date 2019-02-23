@@ -128,14 +128,7 @@ def build_release(dir_src: os.PathLike,
             exit()
 
     check_modgroups(plugins, sub_dirs, loose_files, dir_src, logger)
-    # Check readmes
-    for sub_dir in sub_dirs:
-        for file in loose_files:
-            (head, tail) = os.path.split(file)
-            if (head == "Readme" and os.path.splitext(tail)[0] == sub_dir):
-                break
-        else:
-            logger.warning("Readme for {} not found".format(sub_dir))
+    check_readmes(plugins, sub_dirs, loose_files, dir_src, logger)
     # Build fomod tree in a temporary directory
     with tempfile.TemporaryDirectory() as dir_temp:
         # Copy fomod files to the fomod tree
@@ -337,6 +330,34 @@ def check_modgroups(plugins: list, sub_dirs: list, loose_files: list,
                     break
         if not found:
             logger.warning("Modgroups for {} not found".format(shortname))
+
+
+def check_readmes(plugins: list, sub_dirs: list, loose_files: list,
+                  dir_src: os.PathLike, logger: logging.Logger):
+    """Check if readmes are missing.
+
+    Args:
+        plugins: Paths of all eligible plugins relative to dir_src
+        sub_dirs: Paths of all eligible subdirectories relative to dir_src
+        loose_files: Paths of all eligible loose files relative to dir_src
+        dir_src: Directory where mod files are stored
+        logger: Print any warnings to this Logger
+    """
+    for plugin in plugins:
+        shortname = os.path.splitext(os.path.basename(plugin))[0]
+        readme = "{}.txt".format(shortname)
+        found = False
+        for file in loose_files:
+            if os.path.basename(file) == readme:
+                found = True
+                break
+        for sub_dir in sub_dirs:
+            for file in os.listdir(os.path.join(dir_src, sub_dir)):
+                if file == readme:
+                    found = True
+                    break
+        if not found:
+            logger.warning("Readme for {} not found".format(shortname))
 
 
 def parse_fomod(dir_fomod: os.PathLike) -> (str, str, list, list):
