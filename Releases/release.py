@@ -96,6 +96,13 @@ def build_release(dir_src: os.PathLike, dir_dst: os.PathLike = os.getcwd(),
         exit()
     # Extract relevant information from fomod installation files
     name_release, version, sub_dirs, loose_files = parse_fomod(dir_src_fomod)
+    plugins = list()
+    for sub_dir in sub_dirs:
+        for plugin in find_plugins(os.path.join(dir_src, sub_dir)):
+            plugins.append(os.path.join(sub_dir, plugin))
+    for file in loose_files:
+        if os.path.splitext(os.path.basename(file))[1] in plugin_exts:
+            plugins.append(file)
     # Validate subdirectories
     logger.info("Subdirectories required by the Fomod installer:")
     for sub_dir in sub_dirs:
@@ -166,18 +173,12 @@ def build_release(dir_src: os.PathLike, dir_dst: os.PathLike = os.getcwd(),
             os.makedirs(os.path.dirname(dst), exist_ok=True)
             shutil.copy2(src, dst)
         # Add version number to plugins
-        plugins = list()
-        for sub_dir in sub_dirs:
-            for plugin in find_plugins(os.path.join(dir_temp, sub_dir)):
-                plugins.append(os.path.join(dir_temp, sub_dir, plugin))
-        for file in loose_files:
-            if os.path.splitext(os.path.basename(file))[1] in plugin_exts:
-                plugins.append(os.path.join(dir_temp, file))
+        plugins_fomod = [os.path.join(dir_temp, p) for p in plugins]
         if dir_ver:
-            version_plugins(plugins, dir_ver, version)
+            version_plugins(plugins_fomod, dir_ver, version)
         # Validate version stamp on plugins
         version_stamp = bytes("Version: {}".format(version), "utf8")
-        for plugin in plugins:
+        for plugin in plugins_fomod:
             with open(plugin, "rb") as fh:
                 if version_stamp not in fh.read():
                     logger.warning("{} does not have the correct version "
