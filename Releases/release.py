@@ -35,18 +35,22 @@ class ArchiveFlags():
         self.check_embed_file_name = False
 
 
-def build_release(dir_source, dir_target, archive_exe=None,
+def build_release(dir_source: str, dir_target: str, dir_versioning: str = None,
+                  archive_exe: str = None,
                   archive_flags: ArchiveFlags = ArchiveFlags()):
     """Build a release archive.
 
     Args:
-        dir_source: The source directory for which the archive is built.
+        dir_source: Source directory for which the archive is built.
             It must contain a Fomod subdirectory with Info.xml and
             ModuleConfig.xml.
             Furthermore it must contain a subdirectory for every folder
             specified in ModuleConfig.xml. Such a subdirectory is expected
             to contain at most one plugin.
-        dir_target: The target directory for the release archive.
+        dir_target: Target directory for the release archive.
+        dir_versioning: Directory where the plugins will be copied to to add
+            the version number to their description.
+            If ommited no version number will be added.
         archive_exe: Path to Archive.exe, the executable that creates the bsa.
             If ommited no bsa will be created.
         archive_flags: Check the corresponding options in Archive.exe
@@ -62,6 +66,7 @@ def build_release(dir_source, dir_target, archive_exe=None,
     logger.info("Building release")
     logger.info("Source directory: {}".format(dir_source))
     logger.info("Target directory: {}".format(dir_target))
+    logger.info("Versioning directory: {}".format(dir_versioning))
     logger.info("Build bsa: {}".format(bool(archive_exe)))
     # Validate arguments
     dir_source_fomod = os.path.join(dir_source, "Fomod")
@@ -70,6 +75,9 @@ def build_release(dir_source, dir_target, archive_exe=None,
         exit()
     if not os.path.isdir(dir_target):
         logger.error("Target directory does not exist")
+        exit()
+    if dir_versioning and not os.path.isdir(dir_versioning):
+        logger.error("Versioning directory does not exist")
         exit()
     if not os.path.isfile(os.path.join(dir_source_fomod, "Info.xml")):
         logger.error("Info.xml is missing in {}".format(dir_source_fomod))
@@ -125,22 +133,6 @@ def build_release(dir_source, dir_target, archive_exe=None,
     root = xml.etree.ElementTree.parse(path).getroot()
     version = root.find("Version").text
     name_release = root.find("Name").text
-    # Validate version stamp of plugins
-    version_stamp = bytes("Version: {}".format(version), "utf8")
-    for sub_dir in sub_dirs:
-        for plugin in find_plugins(os.path.join(dir_source, sub_dir)):
-            path_plugin = os.path.join(dir_source, sub_dir, plugin)
-            with open(path_plugin, "rb") as fh:
-                if version_stamp not in fh.read():
-                    logger.warning("{} does not have the correct version "
-                                   "stamp".format(plugin))
-    for file in loose_files:
-        if os.path.splitext(file)[1] in plugin_exts:
-            path_plugin = os.path.join(dir_source, file)
-            with open(path_plugin, "rb") as fh:
-                if version_stamp not in fh.read():
-                    logger.warning("{} does not have the correct version"
-                                   "stamp".format(plugin))
     # Build fomod tree in a temporary directory
     with tempfile.TemporaryDirectory() as dir_temp:
         # Copy fomod files to the fomod tree
@@ -178,6 +170,9 @@ def build_release(dir_source, dir_target, archive_exe=None,
             dst = os.path.join(dir_temp, file)
             os.makedirs(os.path.dirname(dst), exist_ok=True)
             shutil.copy2(src, dst)
+        # Add version number to plugins
+        if dir_versioning:
+            version_plugins(dir_temp, dir_versioning)
         # Pack fomod tree into a 7zip archive
         file_archive = "{} {}.7z".format(name_release, version)
         # Remove whitespaces from archive name because GitHub doesn't like them
@@ -274,22 +269,33 @@ def build_bsa(archive_exe, dir_source, bsa_target,
         os.remove(path_bsl)
 
 
-def version_plugins(dir_source: str, old_version: str):
+def version_plugins(dir_source: str, dir_target: str):
+    # Get new version from Info.xml
     path = os.path.join(dir_source, "Fomod", "Info.xml")
     root = xml.etree.ElementTree.parse(path).getroot()
-    new_version = root.find("Version").text
-    old_stamp = bytes("Version: {}".format(old_version), "utf-8")
-    new_stamp = bytes("Version: {}".format(new_version), "utf-8")
-    for path in os.listdir(dir_source):
-        path_abs = os.path.join(dir_source, path)
-        if os.path.isdir(path_abs):
-            for plugin in find_plugins(path_abs):
-                path_plugin = os.path.join(path_abs, plugin)
-                with open(path_plugin, "rb") as fh:
-                    plugin_data = fh.read()
-                plugin_data = plugin_data.replace(old_stamp, new_stamp, 1)
-                with open(path_plugin, "wb") as fh:
-                    fh.write(plugin_data)
+    version = root.find("Version").text
+    # Get files from ModuleConfig.xml
+    path = os.path.join(dir_source, "Fomod", "ModuleConfig.xml")
+    sub_dirs, loose_files = parse_module_config(path)
+    plugins = list()  # Contains plugin paths relative to dir_source
+    for sub_dir in sub_dirs:
+        path = os.path.join(dir_source, sub_dir)
+        for plugin in find_plugins(path):
+            plugins.append(os.path.join(sub_dir, plugin))
+    for file in loose_files:
+        if os.path.splitext(os.path.basename(file))[1] in plugin_exts:
+            plugins.append(file)
+    for plugin in plugins:
+        src = os.path.join(dir_source, plugin)
+        dst = os.path.join(dir_target, os.path.basename(plugin))
+        shutil.move(src, dst)
+    print("Update the version stamp of all", len(plugins), "plugins to",
+          version)
+    input("Press any key to continue")
+    for plugin in plugins:
+        src = os.path.join(dir_target, os.path.basename(plugin))
+        dst = os.path.join(dir_source, plugin)
+        shutil.move(src, dst)
 
 
 def parse_module_config(path: str) -> (list, list):
