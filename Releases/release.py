@@ -166,15 +166,22 @@ def build_release(dir_src: os.PathLike, dir_dst: os.PathLike = os.getcwd(),
             os.makedirs(os.path.dirname(dst), exist_ok=True)
             shutil.copy2(src, dst)
         # Add version number to plugins
+        plugins = list()
+        for sub_dir in sub_dirs:
+            for plugin in find_plugins(os.path.join(dir_temp, sub_dir)):
+                plugins.append(os.path.join(dir_temp, sub_dir, plugin))
+        for file in loose_files:
+            if os.path.splitext(os.path.basename(file))[1] in plugin_exts:
+                plugins.append(os.path.join(dir_temp, file))
         if dir_ver:
-            plugins = list()
-            for sub_dir in sub_dirs:
-                for plugin in find_plugins(os.path.join(dir_temp, sub_dir)):
-                    plugins.append(os.path.join(dir_temp, sub_dir, plugin))
-            for file in loose_files:
-                if os.path.splitext(os.path.basename(file))[1] in plugin_exts:
-                    plugins.append(os.path.join(dir_temp, file))
             version_plugins(plugins, dir_ver, version)
+        # Validate version stamp on plugins
+        version_stamp = bytes("Version: {}".format(version), "utf8")
+        for plugin in plugins:
+            with open(plugin, "rb") as fh:
+                if version_stamp not in fh.read():
+                    logger.warning("{} does not have the correct version "
+                                   "stamp".format(os.path.basename(plugin)))
         # Pack fomod tree into a 7zip archive
         file_archive = "{} {}.7z".format(name_release, version)
         # Remove whitespaces from archive name because GitHub doesn't like them
