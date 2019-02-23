@@ -197,17 +197,14 @@ def build_release(dir_src: os.PathLike,
         if warn_version:
             check_version(plugins_fomod, version, logger)
         # Pack fomod tree into a 7zip archive
-        file_archive = "{} {}.7z".format(name_release, version)
+        file_archive = "{} {}".format(name_release, version)
         # Remove whitespaces from archive name because GitHub doesn't like them
         file_archive = "_".join(file_archive.split())
-        src = os.path.join(dir_temp, "*")
         dst = os.path.join(dir_dst, file_archive)
         if os.path.isfile(dst):
             os.remove(dst)
-        cmd = ["7z", "a", dst, src]
-        sp = subprocess.run(cmd, stdout=subprocess.DEVNULL)
-        sp.check_returncode()
-        logger.info("Succesfully built archive for {} of {}".
+        shutil.make_archive(dst, "zip", dir_temp)
+        logger.info("Succesfully built release archive for {} of {}".
                     format(version, name_release))
     logger.removeHandler(handler)
 
