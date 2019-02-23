@@ -2,7 +2,7 @@
 import os
 
 DIR_REPO = "C:\\Users\\user\\Documents\\GitHub\\requiem-patch-central"
-"""Directory where the git repository for Skyrim Unlocked is stored."""
+"""Directory where the git repository for Requiem Patch Central is stored."""
 
 DIR_REPO_LE = DIR_REPO
 """Directory where all mod files for Legendary Edition are stored."""

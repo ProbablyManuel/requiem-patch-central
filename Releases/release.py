@@ -10,6 +10,8 @@ import xml.etree.ElementTree
 BSA_INCLUDE_DIRS = ["interface", "meshes", "music", "textures", "scripts",
                     "seq", "shadersfx", "sound", "strings"]
 
+logger = logging.getLogger(__name__)
+
 
 class ArchiveFlags():
     """Flags for Archive.exe"""
@@ -73,12 +75,6 @@ def build_release(dir_src: os.PathLike,
         warn_mult_plugins: If True warn of multiple plugins inside a
             subdirectory of the fomod installation. Defaults to True.
     """
-    logger = logging.getLogger(build_release.__name__)
-    logger.setLevel(logging.INFO)
-    handler = logging.FileHandler("{}.log".format(build_release.__name__), "w")
-    formatter = logging.Formatter("%(asctime)s %(levelname)s %(message)s")
-    handler.setFormatter(formatter)
-    logger.addHandler(handler)
     logger.info("------------------------------------------------------------")
     logger.info("Building release")
     logger.info("Source directory: {}".format(dir_src))
@@ -151,9 +147,9 @@ def build_release(dir_src: os.PathLike,
             exit()
     # Check if all plugins have modgroups and readmes
     if warn_modgroups:
-        check_modgroups(plugins, sub_dirs, loose_files, dir_src, logger)
+        check_modgroups(plugins, sub_dirs, loose_files, dir_src)
     if warn_readmes:
-        check_readmes(plugins, sub_dirs, loose_files, dir_src, logger)
+        check_readmes(plugins, sub_dirs, loose_files, dir_src)
     # Build fomod tree in a temporary directory
     with tempfile.TemporaryDirectory() as dir_temp:
         # Copy fomod files to the fomod tree
@@ -195,8 +191,8 @@ def build_release(dir_src: os.PathLike,
         if dir_ver:
             version_plugins(plugins_fomod, dir_ver, version)
         if warn_version:
-            check_version(plugins_fomod, version, logger)
-        # Pack fomod tree into a 7zip archive
+            check_version(plugins_fomod, version)
+        # Pack fomod tree into a zip archive
         file_archive = "{} {}".format(name_release, version)
         # Remove whitespaces from archive name because GitHub doesn't like them
         file_archive = "_".join(file_archive.split())
@@ -206,7 +202,6 @@ def build_release(dir_src: os.PathLike,
         shutil.make_archive(dst, "zip", dir_temp)
         logger.info("Succesfully built release archive for {} of {}".
                     format(version, name_release))
-    logger.removeHandler(handler)
 
 
 def build_bsa(dir_src: os.PathLike, bsa: os.PathLike, temp_alt: os.PathLike,
@@ -249,9 +244,10 @@ def build_bsa(dir_src: os.PathLike, bsa: os.PathLike, temp_alt: os.PathLike,
             return
         # Create batch file
         batch = os.path.join(dir_temp, "Batch.txt")
+        log = "{}.log".format(os.path.splitext(os.path.basename(bsa))[0])
         with open(batch, "w") as fh:
-            log = "{}.log".format(os.path.splitext(os.path.basename(bsa))[0])
-            fh.write("Log: {}\n".format(log))
+            if logger.getEffectiveLevel() < logging.INFO:
+                fh.write("Log: {}\n".format(log))
             fh.write("New Archive\n")
             if arch_flags.check_meshes:
                 fh.write("Check: Meshes\n")
@@ -288,7 +284,7 @@ def build_bsa(dir_src: os.PathLike, bsa: os.PathLike, temp_alt: os.PathLike,
             fh.write("Save Archive: {}\n".format(bsa))
         # Build bsa
         cmd = [arch_exe, batch]
-        sp = subprocess.run(cmd, stdout=subprocess.DEVNULL)
+        sp = subprocess.run(cmd)
         sp.check_returncode()
         # Delete useless bsl file
         bsl = "{}.bsl".format(os.path.splitext(bsa)[0])
@@ -321,14 +317,8 @@ def version_plugins(plugins: list, dir_ver: os.PathLike, version: str):
         shutil.move(src, dst)
 
 
-def check_version(plugins: list, version: str, logger: logging.Logger):
-    """Check if the description of plugins have the correct version.
-
-    Args:
-        plugins: Paths to the plugins.
-        version: Expected version.
-        logger: Print any warnings to this logger.
-    """
+def check_version(plugins: list, version: str):
+    """Check if the description of plugins have the correct version."""
     version_stamp = bytes("Version: {}".format(version), "utf8")
     for plugin in plugins:
         with open(plugin, "rb") as fh:
@@ -338,7 +328,7 @@ def check_version(plugins: list, version: str, logger: logging.Logger):
 
 
 def check_modgroups(plugins: list, sub_dirs: list, loose_files: list,
-                    dir_src: os.PathLike, logger: logging.Logger):
+                    dir_src: os.PathLike):
     """Check if modgroups are missing.
 
     Args:
@@ -346,7 +336,6 @@ def check_modgroups(plugins: list, sub_dirs: list, loose_files: list,
         sub_dirs: Paths of all eligible subdirectories relative to dir_src.
         loose_files: Paths of all eligible loose files relative to dir_src.
         dir_src: Directory where mod files are stored.
-        logger: Print any warnings to this logger.
     """
     for plugin in plugins:
         shortname = os.path.splitext(os.path.basename(plugin))[0]
@@ -366,7 +355,7 @@ def check_modgroups(plugins: list, sub_dirs: list, loose_files: list,
 
 
 def check_readmes(plugins: list, sub_dirs: list, loose_files: list,
-                  dir_src: os.PathLike, logger: logging.Logger):
+                  dir_src: os.PathLike):
     """Check if readmes are missing.
 
     Args:
@@ -374,7 +363,6 @@ def check_readmes(plugins: list, sub_dirs: list, loose_files: list,
         sub_dirs: Paths of all eligible subdirectories relative to dir_src.
         loose_files: Paths of all eligible loose files relative to dir_src.
         dir_src: Directory where mod files are stored.
-        logger: Print any warnings to this logger.
     """
     for plugin in plugins:
         shortname = os.path.splitext(os.path.basename(plugin))[0]
@@ -438,13 +426,8 @@ def parse_fomod(dir_fomod: os.PathLike) -> (str, str, list, list):
 
 
 def find_bsa_name(path: os.PathLike) -> str:
-    """Find a bsa name that matches a plugin found in the directory.
-
-    Args:
-        path: bsa name must match a plugin in this directory.
-
-    Returns:
-        A bsa name or an empty string if no matching name is found.
+    """Return bsa name that matches a plugin found in the directory or an empty
+        string if no matching name is found.
     """
     plugins = find_plugins(path)
     if plugins:
