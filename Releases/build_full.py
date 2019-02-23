@@ -1,6 +1,6 @@
 """Build full release.
 Loose files are packed into a bsa and version numbers are added."""
-import config
+from config import *
 import release
 
-release.build_release(config.DIR_REPO_LE, config.DIR_REPO_REL, config.DIR_VER, config.ARCH_EXE_LE)
+release.build_release(DIR_REPO_LE, dir_ver=DIR_VER, arch_exe=ARCH_EXE_LE)

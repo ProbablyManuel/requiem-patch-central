@@ -35,7 +35,7 @@ class ArchiveFlags():
         self.check_embed_file_name = False
 
 
-def build_release(dir_src: os.PathLike, dir_dst: os.PathLike,
+def build_release(dir_src: os.PathLike, dir_dst: os.PathLike = os.getcwd(),
                   dir_ver: os.PathLike = None, arch_exe: os.PathLike = None,
                   arch_flags: ArchiveFlags = ArchiveFlags()):
     """Build a release archive.
@@ -45,7 +45,8 @@ def build_release(dir_src: os.PathLike, dir_dst: os.PathLike,
             It must contain a Fomod subdirectory with Info.xml and
             ModuleConfig.xml. Furthermore it must contain all files specified
             in ModuleConfig.xml.
-        dir_dst: Target directory for the release archive.
+        dir_dst: Target directory for the release archive. Defaults to the
+            current working directory.
         dir_ver: Plugins are temporarily moved to this directory to manually
             add a version number to their description.
             If ommited, no version number is added.

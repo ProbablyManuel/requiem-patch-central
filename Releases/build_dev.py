@@ -1,6 +1,6 @@
 """Build development archive.
 Loose files are not packed into a bsa and version numbers are not added."""
-import config
+from config import *
 import release
 
-release.build_release(config.DIR_REPO_LE, config.DIR_REPO_REL)
+release.build_release(DIR_REPO_LE)

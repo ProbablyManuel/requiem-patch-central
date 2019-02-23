@@ -7,9 +7,6 @@ DIR_REPO = "C:\\Users\\user\\Documents\\GitHub\\requiem-patch-central"
 DIR_REPO_LE = DIR_REPO
 """Directory where all mod files for Legendary Edition are stored."""
 
-DIR_REPO_REL = os.path.join(DIR_REPO, "Releases")
-"""Directory where the releases are created and stored."""
-
 DIR_VER = "C:\\Users\\user\\Documents\\Skyrim Tools\\Mod Organizer\\mods\\RPC Release"
 """Directory where verion number is manually added to plugins."""
 
