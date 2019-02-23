@@ -126,14 +126,8 @@ def build_release(dir_src: os.PathLike,
         if not os.path.isfile(os.path.join(dir_src, file)):
             logger.error("Loose file {} is missing".format(file))
             exit()
-    # Validate modgroups
-    for sub_dir in sub_dirs:
-        for file in loose_files:
-            (head, tail) = os.path.split(file)
-            if (head == "Modgroups" and os.path.splitext(tail)[0] == sub_dir):
-                break
-        else:
-            logger.warning("Modgroups for {} not found".format(sub_dir))
+
+    check_modgroups(plugins, sub_dirs, loose_files, dir_src, logger)
     # Check readmes
     for sub_dir in sub_dirs:
         for file in loose_files:
@@ -315,6 +309,34 @@ def version_plugins(plugins: list, dir_ver: os.PathLike, version: str):
         src = os.path.join(dir_ver, os.path.basename(plugin))
         dst = plugin
         shutil.move(src, dst)
+
+
+def check_modgroups(plugins: list, sub_dirs: list, loose_files: list,
+                    dir_src: os.PathLike, logger: logging.Logger):
+    """Check if modgroups are missing.
+
+    Args:
+        plugins: Paths of all eligible plugins relative to dir_src
+        sub_dirs: Paths of all eligible subdirectories relative to dir_src
+        loose_files: Paths of all eligible loose files relative to dir_src
+        dir_src: Directory where mod files are stored
+        logger: Print any warnings to this Logger
+    """
+    for plugin in plugins:
+        shortname = os.path.splitext(os.path.basename(plugin))[0]
+        modgroups = "{}.modgroups".format(shortname)
+        found = False
+        for file in loose_files:
+            if os.path.basename(file) == modgroups:
+                found = True
+                break
+        for sub_dir in sub_dirs:
+            for file in os.listdir(os.path.join(dir_src, sub_dir)):
+                if file == modgroups:
+                    found = True
+                    break
+        if not found:
+            logger.warning("Modgroups for {} not found".format(shortname))
 
 
 def parse_fomod(dir_fomod: os.PathLike) -> (str, str, list, list):
