@@ -32,8 +32,11 @@ class ArchiveFlags():
         self.check_embed_file_name = False
 
 
-def build_release(dir_src: os.PathLike, dir_dst: os.PathLike = os.getcwd(),
-                  dir_ver: os.PathLike = None, arch_exe: os.PathLike = None,
+def build_release(dir_src: os.PathLike,
+                  dir_dst: os.PathLike = os.getcwd(),
+                  dir_ver: os.PathLike = None,
+                  temp_alt: os.PathLike = None,
+                  arch_exe: os.PathLike = None,
                   arch_flags: ArchiveFlags = ArchiveFlags()):
     """Build a release archive.
 
@@ -47,6 +50,10 @@ def build_release(dir_src: os.PathLike, dir_dst: os.PathLike = os.getcwd(),
         dir_ver: Plugins are temporarily moved to this directory to manually
             add a version number to their description.
             If ommited, no version number is added.
+        temp_alt: A directory whose path does not contain a directory that
+            ends with "Data". Will be used to store temporary files during
+            cration of the bsa.
+            If ommited, no bsa is created.
         arch_exe: Path to Archive.exe, the executable that creates the bsa.
             If ommited, no bsa is created.
         arch_flags: Check the corresponding options in Archive.exe.
@@ -65,6 +72,8 @@ def build_release(dir_src: os.PathLike, dir_dst: os.PathLike = os.getcwd(),
     logger.info("Add version number: {}".format(bool(dir_ver)))
     if dir_ver:
         logger.info("Versioning directory: {}".format(dir_ver))
+    if temp_alt:
+        logger.info("Alternate temporary directory: {}".format(temp_alt))
     logger.info("Build bsa: {}".format(bool(arch_exe)))
     if arch_exe:
         logger.info("Archive.exe path: {}".format(arch_exe))
@@ -78,6 +87,9 @@ def build_release(dir_src: os.PathLike, dir_dst: os.PathLike = os.getcwd(),
         exit()
     if dir_ver and not os.path.isdir(dir_ver):
         logger.error("Versioning directory does not exist")
+        exit()
+    if temp_alt and not os.path.isdir(temp_alt):
+        logger.error("Alternate temporary directory does not exist")
         exit()
     if not os.path.isfile(os.path.join(dir_src_fomod, "Info.xml")):
         logger.error("Info.xml is missing in {}".format(dir_src_fomod))
@@ -140,12 +152,12 @@ def build_release(dir_src: os.PathLike, dir_dst: os.PathLike = os.getcwd(),
         for sub_dir in sub_dirs:
             # Find a possible bsa name
             bsa = find_bsa_name(os.path.join(dir_src, sub_dir))
-            if arch_exe and bsa:
+            if bsa and temp_alt and arch_exe:
                 os.mkdir(os.path.join(dir_temp, sub_dir))
                 # Build the bsa
                 src = os.path.join(dir_src, sub_dir)
                 dst = os.path.join(dir_temp, sub_dir, bsa)
-                build_bsa(src, dst, arch_exe, arch_flags)
+                build_bsa(src, dst, temp_alt, arch_exe, arch_flags)
                 # Copy all files that aren't packed in the bsa
                 for path in os.listdir(os.path.join(dir_src, sub_dir)):
                     src = os.path.join(dir_src, sub_dir, path)
@@ -193,26 +205,27 @@ def build_release(dir_src: os.PathLike, dir_dst: os.PathLike = os.getcwd(),
     logger.removeHandler(handler)
 
 
-def build_bsa(dir_src: os.PathLike, bsa: os.PathLike, arch_exe: os.PathLike,
-              arch_flags: ArchiveFlags):
+def build_bsa(dir_src: os.PathLike, bsa: os.PathLike, temp_alt: os.PathLike,
+              arch_exe: os.PathLike, arch_flags: ArchiveFlags):
     """Build a bsa.
 
     Args:
         dir_src: All valid files in this directory are packed into the bsa.
         bsa: The bsa is created at this path.
             This is the final path e.g. /Some/Path/Mod.bsa.
+        temp_alt: A directory whose path does not contain a directory that
+            ends with "Data". Will be used to store temporary files.
         arch_exe: Path to Archive.exe, the executable that creates the bsa.
         arch_flags: Checks the corresponding options in Archive.exe.
 
     Some genius at Bethesda imposed two constraint regarding Archive.exe:
         1. The loose files must be in a directory that ends with "Data".
         2. The path to that directory must not contain another directory that
-           ends with "Data".
+            ends with "Data".
     As luck would have it the default location for temporary files has such a
         directory, namely AppData. Thus another location must be used.
     """
-    alt_temp = "C:\\Windows\\Temp"
-    with tempfile.TemporaryDirectory(dir=alt_temp, suffix="Data") as dir_temp:
+    with tempfile.TemporaryDirectory(dir=temp_alt, suffix="Data") as dir_temp:
         # Create manifest and copy files to temporary directory
         manifest = os.path.join(dir_temp, "Manifest.txt")
         with open(manifest, "w") as fh:
