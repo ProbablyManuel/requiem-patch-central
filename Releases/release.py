@@ -95,16 +95,6 @@ def build_release(dir_src: os.PathLike, dir_dst: os.PathLike,
         exit()
     # Extract relevant information from fomod installation files
     name_release, version, sub_dirs, loose_files = parse_fomod(dir_src_fomod)
-    plugins_rel = list()  # Plugin paths relative to dir_src
-    plugins_abs = list()  # Absolute plugin paths
-    for sub_dir in sub_dirs:
-        for plugin in find_plugins(os.path.join(dir_src, sub_dir)):
-            plugins_rel.append(os.path.join(sub_dir, plugin))
-            plugins_abs.append(os.path.join(dir_src, sub_dir, plugin))
-    for file in loose_files:
-        if os.path.splitext(os.path.basename(file))[1] in plugin_exts:
-            plugins_rel.append(file)
-            plugins_abs.append(os.path.join(dir_src, file))
     # Validate subdirectories
     logger.info("Subdirectories required by the Fomod installer:")
     for sub_dir in sub_dirs:
@@ -146,15 +136,9 @@ def build_release(dir_src: os.PathLike, dir_dst: os.PathLike,
         shutil.copytree(src, dst)
         # Copy subdirectories to the fomod tree
         for sub_dir in sub_dirs:
-            # Find a possible bsa name that matches a plugin
-            bsa = None
-            for plugin in plugins_rel:
-                head, tail = os.path.split(plugin)
-                if head == sub_dir:
-                    bsa = "{}.bsa".format(os.path.splitext(tail)[0])
-                    break
+            # Find a possible bsa name
+            bsa = find_bsa_name(os.path.join(dir_src, sub_dir))
             if arch_exe and bsa:
-                # Create subdirectory in the fomod tree
                 os.mkdir(os.path.join(dir_temp, sub_dir))
                 # Build the bsa
                 src = os.path.join(dir_src, sub_dir)
@@ -182,7 +166,14 @@ def build_release(dir_src: os.PathLike, dir_dst: os.PathLike,
             shutil.copy2(src, dst)
         # Add version number to plugins
         if dir_ver:
-            version_plugins(plugins_abs, dir_ver, version)
+            plugins = list()
+            for sub_dir in sub_dirs:
+                for plugin in find_plugins(os.path.join(dir_temp, sub_dir)):
+                    plugins.append(os.path.join(dir_temp, sub_dir, plugin))
+            for file in loose_files:
+                if os.path.splitext(os.path.basename(file))[1] in plugin_exts:
+                    plugins.append(os.path.join(dir_temp, file))
+            version_plugins(plugins, dir_ver, version)
         # Pack fomod tree into a 7zip archive
         file_archive = "{} {}.7z".format(name_release, version)
         # Remove whitespaces from archive name because GitHub doesn't like them
@@ -347,6 +338,21 @@ def parse_fomod(dir_fomod: os.PathLike) -> (str, str, list, list):
                     for file in files.iterfind("file"):
                         loose_files.append(file.get("source"))
     return (name, version, sub_dirs, loose_files)
+
+
+def find_bsa_name(path: os.PathLike) -> str:
+    """Find a bsa name that matches a plugin found in the directory.
+
+    Args:
+        path: bsa name must match a plugin in this directory.
+
+    Returns:
+        A bsa name or an empty string if no matching name is found.
+    """
+    plugins = find_plugins(path)
+    if plugins:
+        return "{}.bsa".format(os.path.splitext(plugins[0])[0])
+    return ""
 
 
 def find_plugins(source_dir: os.PathLike):
