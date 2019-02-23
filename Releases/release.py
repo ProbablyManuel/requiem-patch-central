@@ -193,84 +193,89 @@ def build_release(dir_src: os.PathLike, dir_dst: os.PathLike = os.getcwd(),
     logger.removeHandler(handler)
 
 
-def build_bsa(dir_src: os.PathLike, bsa_dst: os.PathLike,
-              arch_exe: os.PathLike, arch_flags: ArchiveFlags):
+def build_bsa(dir_src: os.PathLike, bsa: os.PathLike, arch_exe: os.PathLike,
+              arch_flags: ArchiveFlags):
     """Build a bsa.
 
     Args:
         dir_src: All valid files in this directory are packed into the bsa.
-        bsa_dst: The bsa is created at this path.
+        bsa: The bsa is created at this path.
             This is the final path e.g. /Some/Path/Mod.bsa.
         arch_exe: Path to Archive.exe, the executable that creates the bsa.
         arch_flags: Checks the corresponding options in Archive.exe.
+
+    Some genius at Bethesda imposed two constraint regarding Archive.exe:
+        1. The loose files must be in a directory that ends with "Data".
+        2. The path to that directory must not contain another directory that
+           ends with "Data".
+    As luck would have it the default location for temporary files has such a
+        directory, namely AppData. Thus another location must be used.
     """
-    # Some genius at Bethesda had the idea to assume that the first occurence
-    # of "Data\" in a path must be Skyrim's Data directory. Thus the temporary
-    # directory must not be created at the default location ..\AppData\Temp
-    with tempfile.TemporaryDirectory(dir="C:\\Windows\\Temp") as dir_temp:
-        # Another genius' idea: The root of the loose files must be Data
-        path_root = os.path.join(dir_temp, "Data")
-        shutil.copytree(dir_src, path_root)
-        # Create manifest
-        path_manifest = os.path.join(dir_temp, "Manifest.txt")
-        with open(path_manifest, "w") as manifest:
+    alt_temp = "C:\\Windows\\Temp"
+    with tempfile.TemporaryDirectory(dir=alt_temp, suffix="Data") as dir_temp:
+        # Create manifest and copy files to temporary directory
+        manifest = os.path.join(dir_temp, "Manifest.txt")
+        with open(manifest, "w") as fh:
             for root, subdirs, files in os.walk(dir_src):
-                root_relative = pathlib.PurePath(root).relative_to(dir_src)
+                root_rel = pathlib.PurePath(root).relative_to(dir_src)
                 for file in files:
-                    path_relative = root_relative.joinpath(file)
-                    first_dir = path_relative.parts[0]
+                    path_rel = root_rel.joinpath(file)
+                    first_dir = path_rel.parts[0]
                     if first_dir.lower() in bsa_include_dirs:
-                        manifest.write("{}\n".format(path_relative))
+                        fh.write("{}\n".format(path_rel))
+                    src = os.path.join(root, file)
+                    dst = os.path.join(dir_temp, path_rel)
+                    os.makedirs(os.path.dirname(dst), exist_ok=True)
+                    shutil.copyfile(src, dst)
         # Exit if manifest is empty because Archive.exe will crash
-        if os.path.getsize(path_manifest) == 0:
+        if os.path.getsize(manifest) == 0:
             return
         # Create batch file
-        path_batch = os.path.join(dir_temp, "Batch.txt")
-        with open(path_batch, "w") as batch:
-            path_log = os.path.basename(bsa_dst).replace(".bsa", ".log")
-            batch.write("Log: {}\n".format(path_log))
-            batch.write("New Archive\n")
+        batch = os.path.join(dir_temp, "Batch.txt")
+        with open(batch, "w") as fh:
+            log = "{}.log".format(os.path.splitext(os.path.basename(bsa))[0])
+            fh.write("Log: {}\n".format(log))
+            fh.write("New Archive\n")
             if arch_flags.check_meshes:
-                batch.write("Check: Meshes\n")
+                fh.write("Check: Meshes\n")
             if arch_flags.check_textures:
-                batch.write("Check: Textures\n")
+                fh.write("Check: Textures\n")
             if arch_flags.check_menus:
-                batch.write("Check: Menus\n")
+                fh.write("Check: Menus\n")
             if arch_flags.check_sounds:
-                batch.write("Check: Sounds\n")
+                fh.write("Check: Sounds\n")
             if arch_flags.check_voices:
-                batch.write("Check: Voices\n")
+                fh.write("Check: Voices\n")
             if arch_flags.check_shaders:
-                batch.write("Check: Shaders\n")
+                fh.write("Check: Shaders\n")
             if arch_flags.check_trees:
-                batch.write("Check: Trees\n")
+                fh.write("Check: Trees\n")
             if arch_flags.check_fonts:
-                batch.write("Check: Fonts\n")
+                fh.write("Check: Fonts\n")
             if arch_flags.check_misc:
-                batch.write("Check: Misc\n")
+                fh.write("Check: Misc\n")
             if arch_flags.check_compress_archive:
-                batch.write("Check: Compress Archive\n")
+                fh.write("Check: Compress Archive\n")
             if arch_flags.check_retain_directory_names:
-                batch.write("Check: Retain Directory Names\n")
+                fh.write("Check: Retain Directory Names\n")
             if arch_flags.check_retain_file_names:
-                batch.write("Check: Retain File Names\n")
+                fh.write("Check: Retain File Names\n")
             if arch_flags.check_retain_file_name_offsets:
-                batch.write("Check: Retain File Name Offsets\n")
+                fh.write("Check: Retain File Name Offsets\n")
             if arch_flags.check_retain_strings_during_startup:
-                batch.write("Check: Retain Strings During Startup\n")
+                fh.write("Check: Retain Strings During Startup\n")
             if arch_flags.check_embed_file_name:
-                batch.write("Check: Embed File Names\n")
-            batch.write("Set File Group Root: {}{}\n".
-                        format(path_root, os.sep))
-            batch.write("Add File Group: {}\n".format(path_manifest))
-            batch.write("Save Archive: {}\n".format(bsa_dst))
+                fh.write("Check: Embed File Names\n")
+            fh.write("Set File Group Root: {}{}\n".format(dir_temp, os.sep))
+            fh.write("Add File Group: {}\n".format(manifest))
+            fh.write("Save Archive: {}\n".format(bsa))
         # Build bsa
-        cmd = [arch_exe, path_batch]
+        cmd = [arch_exe, batch]
         sp = subprocess.run(cmd, stdout=subprocess.DEVNULL)
         sp.check_returncode()
         # Delete useless bsl file
-        path_bsl = bsa_dst.replace(".bsa", ".bsl")
-        os.remove(path_bsl)
+        bsl = "{}.bsl".format(os.path.splitext(bsa)[0])
+        os.remove(bsl)
 
 
 def version_plugins(plugins: list, dir_ver: os.PathLike, version: str):
