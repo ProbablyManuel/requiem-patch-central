@@ -38,6 +38,7 @@ def build_release(dir_src: os.PathLike,
                   temp_alt: os.PathLike = None,
                   arch_exe: os.PathLike = None,
                   arch_flags: ArchiveFlags = ArchiveFlags(),
+                  bsa_exclude: list = list(),
                   warn_modgroups: bool = True,
                   warn_readmes: bool = True,
                   warn_version: bool = True,
@@ -62,6 +63,7 @@ def build_release(dir_src: os.PathLike,
             If ommited, no bsa is created.
         arch_flags: Check the corresponding options in Archive.exe.
             If ommited, no flags are set.
+        bsa_exclude: No bsa is created for these subdirectories.
         warn_modgroups: If True warn of plugins without a modgroups file.
             Defaults to True.
         warn_readmes: If True warn of plugins with a readme. A readme is
@@ -86,9 +88,13 @@ def build_release(dir_src: os.PathLike,
         logger.info("Versioning directory: {}".format(dir_ver))
     if temp_alt:
         logger.info("Alternate temporary directory: {}".format(temp_alt))
-    logger.info("Build bsa: {}".format(bool(arch_exe)))
+    logger.info("Build bsa: {}".format(bool(arch_exe) and bool(temp_alt)))
     if arch_exe:
         logger.info("Archive.exe path: {}".format(arch_exe))
+    if bsa_exclude:
+        logger.info("Subdirectories excluded from bsa creation:")
+        for bsa in bsa_exclude:
+            logger.info("    {}".format(bsa))
     logger.info("Check modgroups: {}".format(bool(warn_modgroups)))
     logger.info("Check readmes: {}".format(bool(warn_readmes)))
     logger.info("Check version number: {}".format(bool(warn_version)))
@@ -158,7 +164,7 @@ def build_release(dir_src: os.PathLike,
         for sub_dir in sub_dirs:
             # Find a possible bsa name
             bsa = find_bsa_name(os.path.join(dir_src, sub_dir))
-            if bsa and temp_alt and arch_exe:
+            if bsa and temp_alt and arch_exe and sub_dir not in bsa_exclude:
                 os.mkdir(os.path.join(dir_temp, sub_dir))
                 # Build the bsa
                 src = os.path.join(dir_src, sub_dir)
@@ -318,7 +324,7 @@ def version_plugins(plugins: list, dir_ver: os.PathLike, version: str):
         shutil.move(src, dst)
 
 
-def check_version(plugins: list(), version: str, logger: logging.Logger):
+def check_version(plugins: list, version: str, logger: logging.Logger):
     """Check if the description of plugins have the correct version.
 
     Args:
