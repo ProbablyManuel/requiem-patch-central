@@ -169,13 +169,7 @@ def build_release(dir_src: os.PathLike,
         plugins_fomod = [os.path.join(dir_temp, p) for p in plugins]
         if dir_ver:
             version_plugins(plugins_fomod, dir_ver, version)
-        # Validate version stamp on plugins
-        version_stamp = bytes("Version: {}".format(version), "utf8")
-        for plugin in plugins_fomod:
-            with open(plugin, "rb") as fh:
-                if version_stamp not in fh.read():
-                    logger.warning("{} does not have the correct version "
-                                   "stamp".format(os.path.basename(plugin)))
+        check_version(plugins_fomod, version, logger)
         # Pack fomod tree into a 7zip archive
         file_archive = "{} {}.7z".format(name_release, version)
         # Remove whitespaces from archive name because GitHub doesn't like them
@@ -304,16 +298,32 @@ def version_plugins(plugins: list, dir_ver: os.PathLike, version: str):
         shutil.move(src, dst)
 
 
+def check_version(plugins: list(), version: str, logger: logging.Logger):
+    """Check if the description of plugins have the correct version.
+
+    Args:
+        plugins: Paths to the plugins.
+        version: Expected version.
+        logger: Print any warnings to this logger.
+    """
+    version_stamp = bytes("Version: {}".format(version), "utf8")
+    for plugin in plugins:
+        with open(plugin, "rb") as fh:
+            if version_stamp not in fh.read():
+                logger.warning("{} does not have the correct version stamp".
+                               format(os.path.basename(plugin)))
+
+
 def check_modgroups(plugins: list, sub_dirs: list, loose_files: list,
                     dir_src: os.PathLike, logger: logging.Logger):
     """Check if modgroups are missing.
 
     Args:
-        plugins: Paths of all eligible plugins relative to dir_src
-        sub_dirs: Paths of all eligible subdirectories relative to dir_src
-        loose_files: Paths of all eligible loose files relative to dir_src
-        dir_src: Directory where mod files are stored
-        logger: Print any warnings to this Logger
+        plugins: Paths of all eligible plugins relative to dir_src.
+        sub_dirs: Paths of all eligible subdirectories relative to dir_src.
+        loose_files: Paths of all eligible loose files relative to dir_src.
+        dir_src: Directory where mod files are stored.
+        logger: Print any warnings to this logger.
     """
     for plugin in plugins:
         shortname = os.path.splitext(os.path.basename(plugin))[0]
@@ -337,11 +347,11 @@ def check_readmes(plugins: list, sub_dirs: list, loose_files: list,
     """Check if readmes are missing.
 
     Args:
-        plugins: Paths of all eligible plugins relative to dir_src
-        sub_dirs: Paths of all eligible subdirectories relative to dir_src
-        loose_files: Paths of all eligible loose files relative to dir_src
-        dir_src: Directory where mod files are stored
-        logger: Print any warnings to this Logger
+        plugins: Paths of all eligible plugins relative to dir_src.
+        sub_dirs: Paths of all eligible subdirectories relative to dir_src.
+        loose_files: Paths of all eligible loose files relative to dir_src.
+        dir_src: Directory where mod files are stored.
+        logger: Print any warnings to this logger.
     """
     for plugin in plugins:
         shortname = os.path.splitext(os.path.basename(plugin))[0]
