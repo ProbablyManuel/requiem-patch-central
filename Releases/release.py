@@ -7,7 +7,7 @@ import tempfile
 import xml.etree.ElementTree
 
 """All files in these directories will be included in a bsa."""
-bsa_include_dirs = ["interface", "meshes", "music", "textures", "scripts",
+BSA_INCLUDE_DIRS = ["interface", "meshes", "music", "textures", "scripts",
                     "seq", "shadersfx", "sound", "strings"]
 
 
@@ -37,7 +37,11 @@ def build_release(dir_src: os.PathLike,
                   dir_ver: os.PathLike = None,
                   temp_alt: os.PathLike = None,
                   arch_exe: os.PathLike = None,
-                  arch_flags: ArchiveFlags = ArchiveFlags()):
+                  arch_flags: ArchiveFlags = ArchiveFlags(),
+                  warn_modgroups: bool = True,
+                  warn_readmes: bool = True,
+                  warn_version: bool = True,
+                  warn_mult_plugins: bool = True):
     """Build a release archive.
 
     Args:
@@ -58,6 +62,14 @@ def build_release(dir_src: os.PathLike,
             If ommited, no bsa is created.
         arch_flags: Check the corresponding options in Archive.exe.
             If ommited, no flags are set.
+        warn_modgroups: If True warn of plugins without a modgroups file.
+            Defaults to True.
+        warn_readmes: If True warn of plugins with a readme. A readme is
+            expected to have the same name as the plugin. Defaults to True.
+        warn_version: If True warn of plugins that don't have a version stamp.
+            Defaults to True.
+        warn_mult_plugins: If True warn of multiple plugins inside a
+            subdirectory of the fomod installation. Defaults to True.
     """
     logger = logging.getLogger(build_release.__name__)
     logger.setLevel(logging.INFO)
@@ -77,6 +89,10 @@ def build_release(dir_src: os.PathLike,
     logger.info("Build bsa: {}".format(bool(arch_exe)))
     if arch_exe:
         logger.info("Archive.exe path: {}".format(arch_exe))
+    logger.info("Check modgroups: {}".format(bool(warn_modgroups)))
+    logger.info("Check readmes: {}".format(bool(warn_readmes)))
+    logger.info("Check version number: {}".format(bool(warn_version)))
+    logger.info("Check multiple plugins: {}".format(bool(warn_version)))
     # Validate arguments
     dir_src_fomod = os.path.join(dir_src, "Fomod")
     if not os.path.isdir(dir_src):
@@ -116,9 +132,10 @@ def build_release(dir_src: os.PathLike,
         if not os.path.isdir(os.path.join(dir_src, sub_dir)):
             logger.error("Subdirectory {} is missing".format(sub_dir))
             exit()
-        if len(find_plugins(os.path.join(dir_src, sub_dir))) > 1:
-            logger.warning("Subdirectory {} contains multiple plugins".
-                           format(sub_dir))
+        if warn_mult_plugins:
+            if len(find_plugins(os.path.join(dir_src, sub_dir))) > 1:
+                logger.warning("Subdirectory {} contains multiple plugins".
+                               format(sub_dir))
     # Validate loose files
     logger.info("Loose files required by the Fomod installer:")
     for file in loose_files:
@@ -126,9 +143,11 @@ def build_release(dir_src: os.PathLike,
         if not os.path.isfile(os.path.join(dir_src, file)):
             logger.error("Loose file {} is missing".format(file))
             exit()
-
-    check_modgroups(plugins, sub_dirs, loose_files, dir_src, logger)
-    check_readmes(plugins, sub_dirs, loose_files, dir_src, logger)
+    # Check if all plugins have modgroups and readmes
+    if warn_modgroups:
+        check_modgroups(plugins, sub_dirs, loose_files, dir_src, logger)
+    if warn_readmes:
+        check_readmes(plugins, sub_dirs, loose_files, dir_src, logger)
     # Build fomod tree in a temporary directory
     with tempfile.TemporaryDirectory() as dir_temp:
         # Copy fomod files to the fomod tree
@@ -152,7 +171,7 @@ def build_release(dir_src: os.PathLike,
                     if os.path.isfile(src):
                         shutil.copy2(src, dst)
                     elif os.path.isdir(src):
-                        if path.lower() not in bsa_include_dirs:
+                        if path.lower() not in BSA_INCLUDE_DIRS:
                             shutil.copytree(src, dst)
             else:
                 # Copy everything
@@ -169,7 +188,8 @@ def build_release(dir_src: os.PathLike,
         plugins_fomod = [os.path.join(dir_temp, p) for p in plugins]
         if dir_ver:
             version_plugins(plugins_fomod, dir_ver, version)
-        check_version(plugins_fomod, version, logger)
+        if warn_version:
+            check_version(plugins_fomod, version, logger)
         # Pack fomod tree into a 7zip archive
         file_archive = "{} {}.7z".format(name_release, version)
         # Remove whitespaces from archive name because GitHub doesn't like them
@@ -215,7 +235,7 @@ def build_bsa(dir_src: os.PathLike, bsa: os.PathLike, temp_alt: os.PathLike,
                 for file in files:
                     path_rel = root_rel.joinpath(file)
                     first_dir = path_rel.parts[0]
-                    if first_dir.lower() in bsa_include_dirs:
+                    if first_dir.lower() in BSA_INCLUDE_DIRS:
                         fh.write("{}\n".format(path_rel))
                     src = os.path.join(root, file)
                     dst = os.path.join(dir_temp, path_rel)
