@@ -92,9 +92,18 @@ def build_release(dir_source: str, dir_target: str, dir_versioning: str = None,
     if archive_exe and os.path.basename(archive_exe) != "Archive.exe":
         logger.error("{} does not point to Archive.exe".format(archive_exe))
         exit()
-    # Get required files from ModuleConfig.xml
-    path = os.path.join(dir_source_fomod, "ModuleConfig.xml")
-    sub_dirs, loose_files = parse_module_config(path)
+    # Extract relevant information from fomod installation files
+    name_release, version, sub_dirs, loose_files = parse_fomod(dir_source_fomod)
+    plugins_rel = list()  # Contains plugin paths relative to dir_source
+    plugins_abs = list()  # Contains absolute plugin paths
+    for sub_dir in sub_dirs:
+        for plugin in find_plugins(os.path.join(dir_source, sub_dir)):
+            plugins_rel.append(os.path.join(sub_dir, plugin))
+            plugins_abs.append(os.path.join(dir_source, sub_dir, plugin))
+    for file in loose_files:
+        if os.path.splitext(os.path.basename(file))[1] in plugin_exts:
+            plugins_rel.append(file)
+            plugins_abs.append(os.path.join(dir_source, file))
     # Validate subdirectories
     logger.info("Subdirectories required by the Fomod installer:")
     for sub_dir in sub_dirs:
@@ -128,11 +137,6 @@ def build_release(dir_source: str, dir_target: str, dir_versioning: str = None,
                 break
         else:
             logger.warning("Modgroups for {} not found".format(sub_dir))
-    # Get version number and release name from Info.xml
-    path = os.path.join(dir_source_fomod, "Info.xml")
-    root = xml.etree.ElementTree.parse(path).getroot()
-    version = root.find("Version").text
-    name_release = root.find("Name").text
     # Build fomod tree in a temporary directory
     with tempfile.TemporaryDirectory() as dir_temp:
         # Copy fomod files to the fomod tree
@@ -141,12 +145,17 @@ def build_release(dir_source: str, dir_target: str, dir_versioning: str = None,
         shutil.copytree(src, dst)
         # Copy subdirectories to the fomod tree
         for sub_dir in sub_dirs:
-            plugins = find_plugins(os.path.join(dir_source, sub_dir))
-            if plugins and archive_exe:
-                # Create subdirectory
+            # Find a possible bsa name that matches a plugin
+            bsa = None
+            for plugin in plugins_rel:
+                head, tail = os.path.split(plugin)
+                if head == sub_dir:
+                    bsa = "{}.bsa".format(os.path.splitext(tail)[0])
+                    break
+            if archive_exe and bsa:
+                # Create the subdirectory in the fomod tree
                 os.mkdir(os.path.join(dir_temp, sub_dir))
                 # Build the bsa
-                bsa = "{}.bsa".format(os.path.splitext(plugins[0])[0])
                 src = os.path.join(dir_source, sub_dir)
                 dst = os.path.join(dir_temp, sub_dir, bsa)
                 build_bsa(archive_exe, src, dst, archive_flags)
@@ -172,7 +181,7 @@ def build_release(dir_source: str, dir_target: str, dir_versioning: str = None,
             shutil.copy2(src, dst)
         # Add version number to plugins
         if dir_versioning:
-            version_plugins(dir_temp, dir_versioning)
+            version_plugins(plugins_abs, dir_versioning, version)
         # Pack fomod tree into a 7zip archive
         file_archive = "{} {}.7z".format(name_release, version)
         # Remove whitespaces from archive name because GitHub doesn't like them
@@ -269,41 +278,39 @@ def build_bsa(archive_exe, dir_source, bsa_target,
         os.remove(path_bsl)
 
 
-def version_plugins(dir_source: str, dir_target: str):
-    # Get new version from Info.xml
-    path = os.path.join(dir_source, "Fomod", "Info.xml")
-    root = xml.etree.ElementTree.parse(path).getroot()
-    version = root.find("Version").text
-    # Get files from ModuleConfig.xml
-    path = os.path.join(dir_source, "Fomod", "ModuleConfig.xml")
-    sub_dirs, loose_files = parse_module_config(path)
-    plugins = list()  # Contains plugin paths relative to dir_source
-    for sub_dir in sub_dirs:
-        path = os.path.join(dir_source, sub_dir)
-        for plugin in find_plugins(path):
-            plugins.append(os.path.join(sub_dir, plugin))
-    for file in loose_files:
-        if os.path.splitext(os.path.basename(file))[1] in plugin_exts:
-            plugins.append(file)
+def version_plugins(plugins: str, dir_versioning: str, version: str):
     for plugin in plugins:
-        src = os.path.join(dir_source, plugin)
-        dst = os.path.join(dir_target, os.path.basename(plugin))
+        src = plugin
+        dst = os.path.join(dir_versioning, os.path.basename(plugin))
         shutil.move(src, dst)
     print("Update the version stamp of all", len(plugins), "plugins to",
           version)
     input("Press any key to continue")
     for plugin in plugins:
-        src = os.path.join(dir_target, os.path.basename(plugin))
-        dst = os.path.join(dir_source, plugin)
+        src = os.path.join(dir_versioning, os.path.basename(plugin))
+        dst = plugin
         shutil.move(src, dst)
 
 
-def parse_module_config(path: str) -> (list, list):
-    """Extract required folders and loose files from ModuleConfig.xml.
+def parse_fomod(dir_fomod: str) -> (str, str, list, list):
+    """Extract relevant information from fomod installation files.
 
     Args:
-        path: Path to ModuleConfig.xml.
+        dir_fomod: Directory that contains Info.xml and ModuleConfig.xml.
+
+    Return:
+        Extracted information (name, version, sub_dirs, loose_files)
+        name: First <name> tag in Info.xml.
+        version: First <version> tag in Info.xml.
+        sub_dirs: All <folder> tags in ModlueConfig.xml.
+        loose_files: All <file> tags in ModlueConfig.xml.
     """
+    path = os.path.join(dir_fomod, "Info.xml")
+    root = xml.etree.ElementTree.parse(path).getroot()
+    version = root.find("Version").text
+    name = root.find("Name").text
+
+    path = os.path.join(dir_fomod, "ModuleConfig.xml")
     root = xml.etree.ElementTree.parse(path).getroot()
     sub_dirs = list()
     loose_files = list()
@@ -326,7 +333,7 @@ def parse_module_config(path: str) -> (list, list):
                         sub_dirs.append(folder.get("source"))
                     for file in files.iterfind("file"):
                         loose_files.append(file.get("source"))
-    return (sub_dirs, loose_files)
+    return (name, version, sub_dirs, loose_files)
 
 
 def find_plugins(source_dir):
