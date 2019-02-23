@@ -6,9 +6,6 @@ import subprocess
 import tempfile
 import xml.etree.ElementTree
 
-"""Valid extensions of a plugin."""
-plugin_exts = [".esl", ".esp", ".esm"]
-
 """All files in these directories will be included in a bsa."""
 bsa_include_dirs = ["interface", "meshes", "music", "textures", "scripts",
                     "seq", "shadersfx", "sound", "strings"]
@@ -96,13 +93,10 @@ def build_release(dir_src: os.PathLike, dir_dst: os.PathLike = os.getcwd(),
         exit()
     # Extract relevant information from fomod installation files
     name_release, version, sub_dirs, loose_files = parse_fomod(dir_src_fomod)
-    plugins = list()
+    plugins = [file for file in loose_files if is_plugin(file)]
     for sub_dir in sub_dirs:
         for plugin in find_plugins(os.path.join(dir_src, sub_dir)):
             plugins.append(os.path.join(sub_dir, plugin))
-    for file in loose_files:
-        if os.path.splitext(os.path.basename(file))[1] in plugin_exts:
-            plugins.append(file)
     # Validate subdirectories
     logger.info("Subdirectories required by the Fomod installer:")
     for sub_dir in sub_dirs:
@@ -366,5 +360,10 @@ def find_bsa_name(path: os.PathLike) -> str:
 
 def find_plugins(source_dir: os.PathLike):
     """Find all plugins in a directory. Does not search in subdirectories."""
-    files = os.listdir(source_dir)
-    return [f for f in files if os.path.splitext(f)[1] in plugin_exts]
+    return [file for file in os.listdir(source_dir) if is_plugin(file)]
+
+
+def is_plugin(path: os.PathLike) -> bool:
+    """Return True if the path has the extension of a plugin."""
+    plugin_exts = [".esl", ".esp", ".esm"]
+    return os.path.splitext(path)[1] in plugin_exts
