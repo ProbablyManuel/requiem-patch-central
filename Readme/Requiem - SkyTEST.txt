@@ -1,5 +1,12 @@
 Changelog:
 
+3.00
+
+Updated to SkyTEST 1.65.
+
+Switched master file to SkyTEST-RealisticAnimals&Predators.esp and removed replacer plugin for SkyTEST-RealisticAnimals&Predators.esm.
+
+
 2.00
 
 Updated to Requiem 2.0.1.
@@ -7,19 +14,19 @@ Updated to Requiem 2.0.1.
 
 1.58
 
-Updated to Skytest 1.56.03.
+Updated to SkyTEST 1.56.03.
 
 
 1.57
 
-Updated to Skytest 1.51.15.
+Updated to SkyTEST 1.51.15.
 
 Added a replacer plugin for "SkyTEST-RealisticAnimals&Predators.esm".
 
 
 1.53
 
-Updated to Skytest 1.48b. No longer requires Dragonborn.
+Updated to SkyTEST 1.48b. No longer requires Dragonborn.
 
 
 1.40
@@ -42,20 +49,20 @@ Snowy Sabre Cat --> Sabre Cat
 Snow Fox 	--> Fox
 
 
-Fixes all conflicts:
+Resolved all conflicts:
 
 Only one mod alters a vanilla record 	--->	altered value wins
 Both mods alter a vanilly record	---> 	following conflict resolution:
 
-Skill values			Requiem > Skytest
-Health/Stamina			Requiem > Skytest
-Damage				Requiem > Skytest
-Speed				Skytest > Requiem
-Behaviour			Skytest > Requiem
-Factions			SKytest > Requiem
+Skill values			Requiem > SkyTEST
+Health/Stamina			Requiem > SkyTEST
+Damage				Requiem > SkyTEST
+Speed				SkyTEST > Requiem
+Behaviour			SkyTEST > Requiem
+Factions			SkyTEST > Requiem
 Loot				Common Sense
 
-Legendary version requires Hearthfire, Dawnguard, Dragonborn and the Skytest Dawnguard and Dragonborn addons.
+Legendary version requires Hearthfire, Dawnguard, Dragonborn and the SkyTEST Dawnguard and Dragonborn addons.
 
 Deleves leveled lists.
 

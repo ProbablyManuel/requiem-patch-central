@@ -339,7 +339,7 @@
 									<patterns>
 										<pattern>
 											<dependencies operator="And">
-												<fileDependency file="SkyTEST-RealisticAnimals&amp;Predators.esm" state="Active"/>
+												<fileDependency file="SkyTEST-RealisticAnimals&amp;Predators.esp" state="Active"/>
 											</dependencies>
 											<type name="Recommended"/>
 										</pattern>
