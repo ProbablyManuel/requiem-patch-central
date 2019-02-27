@@ -7,6 +7,13 @@ The requirements-only version is fully compatible with Requiem and doesn't requi
 
 Changelog:
 
+3.00
+
+Synchronized with USLEEP 3.0.13a.
+
+Added level requirement for difficult enemies in Companion jobs, similar to Minor Arcana.
+
+
 2.00
 
 Updated to Requiem 2.0.1.
