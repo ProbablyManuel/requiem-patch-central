@@ -1,6 +1,6 @@
 Changelog:
 
-2.13
+3.00
 
 Carried over VioLens' changes to dragon killmoves.
 
