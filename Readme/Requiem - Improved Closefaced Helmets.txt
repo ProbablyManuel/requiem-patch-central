@@ -7,6 +7,14 @@ You have to disable or delete "imp_helm_legend.esp" and "ICH - Silver Knight Pat
 
 
 
+Load Order:
+
+Must be loaded after "Requiem_Minor_Arcana.esp".
+
+In general should be loaded as one of the last Requiem patches/addons.
+
+
+
 Changelog:
 
 2.12

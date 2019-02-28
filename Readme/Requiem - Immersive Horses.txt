@@ -10,6 +10,17 @@ Saddles, that hide a horse's mane AND are already equipped when you claim the ho
 This bug doesn't occur if you use the Craftable Horse Barding patch because horses only wear basic saddles when you claim them.
 
 
+
+Load Order:
+
+Must be loaded after "Requiem - SkyTEST.esp".
+
+Must be loaded after "Requiem - Wild World.esp".
+
+Must be loaded after "Requiem_Minor_Arcana.esp".
+
+
+
 Changelog:
 
 2.06

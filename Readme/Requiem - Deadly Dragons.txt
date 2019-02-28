@@ -4,6 +4,12 @@ The patch requires the normal version of Deadly Dragons. It doesn't work with th
 
 
 
+Load Order:
+
+Should be loaded after "Requiem - Wild World.esp". This doesn't fully resolve conflicts, but is better than the opposite order.
+
+
+
 Changelog:
 
 2.00

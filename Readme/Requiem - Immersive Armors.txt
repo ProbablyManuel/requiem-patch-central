@@ -6,6 +6,12 @@ It's recommended not to change the distribution options in the Armor and Shield 
 
 
 
+Load Order:
+
+Must be loaded before "Requiem_Minor_Arcana.esp". This doesn't fully resolve conflicts, but is better than the opposite order.
+
+
+
 Changelog:
 
 2.07

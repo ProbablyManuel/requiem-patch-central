@@ -1,3 +1,9 @@
+Load Order:
+
+Must be loaded after "Requiem - Audio Overhaul for Skyrim.esp" and "AOS2_Requiem Patch.esp".
+
+
+
 Changelog:
 
 2.00

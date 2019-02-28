@@ -5,6 +5,13 @@ Do NOT install the Immersive Weapons patch from WAF. It's fully included in this
 Do NOT install the Immersive Weapons USLEEP Patch. It's fully included in this patch.
 
 
+
+Load Order:
+
+Must be loaded before "Requiem_Minor_Arcana.esp". This doesn't fully resolve conflicts, but is better than the opposite order.
+
+
+
 Weapon Types:
 
 Spears and crescents are new weapon types without proper integration to Skyrim.

@@ -5,6 +5,14 @@ The requirements-only version is fully compatible with Requiem and doesn't requi
 
 
 
+Load Order:
+
+Must be loaded after "Requiem_Minor_Arcana.esp".
+
+Must be loaded after "Requiem - Immersive Weapons.esp". This doesn't fully resolve conflicts, but is better than the opposite order.
+
+
+
 Changelog:
 
 3.00

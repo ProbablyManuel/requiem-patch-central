@@ -6,6 +6,14 @@ This makes the Requiem, WAFR and GDO patch from the AOS installer redundant. Do 
 
 
 
+Load Order:
+
+Must be loaded after "Requiem - Cutting Room Floor.esp".
+
+Should be loaded as one of the first Requiem patches/addons.
+
+
+
 Changelog:
 
 2.09
