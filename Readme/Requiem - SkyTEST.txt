@@ -2,6 +2,8 @@ Changelog:
 
 3.00
 
+Updated to Requiem 3.0.0.
+
 Updated to SkyTEST 1.65.
 
 Switched master file to SkyTEST-RealisticAnimals&Predators.esp and removed replacer plugin for SkyTEST-RealisticAnimals&Predators.esm.
