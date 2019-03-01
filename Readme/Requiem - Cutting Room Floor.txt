@@ -6,6 +6,11 @@ Do NOT install the Cutting Room Floor patch from Even Better Quest Objectives. I
 
 Changelog:
 
+3.00
+
+Updated to Requiem 3.0.0.
+
+
 2.11
 
 Restored unique shader effects for Mage Armor On Self and changed them to only show on skin.
