@@ -16,6 +16,11 @@ Should be loaded as one of the first Requiem patches/addons.
 
 Changelog:
 
+3.00
+
+Updated to Requiem 3.0.0.
+
+
 2.09
 
 Updated to Requiem 2.0.2.
