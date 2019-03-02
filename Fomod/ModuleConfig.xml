@@ -389,7 +389,7 @@
 							<description>
 								Requires Immersive Horses.
 
-It's highly recommend to use Craftable Horse Barding too.
+It's recommended to use Craftable Horse Barding too.
 							</description>
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
@@ -413,42 +413,13 @@ It's highly recommend to use Craftable Horse Barding too.
 								</dependencyType>
 							</typeDescriptor>
 						</plugin>
-						<plugin name="Immersive Horses - SkyTEST compatible">
-							<description>
-								Requires Immersive Horses and SkyTEST.
-
-It's highly recommend to use Craftable Horse Barding too.
-							</description>
-							<image path="fomod\Requiem Compatibility Patches.jpg"/>
-							<files>
-								<folder source="Requiem - Immersive Horses - SkyTEST" destination=""/>
-								<file source="Readme\Requiem - Immersive Horses.txt" destination="Requiem Patches - Readme\Requiem - Immersive Horses.txt"/>
-							</files>
-							<conditionFlags>
-								<flag name="Immersive Horses - SkyTEST">On</flag>
-							</conditionFlags>
-							<typeDescriptor>
-								<dependencyType>
-									<defaultType name="Optional"/>
-									<patterns>
-										<pattern>
-											<dependencies operator="And">
-												<fileDependency file="Immersive Horses.esp" state="Active"/>
-												<fileDependency file="SkyTEST-RealisticAnimals&amp;Predators.esm" state="Active"/>
-											</dependencies>
-											<type name="Recommended"/>
-										</pattern>
-									</patterns>
-								</dependencyType>
-							</typeDescriptor>
-						</plugin>
 					</plugins>
 				</group>
 				<group name="Craftable Horse Barding" type="SelectAny">
 					<plugins order="Explicit">
 						<plugin name="Craftable Horse Barding">
 							<description>
-								Requires Craftable Horse Barding and Immersive Horses.
+								Requires Craftable Horse Barding.
 							</description>
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>

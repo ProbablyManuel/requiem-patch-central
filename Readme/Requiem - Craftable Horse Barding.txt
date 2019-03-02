@@ -1,6 +1,6 @@
 Load Order:
 
-Must be loaded after "Requiem - Immersive Horses.esp" and "Requiem - Immersive Horses - SkyTEST.esp".
+Must be loaded after "Requiem - Immersive Horses.esp".
 
 Must be loaded after "Requiem - SkyTEST.esp".
 
@@ -11,6 +11,19 @@ Must be loaded after "Requiem_Minor_Arcana.esp".
 
 
 Changelog:
+
+3.00
+
+Updated to Requiem 3.0.0.
+
+Immersive Horses is no longer a master file.
+
+Increased armor rating of saddles and added armor piercing resistances.
+
+Decreased weight of saddles.
+
+Increased number of saddles for sale.
+
 
 2.06
 

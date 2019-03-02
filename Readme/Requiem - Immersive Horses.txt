@@ -6,9 +6,6 @@ Do NOT install the Hearthfire patch from Immersive Horses. It's fully included i
 
 The "open inventory" option from Immersive Horses acts just like the "search" option from Requiem (when used on a horse). Use whatever method you prefer.
 
-Saddles, that hide a horse's mane AND are already equipped when you claim the horse, will disappear forever when you close the menu. This is a bug in Immersive Horses and not caused by the patch.
-This bug doesn't occur if you use the Craftable Horse Barding patch because horses only wear basic saddles when you claim them.
-
 
 
 Load Order:
@@ -22,6 +19,17 @@ Must be loaded after "Requiem_Minor_Arcana.esp".
 
 
 Changelog:
+
+3.00
+
+Updated to Requiem 3.0.0.
+
+Removed SkyTEST compatible file because it's no longer necessary.
+
+Fixed horses sometimes losing their equipped saddle when the player claims them.
+
+Removed carry weight bonus when wearing a saddle.
+
 
 2.06
 
