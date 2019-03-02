@@ -2,6 +2,8 @@ Changelog:
 
 3.00
 
+Updated to Requiem 3.0.0.
+
 Removed Enhancement module. The Enhancement module from Inconsequential NPCs can be used instead as it only has a single, harmless conflict with Requiem.
 
 

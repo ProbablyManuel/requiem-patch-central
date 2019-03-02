@@ -1,5 +1,10 @@
 Changelog:
 
+3.00
+
+Updated to Requiem 3.0.0.
+
+
 2.06
 
 Updated to Immersive Patrols 2.2.0.
