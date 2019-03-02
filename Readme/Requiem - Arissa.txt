@@ -1,5 +1,10 @@
 Changelog:
 
+3.00
+
+Updated to Requiem 3.0.0.
+
+
 2.02
 
 Registered Arissa for the new lockpicking system from Requiem 2.0.
