@@ -9,6 +9,11 @@ You have to disable or delete "83Willows_101BUGS_V4_HighRes.esp" and "83Willows_
 
 Changelog:
 
+3.00
+
+Updated to Requiem 3.0.0.
+
+
 2.00
 
 Updated to Requiem 2.0.1.
