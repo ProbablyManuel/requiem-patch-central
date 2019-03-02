@@ -1539,15 +1539,6 @@ DISABLE/DELETE "imp_helm_legend.esp" and "ICH - Silver Knight Patch.esp".
 			<pattern>
 				<dependencies operator="And">
 					<flagDependency flag="Modgroups" value="On"/>
-					<flagDependency flag="Immersive Horses - SkyTEST" value="On"/>
-				</dependencies>
-				<files>
-					<file source="Modgroups\Requiem - Immersive Horses - SkyTEST.modgroups" destination="Requiem - Immersive Horses - SkyTEST.modgroups"/>
-				</files>
-			</pattern>
-			<pattern>
-				<dependencies operator="And">
-					<flagDependency flag="Modgroups" value="On"/>
 					<flagDependency flag="Craftable Horse Barding" value="On"/>
 				</dependencies>
 				<files>
