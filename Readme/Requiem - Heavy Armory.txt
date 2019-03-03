@@ -48,6 +48,11 @@ Quarterstaff (Warhammer):
 
 Changelog:
 
+3.00
+
+Updated to Requiem 3.0.0.
+
+
 2.04
 
 Rebalanced all weapons. The info section above contains more details.
