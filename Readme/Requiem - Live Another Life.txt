@@ -6,6 +6,11 @@ Do NOT install the Live Another Life patch from Even Better Quest Objectives. It
 
 Changelog:
 
+3.00
+
+Updated to Requiem 3.0.0.
+
+
 2.00
 
 Updated to Requiem 2.0.1.
