@@ -17,6 +17,8 @@ Changelog:
 
 3.00
 
+Updated to Requiem 3.0.0.
+
 Synchronized with USLEEP 3.0.13a.
 
 Added level requirement for difficult enemies in Companion jobs, similar to Minor Arcana.
