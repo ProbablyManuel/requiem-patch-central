@@ -13,6 +13,11 @@ Must be loaded after "Requiem - Immersive Sounds Compendium.esp" and "ISC Requie
 
 Changelog:
 
+3.00
+
+Updated to Requiem 3.0.0.
+
+
 2.00
 
 Updated to Requiem 2.0.1.
