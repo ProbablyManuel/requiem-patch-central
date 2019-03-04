@@ -6,7 +6,7 @@ Do NOT install the optional file for True Weapons. It's fully included in this p
 Weapon Types:
 
 Glaives and (short)spears are new weapon types without proper integration to Skyrim and tridents are an exotic weapon type that's not suitable for combat.
-For the sake of simplicity they share their stats with the (great)sword of the same level.
+For the sake of simplicity they share their stats with the (great)sword of the same level. They deal piercing damage.
 NPCs won't use them because they lack proper animations.
 
 All numbers are prior to running the Reqtificator

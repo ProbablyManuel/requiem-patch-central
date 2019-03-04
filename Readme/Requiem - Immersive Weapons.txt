@@ -15,7 +15,7 @@ Must be loaded before "Requiem_Minor_Arcana.esp". This doesn't fully resolve con
 Weapon Types:
 
 Spears and crescents are new weapon types without proper integration to Skyrim.
-For the sake of simplicity they share their stats with the (great)sword of the same level.
+For the sake of simplicity they share their stats with the (great)sword of the same level. Spears deal piercing damage.
 NPCs won't carry them because they lack proper animations.
 
 All numbers are prior to running the Reqtificator
