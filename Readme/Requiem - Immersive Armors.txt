@@ -14,6 +14,11 @@ Must be loaded before "Requiem_Minor_Arcana.esp". This doesn't fully resolve con
 
 Changelog:
 
+3.00
+
+Updated to Requiem 3.0.0.
+
+
 2.07
 
 The Heroic Imperial Armor can no longer be looted in Helgen.
