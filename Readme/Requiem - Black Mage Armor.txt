@@ -1,5 +1,12 @@
 Changelog:
 
+3.00
+
+Updated to Requiem 3.0.0.
+
+Crafting Black Arch-Mage's (Plate) Armor requires Glass respectively Ebony Smithing.
+
+
 2.00
 
 Updated to Requiem 2.0.1.

@@ -17,6 +17,11 @@ In general should be loaded as one of the last Requiem patches/addons.
 
 Changelog:
 
+3.00
+
+Updated to Requiem 3.0.0.
+
+
 2.12
 
 Improved closefaced Legendary Plate Helmet. This requires the Silver Knight Armor patch from ICH.
