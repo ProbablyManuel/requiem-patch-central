@@ -1,5 +1,4 @@
 All plugins must be loaded after:
-- "Requiem - Legendary Bugsmasher Edition.esp"
 - "Fozars_Dragonborn_-_Requiem_Patch.esp"
 - "KFR-Kryptopyr'sFixesReqtified.esp" and all its optional plugins
 - "COR-CraftingOverhaulReqtified.esp" and all its optional plugins
@@ -11,3 +10,7 @@ All load order advice in these readmes is also known to LOOT. Make your life eas
 To merge edits to leveled lists from multiple plugins, you must tick Merged Leveled Characters and Merged Leveled Items in the Reqtificator.
 
 Alternatively you can use a Smashed Patch if you follow the instructions [here](https://requiem.atlassian.net/wiki/spaces/RS/pages/692257110/Bashing+Merging+and+Smashing).
+
+
+
+Merging the patches is not supported.
