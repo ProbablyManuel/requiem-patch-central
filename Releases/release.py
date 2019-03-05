@@ -403,6 +403,11 @@ def parse_fomod(dir_fomod: os.PathLike) -> (str, str, list, list):
     root = xml.etree.ElementTree.parse(path).getroot()
     sub_dirs = list()
     loose_files = list()
+    for requiredInstallFiles in root.iterfind("requiredInstallFiles"):
+        for folder in requiredInstallFiles.iterfind("folder"):
+            sub_dirs.append(folder.get("source"))
+        for file in requiredInstallFiles.iterfind("file"):
+            loose_files.append(file.get("source"))
     for installSteps in root.iterfind("installSteps"):
         for installStep in installSteps.iterfind("installStep"):
             for fileGroups in installStep.iterfind("optionalFileGroups"):

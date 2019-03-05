@@ -1,5 +1,8 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://qconsulting.ca/fo3/ModConfig5.0.xsd">
 	<moduleName>Requiem Patches</moduleName>
+	<requiredInstallFiles>
+		<file source="Readme\General Advice.txt" destination="Requiem Patches - Readme\General Advice.txt"/>
+	</requiredInstallFiles>
 	<installSteps order="Explicit">
 		<installStep name="Unofficial Patches">
 			<optionalFileGroups order="Explicit">
@@ -383,7 +386,7 @@
 		</installStep>
 		<installStep name="Horses">
 			<optionalFileGroups order="Explicit">
-				<group name="Immersive Horses" type="SelectAtMostOne">
+				<group name="Immersive Horses" type="SelectAny">
 					<plugins order="Explicit">
 						<plugin name="Immersive Horses">
 							<description>
