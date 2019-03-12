@@ -1,3 +1,9 @@
+Info:
+
+Incompatible with Requiem - SkyTEST.
+
+
+
 Changelog:
 
 3.00

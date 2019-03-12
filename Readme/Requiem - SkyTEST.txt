@@ -1,3 +1,9 @@
+Info:
+
+Incompatible with Requiem - Wild World.
+
+
+
 Changelog:
 
 3.00
