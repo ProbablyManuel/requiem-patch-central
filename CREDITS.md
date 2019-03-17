@@ -32,7 +32,6 @@
 - Lazygecko for [Immersive Sounds - Compendium](https://www.nexusmods.com/skyrim/mods/54387)
 - Hothtrooper44 for [Immersive Weapons](https://www.nexusmods.com/skyrim/mods/27644)
 - Navida1 for [Improved Closefaced Helmets](https://www.nexusmods.com/skyrim/mods/15927)
-- Unknown mod author for Improved Housecarls
 - Ripple for [Inconsequential NPCs](https://www.nexusmods.com/skyrim/mods/36334)
 - Smartbluecat for [INIGO](https://www.nexusmods.com/skyrim/mods/40960)
 - Joseph Russell for [Lucien - Fully Voiced Follower](https://www.nexusmods.com/skyrim/mods/95029)
@@ -44,7 +43,6 @@
 - Lifestorock and Jackstarr for [Skyrim Immersive Creatures](https://www.nexusmods.com/skyrim/mods/24913)
 - Thetrader for [Skyrim Unlocked](https://www.nexusmods.com/skyrim/mods/69420)
 - EtaYorius for [SkyTEST - Realistic Animals and Predators](https://www.nexusmods.com/skyrim/mods/10175)
-- Unknown mod author for TG Members Improvement patch
 - Kryptopyr for [Timing is Everything - Quest Delay and Timing Control](https://www.nexusmods.com/skyrim/mods/38151)
 - Kryptopyr for [Trade and Barter](https://www.nexusmods.com/skyrim/mods/34612)
 - InsanitySorrow for [Unique Uniques](https://www.nexusmods.com/skyrim/mods/33292)
