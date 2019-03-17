@@ -258,6 +258,36 @@
 						</plugin>
 					</plugins>	
 				</group>
+				<group name="Vampiric Thirst - Dawnguard Edition" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Vampiric Thirst">
+							<description>
+								Requires Vampiric Thirst.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Vampiric Thirst" destination=""/>
+								<file source="Readme\Requiem - Vampiric Thirst.txt" destination="Requiem Patches - Readme\Requiem - Vampiric Thirst.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Vampiric Thirst">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="mslVampiricThirst.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>	
+				</group>
 				<group name="VioLens - A Killmove Mod" type="SelectAny">
 					<plugins order="Explicit">
 						<plugin name="VioLens">
@@ -1492,6 +1522,15 @@ DISABLE/DELETE "imp_helm_legend.esp" and "ICH - Silver Knight Patch.esp".
 				</dependencies>
 				<files>
 					<file source="Modgroups\Requiem - Trade and Barter.modgroups" destination="Requiem - Trade and Barter.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Vampiric Thirst" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Vampiric Thirst.modgroups" destination="Requiem - Vampiric Thirst.modgroups"/>
 				</files>
 			</pattern>
 			<pattern>

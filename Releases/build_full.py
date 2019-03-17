@@ -4,8 +4,8 @@ import config
 import logging
 import release
 
-bsa_exclude = ["Requiem - Trade and Barter", "Requiem - Timing is Everything",
-               "Requiem - Immersive Horses"]
+bsa_exclude = ["Requiem - Immersive Horses", "Requiem - Timing is Everything",
+               "Requiem - Trade and Barter", "Requiem - Vampiric Thirst"]
 
 logger = logging.getLogger(release.__name__)
 logger.setLevel(logging.INFO)

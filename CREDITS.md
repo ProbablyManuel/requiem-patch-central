@@ -49,6 +49,7 @@
 - Kryptopyr for [Trade and Barter](https://www.nexusmods.com/skyrim/mods/34612)
 - InsanitySorrow for [Unique Uniques](https://www.nexusmods.com/skyrim/mods/33292)
 - Unofficial Patch Project Team for [Unofficial Skyrim Legendary Edition Patch](https://www.nexusmods.com/skyrim/mods/71214)
+- Miss Leeches for [Vampiric Thirst - Dawnguard Edition](https://www.nexusmods.com/skyrim/mods/24222)
 - Emma Amgepo Lycanthrops for [Vilja in Skyrim](https://www.nexusmods.com/skyrim/mods/26393)
 - Reko for [Violens - A Killmove Mod](https://www.nexusmods.com/skyrim/mods/56980)
 - Evrymetul for [Wild World](https://www.nexusmods.com/skyrim/mods/88642)

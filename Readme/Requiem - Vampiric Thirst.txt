@@ -1,0 +1,13 @@
+Info:
+
+The Balance-wise this patch is identical to Miss Leeches' original patch.
+
+
+
+Changelog:
+
+3.01	Initial Release
+
+Updated Miss Leeches' patch to Requiem 3.0.0.
+
+Removed MCM because there is no longer any real reason to keep it.
