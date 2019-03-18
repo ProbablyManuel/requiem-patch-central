@@ -1,10 +1,15 @@
 Info:
 
-The Balance-wise this patch is identical to Miss Leeches' original patch.
+Balance-wise this patch is identical to Miss Leeches' original patch.
 
 
 
 Changelog:
+
+3.02
+
+Added missing script.
+
 
 3.01	Initial Release
 
