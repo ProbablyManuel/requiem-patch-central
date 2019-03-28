@@ -1,5 +1,10 @@
 Changelog:
 
+3.03
+
+Lockpicks are stored in Arissa's real inventory to work with Requiem's lockpicking system. This requires a new game to take effect.
+
+
 3.00
 
 Updated to Requiem 3.0.0.
