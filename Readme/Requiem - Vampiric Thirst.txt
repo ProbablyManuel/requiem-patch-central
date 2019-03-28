@@ -6,6 +6,11 @@ Balance-wise this patch is identical to Miss Leeches' original patch.
 
 Changelog:
 
+3.03
+
+Fixed healing resistance not affecting potions.
+
+
 3.02
 
 Added missing script.
