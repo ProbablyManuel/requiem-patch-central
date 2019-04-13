@@ -6,6 +6,11 @@ Do NOT install the USLEEP patch from RS Children Overhaul. It's fully included i
 
 Changelog:
 
+3.03
+
+Updated to Requiem 3.0.2.
+
+
 3.00
 
 Updated to Requiem 3.0.0.
