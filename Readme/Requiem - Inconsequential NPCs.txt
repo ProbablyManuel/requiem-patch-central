@@ -1,5 +1,10 @@
 Changelog:
 
+3.03
+
+Skooma dealers and fences buy and sell black market goods.
+
+
 3.00
 
 Updated to Requiem 3.0.0.
