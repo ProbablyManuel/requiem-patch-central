@@ -8,6 +8,8 @@ Changelog:
 
 3.03
 
+Updated to Requiem 3.0.2.
+
 Fixed healing resistance not affecting potions.
 
 
