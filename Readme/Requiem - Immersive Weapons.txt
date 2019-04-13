@@ -275,6 +275,11 @@ Ziil Naak
 
 Changelog:
 
+3.03
+
+Updated to Requiem 3.0.2.
+
+
 3.00
 
 Updated to Requiem 3.0.0.
