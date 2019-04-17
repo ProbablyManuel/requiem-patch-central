@@ -48,6 +48,11 @@ Quarterstaff (Warhammer):
 
 Changelog:
 
+3.04
+
+Removed daggers from Draugr and Falmer because they lack animations to wield daggers.
+
+
 3.03
 
 Updated to Requiem 3.0.2.
