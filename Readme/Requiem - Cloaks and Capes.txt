@@ -1,0 +1,17 @@
+Changelog:
+
+3.04	Initial Version
+
+Distributed cloaks to guards, bandits and forsworn.
+
+Disallowed enchanting of cloaks.
+
+Added weight to all cloaks.
+
+Increased value of fur cloaks.
+
+Crafting cloaks requires the Craftsmanship perk.
+
+Adjusted crafting input to be more logical.
+
+Gave cloaks more immersive names.

@@ -1178,6 +1178,40 @@ DISABLE/DELETE "RUSTIC SOULGEMS - Sorted.esp" and "RUSTIC SOULGEMS - Unsorted.es
 				</group>
 			</optionalFileGroups>
 		</installStep>
+		<installStep name="Cloaks">
+			<optionalFileGroups order="Explicit">
+				<group name="Cloaks and Capes" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Cloaks and Capes">
+							<description>
+								Requires Cloaks and Capes.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Cloaks and Capes" destination=""/>
+								<file source="Readme\Requiem - Cloaks and Capes.txt" destination="Requiem Patches - Readme\Requiem - Cloaks and Capes.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Cloaks and Capes">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="Cloaks&amp;Capes.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+			</optionalFileGroups>
+		</installStep>
 		<installStep name="Armors">
 			<optionalFileGroups order="Explicit">
 				<group name="Black Mage Armor" type="SelectAny">
@@ -1783,6 +1817,15 @@ DISABLE/DELETE "imp_helm_legend.esp" and "ICH - Silver Knight Patch.esp".
 				</dependencies>
 				<files>
 					<file source="Modgroups\Requiem - Lost Library.modgroups" destination="Requiem - Lost Library.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Cloaks and Capes" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Cloaks and Capes.modgroups" destination="Requiem - Cloaks and Capes.modgroups"/>
 				</files>
 			</pattern>
 			<pattern>
