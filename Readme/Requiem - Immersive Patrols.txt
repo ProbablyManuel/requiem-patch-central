@@ -1,5 +1,10 @@
 Changelog:
 
+3.04
+
+Updated to Immersive Patrols 2.2.2.
+
+
 3.01
 
 Removed Adept spells from Imperial mages.
