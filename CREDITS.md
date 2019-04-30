@@ -10,6 +10,7 @@
 - DanielCoffey for [Book Covers Skyrim - Lost Library](https://www.nexusmods.com/skyrim/mods/57120)
 - Arthmoor for [Bring Out Your Dead](https://www.nexusmods.com/skyrim/mods/19281)
 - Chesko for [Campfire](https://www.nexusmods.com/skyrim/mods/64798)
+- Volvaga0 for [Cloaks and Capes](https://www.nexusmods.com/skyrim/mods/86219)
 - Franklin Zunge and Thetrader for [Common Clothes and Armors](https://www.nexusmods.com/skyrim/mods/94625)
 - Sevencardz for [Craftable Horse Barding](https://www.nexusmods.com/skyrim/mods/64069)
 - Arthmoor for [Cutting Room Floor](https://www.nexusmods.com/skyrim/mods/47327)
