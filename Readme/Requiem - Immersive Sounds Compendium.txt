@@ -1,10 +1,3 @@
-Info:
-This is an all-in-one patch for WAFR, CCF, CCOR, KFR, COR, Immersive Sounds Compendium and Requiem.
-If you don't use all of them, install the modular patches from Immersive Sounds Compendium.
-This makes the Requiem, WAFR, CCF and CCOR patch from the Immersive Sounds Compendium installer redundant. Do NOT install any of these patches.
-
-
-
 Load Order:
 
 Must be loaded after "Requiem - Cutting Room Floor.esp".
@@ -14,6 +7,11 @@ Should be loaded as one of the first Requiem patches/addons.
 
 
 Changelog:
+
+3.04
+
+Complete Crafting Overhaul Remade is no longer a master file.
+
 
 3.00
 
