@@ -452,40 +452,6 @@ It's recommended to use Craftable Horse Barding too.
 		</installStep>
 		<installStep name="Creatures">
 			<optionalFileGroups order="Explicit">
-				<group name="83Willows 101BugsHD" type="SelectAny">
-					<plugins order="Explicit">
-						<plugin name="83Willow's Bugs">
-							<description>
-								Requires 83Willows 101BugsHD. You need the normal version, i.e. not the HighSpawn version.
-
-DISABLE/DELETE "83Willows_101BUGS_V4_HighRes.esp" and "83Willows_101BUGS_V4_LowRes.esp".
-							</description>
-							<image path="fomod\Requiem Compatibility Patches.jpg"/>
-							<files>
-								<folder source="Requiem - 83Willows 101Bugs" destination=""/>
-								<file source="Readme\Requiem - 83Willows 101Bugs.txt" destination="Requiem Patches - Readme\Requiem - 83Willows 101Bugs.txt"/>
-							</files>
-							<conditionFlags>
-								<flag name="83Willows 101Bugs">On</flag>
-							</conditionFlags>
-							<typeDescriptor>
-								<dependencyType>
-									<defaultType name="Optional"/>
-									<patterns>
-										<pattern>
-											<dependencies operator="Or">
-												<fileDependency file="83Willows_101BUGS_V4_HighRes.esp" state="Active"/>
-												<fileDependency file="83Willows_101BUGS_V4_LowRes.esp" state="Active"/>
-												<fileDependency file="Requiem - 83Willows 101Bugs.esp" state="Active"/>
-											</dependencies>
-											<type name="Recommended"/>
-										</pattern>
-									</patterns>
-								</dependencyType>
-							</typeDescriptor>
-						</plugin>
-					</plugins>
-				</group>
 				<group name="Deadly Dragons" type="SelectAtMostOne">
 					<plugins order="Explicit">
 						<plugin name="Deadly Dragons">
@@ -1580,15 +1546,6 @@ DISABLE/DELETE "imp_helm_legend.esp" and "ICH - Silver Knight Patch.esp".
 				</dependencies>
 				<files>
 					<file source="Modgroups\Requiem - Craftable Horse Barding.modgroups" destination="Requiem - Craftable Horse Barding.modgroups"/>
-				</files>
-			</pattern>
-			<pattern>
-				<dependencies operator="And">
-					<flagDependency flag="Modgroups" value="On"/>
-					<flagDependency flag="83Willows 101Bugs" value="On"/>
-				</dependencies>
-				<files>
-					<file source="Modgroups\Requiem - 83Willows 101Bugs.modgroups" destination="Requiem - 83Willows 101Bugs.modgroups"/>
 				</files>
 			</pattern>
 			<pattern>
