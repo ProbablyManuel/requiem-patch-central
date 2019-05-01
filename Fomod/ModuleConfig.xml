@@ -198,36 +198,6 @@
 		</installStep>
 		<installStep name="Gameplay">
 			<optionalFileGroups order="Explicit">
-				<group name="Dragon Combat Overhaul" type="SelectAny">
-					<plugins order="Explicit">
-						<plugin name="Dragon Combat Overhaul">
-							<description>
-								Requires Dragon Combat Overhaul.
-							</description>
-							<image path="fomod\Requiem Compatibility Patches.jpg"/>
-							<files>
-								<folder source="Requiem - Dragon Combat Overhaul" destination=""/>
-								<file source="Readme\Requiem - Dragon Combat Overhaul.txt" destination="Requiem Patches - Readme\Requiem - Dragon Combat Overhaul.txt"/>
-							</files>
-							<conditionFlags>
-								<flag name="Dragon Combat Overhaul">On</flag>
-							</conditionFlags>
-							<typeDescriptor>
-								<dependencyType>
-									<defaultType name="Optional"/>
-									<patterns>
-										<pattern>
-											<dependencies operator="And">
-												<fileDependency file="Dragon Combat Overhaul.esp" state="Active"/>
-											</dependencies>
-											<type name="Recommended"/>
-										</pattern>
-									</patterns>
-								</dependencyType>
-							</typeDescriptor>
-						</plugin>
-					</plugins>
-				</group>
 				<group name="Trade and Barter" type="SelectAny">
 					<plugins order="Explicit">
 						<plugin name="Trade and Barter">
@@ -1538,15 +1508,6 @@ DISABLE/DELETE "imp_helm_legend.esp" and "ICH - Silver Knight Patch.esp".
 				</dependencies>
 				<files>
 					<file source="Modgroups\Requiem - Frostfall.modgroups" destination="Requiem - Frostfall.modgroups"/>
-				</files>
-			</pattern>
-			<pattern>
-				<dependencies operator="And">
-					<flagDependency flag="Modgroups" value="On"/>
-					<flagDependency flag="Dragon Combat Overhaul" value="On"/>
-				</dependencies>
-				<files>
-					<file source="Modgroups\Requiem - Dragon Combat Overhaul.modgroups" destination="Requiem - Dragon Combat Overhaul.modgroups"/>
 				</files>
 			</pattern>
 			<pattern>
