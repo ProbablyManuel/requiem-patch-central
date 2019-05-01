@@ -132,7 +132,7 @@
 				</group>
 			</optionalFileGroups>
 		</installStep>
-		<installStep name="Immersion">
+		<installStep name="Survival">
 			<optionalFileGroups order="Explicit">
 				<group name="Campfire" type="SelectAny">
 					<plugins order="Explicit">
@@ -198,6 +198,65 @@
 		</installStep>
 		<installStep name="Gameplay">
 			<optionalFileGroups order="Explicit">
+				<group name="Deadly Dragons" type="SelectAtMostOne">
+					<plugins order="Explicit">
+						<plugin name="Deadly Dragons">
+							<description>
+								Requires Deadly Dragons.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Deadly Dragons" destination=""/>
+								<file source="Readme\Requiem - Deadly Dragons.txt" destination="Requiem Patches - Readme\Requiem - Deadly Dragons.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Deadly Dragons">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="DeadlyDragons.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+						<plugin name="Deadly Dragons - AOS compatible">
+							<description>
+								Requires Deadly Dragons and Audio Overhaul for Skyrim. This replaces the Deadly Dragons patch from AOS.
+
+DISABLE/DELETE "AOS2_DD Patch.esp".
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Deadly Dragons - AOS" destination=""/>
+								<file source="Readme\Requiem - Deadly Dragons.txt" destination="Requiem Patches - Readme\Requiem - Deadly Dragons.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Deadly Dragons - AOS">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="DeadlyDragons.esp" state="Active"/>
+												<flagDependency flag="Audio Overhaul for Skyrim" value="On"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
 				<group name="Trade and Barter" type="SelectAny">
 					<plugins order="Explicit">
 						<plugin name="Trade and Barter">
@@ -439,69 +498,6 @@ It's recommended to use Craftable Horse Barding too.
 										<pattern>
 											<dependencies operator="And">
 												<fileDependency file="Craftable Horse Barding.esp" state="Active"/>
-											</dependencies>
-											<type name="Recommended"/>
-										</pattern>
-									</patterns>
-								</dependencyType>
-							</typeDescriptor>
-						</plugin>
-					</plugins>
-				</group>
-			</optionalFileGroups>
-		</installStep>
-		<installStep name="Creatures">
-			<optionalFileGroups order="Explicit">
-				<group name="Deadly Dragons" type="SelectAtMostOne">
-					<plugins order="Explicit">
-						<plugin name="Deadly Dragons">
-							<description>
-								Requires Deadly Dragons.
-							</description>
-							<image path="fomod\Requiem Compatibility Patches.jpg"/>
-							<files>
-								<folder source="Requiem - Deadly Dragons" destination=""/>
-								<file source="Readme\Requiem - Deadly Dragons.txt" destination="Requiem Patches - Readme\Requiem - Deadly Dragons.txt"/>
-							</files>
-							<conditionFlags>
-								<flag name="Deadly Dragons">On</flag>
-							</conditionFlags>
-							<typeDescriptor>
-								<dependencyType>
-									<defaultType name="Optional"/>
-									<patterns>
-										<pattern>
-											<dependencies operator="And">
-												<fileDependency file="DeadlyDragons.esp" state="Active"/>
-											</dependencies>
-											<type name="Recommended"/>
-										</pattern>
-									</patterns>
-								</dependencyType>
-							</typeDescriptor>
-						</plugin>
-						<plugin name="Deadly Dragons - AOS compatible">
-							<description>
-								Requires Deadly Dragons and Audio Overhaul for Skyrim. This replaces the Deadly Dragons patch from AOS.
-
-DISABLE/DELETE "AOS2_DD Patch.esp".
-							</description>
-							<image path="fomod\Requiem Compatibility Patches.jpg"/>
-							<files>
-								<folder source="Requiem - Deadly Dragons - AOS" destination=""/>
-								<file source="Readme\Requiem - Deadly Dragons.txt" destination="Requiem Patches - Readme\Requiem - Deadly Dragons.txt"/>
-							</files>
-							<conditionFlags>
-								<flag name="Deadly Dragons - AOS">On</flag>
-							</conditionFlags>
-							<typeDescriptor>
-								<dependencyType>
-									<defaultType name="Optional"/>
-									<patterns>
-										<pattern>
-											<dependencies operator="And">
-												<fileDependency file="DeadlyDragons.esp" state="Active"/>
-												<flagDependency flag="Audio Overhaul for Skyrim" value="On"/>
 											</dependencies>
 											<type name="Recommended"/>
 										</pattern>
@@ -1479,6 +1475,15 @@ DISABLE/DELETE "imp_helm_legend.esp" and "ICH - Silver Knight Patch.esp".
 			<pattern>
 				<dependencies operator="And">
 					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Deadly Dragons" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Deadly Dragons.modgroups" destination="Requiem - Deadly Dragons.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
 					<flagDependency flag="Trade and Barter" value="On"/>
 				</dependencies>
 				<files>
@@ -1546,15 +1551,6 @@ DISABLE/DELETE "imp_helm_legend.esp" and "ICH - Silver Knight Patch.esp".
 				</dependencies>
 				<files>
 					<file source="Modgroups\Requiem - Craftable Horse Barding.modgroups" destination="Requiem - Craftable Horse Barding.modgroups"/>
-				</files>
-			</pattern>
-			<pattern>
-				<dependencies operator="And">
-					<flagDependency flag="Modgroups" value="On"/>
-					<flagDependency flag="Deadly Dragons" value="On"/>
-				</dependencies>
-				<files>
-					<file source="Modgroups\Requiem - Deadly Dragons.modgroups" destination="Requiem - Deadly Dragons.modgroups"/>
 				</files>
 			</pattern>
 			<pattern>
