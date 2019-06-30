@@ -6,6 +6,11 @@ Incompatible with Requiem - Wild World.
 
 Changelog:
 
+3.05
+
+The price of food is no longer auto-calculated.
+
+
 3.00
 
 Updated to Requiem 3.0.0.
