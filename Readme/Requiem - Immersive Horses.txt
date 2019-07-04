@@ -20,6 +20,13 @@ Must be loaded after "Requiem_Minor_Arcana.esp".
 
 Changelog:
 
+3.05
+
+Updated to Requiem 3.1.0.
+
+Added 150 armor rating to all horses.
+
+
 3.03
 
 Rebalanced saddles to match Craftable Horse Barding.
