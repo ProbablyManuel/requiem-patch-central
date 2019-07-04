@@ -4,6 +4,8 @@ Changelog:
 
 Updated to Requiem 3.1.0.
 
+Buffed mail armors and changed tempering perk to Advanced Light Armors.
+
 
 3.02
 
