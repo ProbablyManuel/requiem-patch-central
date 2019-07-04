@@ -8,6 +8,8 @@ Changelog:
 
 3.05
 
+Updated to Requiem 3.1.0.
+
 The price of food is no longer auto-calculated.
 
 
