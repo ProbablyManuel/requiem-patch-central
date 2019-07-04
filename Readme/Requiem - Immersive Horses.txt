@@ -26,6 +26,8 @@ Updated to Requiem 3.1.0.
 
 Added 150 armor rating to all horses.
 
+Horses retain their name after being claimed by the player and are no longer called "My Horse".
+
 
 3.03
 
