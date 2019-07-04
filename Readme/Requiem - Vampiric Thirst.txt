@@ -6,6 +6,11 @@ Balance-wise this patch is identical to Miss Leeches' original patch.
 
 Changelog:
 
+3.05
+
+Updated to Requiem 3.1.0.
+
+
 3.03
 
 Updated to Requiem 3.0.2.
