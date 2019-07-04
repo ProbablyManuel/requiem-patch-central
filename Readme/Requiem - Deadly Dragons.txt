@@ -14,6 +14,8 @@ Changelog:
 
 3.05
 
+Updated to Requiem 3.1.0.
+
 Removed AOS compatible file. The two conflicts fixed by this file are insignificant. Furthermore with the new smash setting for Requiem, Mator Smash is now capable of resolving these conflicts.
 
 
