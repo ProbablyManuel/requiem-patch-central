@@ -104,7 +104,7 @@
 					<plugins order="Explicit">
 						<plugin name="Immersive Sounds Compendium">
 							<description>
-								Requires Immersive Sounds Compendium and Complete Crafting Overhaul Remade.
+								Requires Immersive Sounds Compendium.
 							</description>
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
