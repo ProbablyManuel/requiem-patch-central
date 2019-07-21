@@ -1,5 +1,10 @@
 Changelog:
 
+3.07
+
+Separating "Backpack, Black Fur (Kynareth)" no longer creates an "Separate: Backpack, Black Fur - Amulet of Kynareth" item in your inventory that generates an infinite number of backpacks. This fix doesn't work on already spawned items.
+
+
 3.00
 
 Updated to Requiem 3.0.0.
