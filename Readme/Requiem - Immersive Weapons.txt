@@ -6,12 +6,6 @@ Do NOT install the Immersive Weapons USLEEP Patch. It's fully included in this p
 
 
 
-Load Order:
-
-Must be loaded before "Requiem_Minor_Arcana.esp". This doesn't fully resolve conflicts, but is better than the opposite order.
-
-
-
 Weapon Types:
 
 Spears and crescents are new weapon types without proper integration to Skyrim.
@@ -279,6 +273,8 @@ Changelog:
 
 Removed Wolf weapons from the Circle.
 
+Removed Housecarl's Greatsword from the Housecarls assigned to the player.
+
 
 3.05
 
@@ -516,7 +512,7 @@ Hot Blood:
 Fura Bloodmouth
 
 Housecarl's Greatsword:
-Argis the Bulwark, Calder, Gregor, Iona, Jordis the Sword-Maiden, Lydia, Bolgeir Bearclaw and Hrongar
+Bolgeir Bearclaw and Hrongar
 
 Ice Blade of the Monarch:
 Haldyn
