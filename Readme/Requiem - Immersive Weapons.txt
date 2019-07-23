@@ -275,6 +275,11 @@ Ziil Naak
 
 Changelog:
 
+3.07
+
+Removed Wolf weapons from the Circle.
+
+
 3.05
 
 Updated to Requiem 3.1.0.
