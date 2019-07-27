@@ -48,6 +48,10 @@ Quarterstaff (Warhammer):
 
 Changelog:
 
+3.07
+
+Renamed "Akviri" weapons to "Blades".
+
 3.04
 
 Removed daggers from Draugr and Falmer because they lack animations to wield daggers.
