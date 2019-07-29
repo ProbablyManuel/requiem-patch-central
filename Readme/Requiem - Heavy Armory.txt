@@ -50,7 +50,8 @@ Changelog:
 
 3.07
 
-Renamed "Akviri" weapons to "Blades".
+Renamed "Akaviri" weapons to "Blades".
+
 
 3.04
 
