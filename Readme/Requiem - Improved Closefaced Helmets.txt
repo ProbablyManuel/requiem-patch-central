@@ -1,9 +1,7 @@
 Info:
 
-Requires the main file from Improved Closefaced Helmets and the Silver Knight Armor patch.
-
 The patch replaces the original plugin because it contains a few errors and ITMs and is rather small.
-You have to disable or delete "imp_helm_legend.esp" and "ICH - Silver Knight Patch.esp".
+You have to disable or delete "imp_helm_legend.esp".
 
 
 
@@ -16,6 +14,11 @@ In general should be loaded as one of the last Requiem patches/addons.
 
 
 Changelog:
+
+3.08
+
+Updated to Requiem 3.2.0.
+
 
 3.05
 
