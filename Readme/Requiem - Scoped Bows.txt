@@ -11,6 +11,11 @@ Scoped Bows have the same stats as their Requiem counterpart +0.5 weight.
 
 Changelog:
 
+3.08
+
+Updated to Requiem 3.2.0.
+
+
 3.03
 
 Updated to Requiem 3.0.2.
