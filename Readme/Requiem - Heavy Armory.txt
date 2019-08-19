@@ -1,8 +1,5 @@
 Info:
 
-Do NOT install the optional file for True Weapons. It's fully included in this patch.
-
-
 Weapon Types:
 
 Glaives and (short)spears are new weapon types without proper integration to Skyrim and tridents are an exotic weapon type that's not suitable for combat.
@@ -47,6 +44,11 @@ Quarterstaff (Warhammer):
 
 
 Changelog:
+
+3.08
+
+Updated to Requiem 3.2.0.
+
 
 3.07
 
