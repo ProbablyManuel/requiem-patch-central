@@ -6,6 +6,11 @@ Do NOT install the Faction Crossbows Compatibility patch for WAFR/CCOR. It's ful
 
 Changelog:
 
+3.08
+
+Updated to Requiem 3.2.0.
+
+
 3.00
 
 Updated to Requiem 3.0.0.
