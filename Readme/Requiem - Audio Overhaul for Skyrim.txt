@@ -1,8 +1,6 @@
 Info:
 
-This is an all-in-one patch for WAFR, CCF, CCOR, KFR, COR, AOS and Requiem.
-If you don't use all of them, install the modular patches from AOS.
-This makes the Requiem, WAFR and GDO patch from the AOS installer redundant. Do NOT install any of these patches.
+Do NOT install the Guard Dialogue Overhaul patch from Audio Overhaul for Skyrim. It's fully included in this patch.
 
 
 
@@ -15,6 +13,11 @@ Should be loaded as one of the first Requiem patches/addons.
 
 
 Changelog:
+
+3.08
+
+Updated to Requiem 3.2.0.
+
 
 3.00
 
