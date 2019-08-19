@@ -1,9 +1,3 @@
-Info:
-
-Do NOT install the Live Another Life patch from Even Better Quest Objectives. It's fully included in this patch.
-
-
-
 Changelog:
 
 3.07
