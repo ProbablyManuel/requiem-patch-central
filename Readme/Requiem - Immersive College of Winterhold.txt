@@ -1,5 +1,10 @@
 Changelog:
 
+3.09
+
+Updated to Immersive College of Winterhold 6.0.
+
+
 3.03
 
 Updated to Requiem 3.0.2.
