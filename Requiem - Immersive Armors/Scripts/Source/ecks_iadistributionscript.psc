@@ -5600,7 +5600,32 @@ If !IACNVvardenfellGlass.GetValue ()
 EndIf
 
 If !IACNWarchief.GetValue ()
-	;Shall not be distributed.
+If !IAVCNWarchiefHeavy.GetValue ()
+	LItemArmorBootsHeavyBlacksmith.AddForm( IADLWarchiefStompers, 1, 1 )
+	LItemArmorCuirassHeavyBlacksmith.AddForm( IADLWarchiefBulwark, 1, 1 )
+	LItemArmorGauntletsHeavyBlacksmith.AddForm( IADLWarchiefGrips, 1, 1 )
+	LItemArmorHelmetHeavyBlacksmith.AddForm( IADLWarchiefHelm, 1, 1 )
+	If IADTBandit.GetValue ()
+		LItemBanditHeavyBoots.AddForm( IADLWarchiefStompers, 1, 1 )
+		LItemBanditHeavyCuirass.AddForm( IADLWarchiefBulwark, 1, 1 )
+		LItemBanditHeavyGauntlets50.AddForm( IADLWarchiefGrips, 1, 1 )
+		LItemBanditHelmet50.AddForm( IADLWarchiefHelm, 1, 1 )
+
+		LItemBanditBossBoots.AddForm( IADLWarchiefStompers, 1, 1 )
+		LItemBanditBossCuirass.AddForm( IADLWarchiefBulwark, 1, 1 )
+		LItemBanditBossGauntlets50.AddForm( IADLWarchiefGrips, 1, 1 )
+		LItemBanditBossHelmet50.AddForm( IADLWarchiefHelm, 1, 1 )
+
+		IA_CLI_EquipSet_BanditHeavy_05_Boots.AddForm( IADLWarchiefStompers, 1, 1 )
+		IA_CLI_EquipSet_BanditHeavy_05_Cuirass.AddForm( IADLWarchiefBulwark, 1, 1 )
+		IA_CLI_EquipSet_BanditHeavy_05_Gauntlets.AddForm( IADLWarchiefGrips, 1, 1 )
+		IA_CLI_EquipSet_BanditHeavy_05_Helmet.AddForm( IADLWarchiefHelm, 1, 1 )
+		IA_CLI_EquipSet_BanditHeavy_06_Boots.AddForm( IADLWarchiefStompers, 1, 1 )
+		IA_CLI_EquipSet_BanditHeavy_06_Cuirass.AddForm( IADLWarchiefBulwark, 1, 1 )
+		IA_CLI_EquipSet_BanditHeavy_06_Gauntlets.AddForm( IADLWarchiefGrips, 1, 1 )
+		IA_CLI_EquipSet_BanditHeavy_06_Helmet.AddForm( IADLWarchiefHelm, 1, 1 )
+	EndIf
+EndIf
 EndIf
 
 If !IACNWitchplate.GetValue ()
