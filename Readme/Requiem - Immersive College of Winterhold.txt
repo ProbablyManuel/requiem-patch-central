@@ -1,5 +1,10 @@
 Changelog:
 
+3.10
+
+Updated to Immersive College of Winterhold 6.1.
+
+
 3.09
 
 Updated to Immersive College of Winterhold 6.0.
