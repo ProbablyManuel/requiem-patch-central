@@ -15,6 +15,11 @@ In general should be loaded as one of the last Requiem patches/addons.
 
 Changelog:
 
+3.10
+
+Updated to Requiem 3.3.0.
+
+
 3.08
 
 Updated to Requiem 3.2.0.
