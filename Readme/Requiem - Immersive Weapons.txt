@@ -72,7 +72,7 @@ Double Axe (Battleaxe):
 +1 damage, +0.1 stagger, weight of warhammer
 
 Halberd (Battleaxe):
--0.05 speed, +0.2 reach
+-0.05 speed, +0.1 reach
 
 Scythe (Battleaxe):
 +1 damage
@@ -274,6 +274,11 @@ Ziil Naak
 
 
 Changelog:
+
+3.11
+
+Reduced reach of halberds.
+
 
 3.08
 

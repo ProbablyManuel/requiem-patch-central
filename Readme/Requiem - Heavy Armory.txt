@@ -33,7 +33,7 @@ Dai-Katana (Greatsword):
 -3 weight
 
 Halberd (Battleaxe):
--0.05 speed, +0.2 reach
+-0.05 speed, +0.1 reach
 
 Long Mace (Warhammer):
 -1 damage, +0.05 speed, -0.15 stagger, -2 weight
@@ -44,6 +44,11 @@ Quarterstaff (Warhammer):
 
 
 Changelog:
+
+3.11
+
+Reduced reach of halberds.
+
 
 3.08
 
