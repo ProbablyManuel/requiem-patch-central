@@ -1,4 +1,15 @@
+Info:
+
+Tutoring only grants experience if your skill level is below 25. Toggle limitless tutoring in the MCM to overwrite this change.
+
+
+
 Changelog:
+
+3.11
+
+Tutoring only grants experience if your skill level is below 25.
+
 
 3.10
 
