@@ -6,6 +6,11 @@ Do NOT install the Cutting Room Floor patch from Even Better Quest Objectives. I
 
 Changelog:
 
+3.11
+
+Restored Shalidor's Insights: Magicka scroll.
+
+
 3.09
 
 Spirit of the Ancient Traveler has a proper set of perks.
