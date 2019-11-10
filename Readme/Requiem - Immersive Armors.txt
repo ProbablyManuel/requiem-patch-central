@@ -14,6 +14,13 @@ Must be loaded before "Requiem_Minor_Arcana.esp". This doesn't fully resolve con
 
 Changelog:
 
+3.11
+
+Adjusted the stats of daedric and dragon armor to Requiem 3.2.0.
+
+Reduced price of Warchief Bulwark.
+
+
 3.09
 
 Warchief Armor is by default craftable and distributed to the world.
