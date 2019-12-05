@@ -1,5 +1,10 @@
 Changelog:
 
+3.12
+
+Fixed skooma dealers not trading anything.
+
+
 3.03
 
 Skooma dealers and fences buy and sell black market goods.
