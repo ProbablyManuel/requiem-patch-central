@@ -6,6 +6,11 @@ Incompatible with Requiem - Wild World.
 
 Changelog:
 
+3.12
+
+Wolfs added by SkyTEST drop Raw Meat and Wolf Heart.
+
+
 3.05
 
 Updated to Requiem 3.1.0.
