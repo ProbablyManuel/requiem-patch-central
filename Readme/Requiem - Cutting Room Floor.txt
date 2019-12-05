@@ -6,6 +6,11 @@ Do NOT install the Cutting Room Floor patch from Even Better Quest Objectives. I
 
 Changelog:
 
+3.12
+
+Buffed College Guard.
+
+
 3.11
 
 Restored Shalidor's Insights: Magicka scroll.
