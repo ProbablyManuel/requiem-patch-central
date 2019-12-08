@@ -8,6 +8,11 @@ Changelog:
 
 3.12
 
+Shalidor's Insights: Magicka has a casting art and sound and no longer interferes with other effects.
+
+
+3.12
+
 Buffed College Guard.
 
 
