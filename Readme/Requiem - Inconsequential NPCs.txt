@@ -1,5 +1,10 @@
 Changelog:
 
+3.13
+
+Buffed College Watchman.
+
+
 3.12
 
 Fixed skooma dealers not trading anything.
