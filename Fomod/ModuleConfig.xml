@@ -1210,9 +1210,9 @@ DISABLE/DELETE "RUSTIC SOULGEMS - Sorted.esp" and "RUSTIC SOULGEMS - Unsorted.es
 					<plugins order="Explicit">
 						<plugin name="Improved Closefaced Helmets">
 							<description>
-								Requires Improved Closefaced Helmets. You need the main file and the Silver Knight Armor patch.
+								Requires Improved Closefaced Helmets.
 
-DISABLE/DELETE "imp_helm_legend.esp" and "ICH - Silver Knight Patch.esp".
+DISABLE/DELETE "imp_helm_legend.esp".
 							</description>
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
