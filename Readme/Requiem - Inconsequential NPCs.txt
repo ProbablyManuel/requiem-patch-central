@@ -1,5 +1,10 @@
 Changelog:
 
+3.14
+
+Updated to Requiem 3.4.0.
+
+
 3.13
 
 Buffed College Watchman.
