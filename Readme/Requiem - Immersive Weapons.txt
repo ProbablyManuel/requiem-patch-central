@@ -279,6 +279,8 @@ Changelog:
 
 Updated to Requiem 3.4.0.
 
+Increased damage of Dariit Arrows.
+
 
 3.11
 
