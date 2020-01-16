@@ -1,5 +1,16 @@
 Changelog:
 
+3.15
+
+The enchantments of amulets attached to backpacks have the same magnitude as the standalone amulet, but they only become active if you are currently under the blessing of that divine.
+
+Attaching amulets to backpacks and separating them can be done by the Create Item power.
+
+Price of backpacks is increased to take any attached amulet into account.
+
+Most basic items can be created without the Craftsmanship perk.
+
+
 3.07
 
 Separating "Backpack, Black Fur (Kynareth)" no longer creates an "Separate: Backpack, Black Fur - Amulet of Kynareth" item in your inventory that generates an infinite number of backpacks. This fix doesn't work on already spawned items.
