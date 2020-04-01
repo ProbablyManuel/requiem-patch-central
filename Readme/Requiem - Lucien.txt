@@ -2,11 +2,16 @@ Info:
 
 The patch currently doesn't edit the new creatures added by the mod.
 Since the new creatures are unique and I haven't used Lucien myself, I don't really know what to do with them.
-They're only present in a new dungeon added by the mod so that shouldn't be a major problem (if it's a problem at all).
+They're only present in a new dungeon added by the mod and shouldn't be a major problem (if it's a problem at all).
 
 
 
 Changelog:
+
+3.16
+
+Updated to Lucien 1.5.0.
+
 
 3.06
 
