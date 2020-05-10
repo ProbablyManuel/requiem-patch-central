@@ -1176,6 +1176,38 @@ DISABLE/DELETE "RUSTIC SOULGEMS - Sorted.esp" and "RUSTIC SOULGEMS - Unsorted.es
 						</plugin>
 					</plugins>
 				</group>
+				<group name="Lost Paladins of the Divines Wrath Armor" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Divine Wrath Armor">
+							<description>
+								Requires Lost Paladins of the Divines Wrath Armor.
+
+DISABLE/DELETE "LpotDHorse.esp".
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Divine Wrath Armor" destination=""/>
+								<file source="Readme\Requiem - Divine Wrath Armor.txt" destination="Requiem Patches - Readme\Requiem - Divine Wrath Armor.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Divine Wrath Armor">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="LPotD Armor.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
 				<group name="Immersive Armors" type="SelectAny">
 					<plugins order="Explicit">
 						<plugin name="Immersive Armors">
@@ -1749,6 +1781,15 @@ DISABLE/DELETE "imp_helm_legend.esp".
 				</dependencies>
 				<files>
 					<file source="Modgroups\Requiem - Black Mage Armor.modgroups" destination="Requiem - Black Mage Armor.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Divine Wrath Armor" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Divine Wrath Armor.modgroups" destination="Requiem - Divine Wrath Armor.modgroups"/>
 				</files>
 			</pattern>
 			<pattern>

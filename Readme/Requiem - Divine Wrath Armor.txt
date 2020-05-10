@@ -1,0 +1,17 @@
+Info:
+
+The patch doesn't cover the horse armor. Craftable Horse Barding should be used instead.
+You have to disable or delete "LpotDHorse.esp".
+
+
+Changelog:
+
+3.17	Initial Release
+
+Crafting and tempering requires Legendary Blacksmithing.
+
+Cloak and cape cannot be enchanted.
+
+Removed enchanted variants.
+
+Vigilant Tyranus wears an enchanted set. His resistances are tweaked so that the overall difficulty remains the same.

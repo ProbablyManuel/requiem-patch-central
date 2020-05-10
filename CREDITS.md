@@ -36,6 +36,7 @@
 - Ripple for [Inconsequential NPCs](https://www.nexusmods.com/skyrim/mods/36334)
 - Smartbluecat for [INIGO](https://www.nexusmods.com/skyrim/mods/40960)
 - Joseph Russell for [Lucien - Fully Voiced Follower](https://www.nexusmods.com/skyrim/mods/95029)
+- Jerros for [Lost Paladins of the Divines Wrath Armor](https://www.nexusmods.com/skyrim/mods/24253)
 - KrittaKitty for [Realistic Primitive Horse Breeds](https://www.nexusmods.com/skyrim/mods/57456)
 - MyEvergreenHometown for [Revenge Of the Enemies](https://www.nexusmods.com/skyrim/mods/40491)
 - Ranaline for [RS Children Overhaul](https://www.nexusmods.com/skyrim/mods/55555)
