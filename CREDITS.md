@@ -54,6 +54,7 @@
 - Reko for [Violens - A Killmove Mod](https://www.nexusmods.com/skyrim/mods/56980)
 - Evrymetul for [Wild World](https://www.nexusmods.com/skyrim/mods/88642)
 - Windsong for [Windsong Skyrim Character Overhaul](https://www.nexusmods.com/skyrim/mods/52322)
+- Telthalion for [Witchplate](https://www.nexusmods.com/skyrim/mods/6685)
 - Wiseman303 for [WM Flora Fixes](https://www.nexusmods.com/skyrim/mods/70656)
 - Azirok for the old [Requiem Patch Central](https://www.nexusmods.com/skyrim/mods/54562)
 - Hunterrock for [More Requiem Patches](https://www.nexusmods.com/skyrim/mods/58141)

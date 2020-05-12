@@ -1301,6 +1301,39 @@ DISABLE/DELETE "imp_helm_legend.esp".
 						</plugin>
 					</plugins>
 				</group>
+				<group name="Runic Armor (Witchplate)" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Runic Armor">
+							<description>
+								Requires Witchplate.
+
+DISABLE/DELETE "witchplate.esp".
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Runic Armor" destination=""/>
+								<file source="Readme\Requiem - Runic Armor.txt" destination="Requiem Patches - Readme\Requiem - Runic Armor.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Runic Armor">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="Or">
+												<fileDependency file="witchplate.esp" state="Active"/>
+												<fileDependency file="Requiem - Runic Armor.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
 			</optionalFileGroups>
 		</installStep>
 		<installStep name="Weapons">
@@ -1817,6 +1850,15 @@ DISABLE/DELETE "imp_helm_legend.esp".
 				</dependencies>
 				<files>
 					<file source="Modgroups\Requiem - Common Clothes and Armors.modgroups" destination="Requiem - Common Clothes and Armors.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Runic Armor" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Runic Armor.modgroups" destination="Requiem - Runic Armor.modgroups"/>
 				</files>
 			</pattern>
 			<pattern>

@@ -1,0 +1,19 @@
+Info:
+
+The patch replaces the original plugin because it is corrupted.
+You have to disable or delete "witchplate.esp".
+
+
+Changelog:
+
+3.17	Initial Release
+
+Renamed armor to Runic Armor.
+
+Weight and additional resistances match steel armor but armor rating is on par with steel plate armor.
+
+Crafting and tempering requires Arcane Craftsmanship.
+
+Removed light variant.
+
+Haldyn wears an enchanted set. Haldyn is buffed to match the description of a powerful battlemage.
