@@ -918,6 +918,39 @@ It's recommended to use Craftable Horse Barding too.
 		</installStep>
 		<installStep name="Visuals">
 			<optionalFileGroups order="Explicit">
+				<group name="Improved Closefaced Helmets" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Improved Closefaced Helmets">
+							<description>
+								Requires Improved Closefaced Helmets.
+
+DISABLE/DELETE "imp_helm_legend.esp".
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Improved Closefaced Helmets" destination=""/>
+								<file source="Readme\Requiem - Improved Closefaced Helmets.txt" destination="Requiem Patches - Readme\Requiem - Improved Closefaced Helmets.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Improved Closefaced Helmets">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="Or">
+												<fileDependency file="imp_helm_legend.esp" state="Active"/>
+												<fileDependency file="Requiem - Improved Closefaced Helmets.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
 				<group name="Unique Uniques" type="SelectAtMostOne">
 					<plugins order="Explicit">
 						<plugin name="Unique Uniques">
@@ -1229,39 +1262,6 @@ DISABLE/DELETE "LpotDHorse.esp".
 										<pattern>
 											<dependencies operator="And">
 												<fileDependency file="Hothtrooper44_ArmorCompilation.esp" state="Active"/>
-											</dependencies>
-											<type name="Recommended"/>
-										</pattern>
-									</patterns>
-								</dependencyType>
-							</typeDescriptor>
-						</plugin>
-					</plugins>
-				</group>
-				<group name="Improved Closefaced Helmets" type="SelectAny">
-					<plugins order="Explicit">
-						<plugin name="Improved Closefaced Helmets">
-							<description>
-								Requires Improved Closefaced Helmets.
-
-DISABLE/DELETE "imp_helm_legend.esp".
-							</description>
-							<image path="fomod\Requiem Compatibility Patches.jpg"/>
-							<files>
-								<folder source="Requiem - Improved Closefaced Helmets" destination=""/>
-								<file source="Readme\Requiem - Improved Closefaced Helmets.txt" destination="Requiem Patches - Readme\Requiem - Improved Closefaced Helmets.txt"/>
-							</files>
-							<conditionFlags>
-								<flag name="Improved Closefaced Helmets">On</flag>
-							</conditionFlags>
-							<typeDescriptor>
-								<dependencyType>
-									<defaultType name="Optional"/>
-									<patterns>
-										<pattern>
-											<dependencies operator="Or">
-												<fileDependency file="imp_helm_legend.esp" state="Active"/>
-												<fileDependency file="Requiem - Improved Closefaced Helmets.esp" state="Active"/>
 											</dependencies>
 											<type name="Recommended"/>
 										</pattern>
@@ -1747,6 +1747,15 @@ DISABLE/DELETE "witchplate.esp".
 			<pattern>
 				<dependencies operator="And">
 					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Improved Closefaced Helmets" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Improved Closefaced Helmets.modgroups" destination="Requiem - Improved Closefaced Helmets.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
 					<flagDependency flag="Unique Uniques" value="On"/>
 				</dependencies>
 				<files>
@@ -1832,15 +1841,6 @@ DISABLE/DELETE "witchplate.esp".
 				</dependencies>
 				<files>
 					<file source="Modgroups\Requiem - Immersive Armors.modgroups" destination="Requiem - Immersive Armors.modgroups"/>
-				</files>
-			</pattern>
-			<pattern>
-				<dependencies operator="And">
-					<flagDependency flag="Modgroups" value="On"/>
-					<flagDependency flag="Improved Closefaced Helmets" value="On"/>
-				</dependencies>
-				<files>
-					<file source="Modgroups\Requiem - Improved Closefaced Helmets.modgroups" destination="Requiem - Improved Closefaced Helmets.modgroups"/>
 				</files>
 			</pattern>
 			<pattern>
