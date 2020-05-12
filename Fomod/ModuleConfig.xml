@@ -1209,6 +1209,36 @@ DISABLE/DELETE "RUSTIC SOULGEMS - Sorted.esp" and "RUSTIC SOULGEMS - Unsorted.es
 						</plugin>
 					</plugins>
 				</group>
+				<group name="Common Clothes and Armors" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Common Clothes and Armors">
+							<description>
+								Requires Common Clothes and Armors.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Common Clothes and Armors" destination=""/>
+								<file source="Readme\Requiem - Common Clothes and Armors.txt" destination="Requiem Patches - Readme\Requiem - Common Clothes and Armors.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Common Clothes and Armors">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="Common Clothes and Armors.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
 				<group name="Lost Paladins of the Divines Wrath Armor" type="SelectAny">
 					<plugins order="Explicit">
 						<plugin name="Divine Wrath Armor">
@@ -1262,36 +1292,6 @@ DISABLE/DELETE "LpotDHorse.esp".
 										<pattern>
 											<dependencies operator="And">
 												<fileDependency file="Hothtrooper44_ArmorCompilation.esp" state="Active"/>
-											</dependencies>
-											<type name="Recommended"/>
-										</pattern>
-									</patterns>
-								</dependencyType>
-							</typeDescriptor>
-						</plugin>
-					</plugins>
-				</group>
-				<group name="Common Clothes and Armors" type="SelectAny">
-					<plugins order="Explicit">
-						<plugin name="Common Clothes and Armors">
-							<description>
-								Requires Common Clothes and Armors.
-							</description>
-							<image path="fomod\Requiem Compatibility Patches.jpg"/>
-							<files>
-								<folder source="Requiem - Common Clothes and Armors" destination=""/>
-								<file source="Readme\Requiem - Common Clothes and Armors.txt" destination="Requiem Patches - Readme\Requiem - Common Clothes and Armors.txt"/>
-							</files>
-							<conditionFlags>
-								<flag name="Common Clothes and Armors">On</flag>
-							</conditionFlags>
-							<typeDescriptor>
-								<dependencyType>
-									<defaultType name="Optional"/>
-									<patterns>
-										<pattern>
-											<dependencies operator="And">
-												<fileDependency file="Common Clothes and Armors.esp" state="Active"/>
 											</dependencies>
 											<type name="Recommended"/>
 										</pattern>
@@ -1828,6 +1828,15 @@ DISABLE/DELETE "witchplate.esp".
 			<pattern>
 				<dependencies operator="And">
 					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Common Clothes and Armors" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Common Clothes and Armors.modgroups" destination="Requiem - Common Clothes and Armors.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
 					<flagDependency flag="Divine Wrath Armor" value="On"/>
 				</dependencies>
 				<files>
@@ -1841,15 +1850,6 @@ DISABLE/DELETE "witchplate.esp".
 				</dependencies>
 				<files>
 					<file source="Modgroups\Requiem - Immersive Armors.modgroups" destination="Requiem - Immersive Armors.modgroups"/>
-				</files>
-			</pattern>
-			<pattern>
-				<dependencies operator="And">
-					<flagDependency flag="Modgroups" value="On"/>
-					<flagDependency flag="Common Clothes and Armors" value="On"/>
-				</dependencies>
-				<files>
-					<file source="Modgroups\Requiem - Common Clothes and Armors.modgroups" destination="Requiem - Common Clothes and Armors.modgroups"/>
 				</files>
 			</pattern>
 			<pattern>
