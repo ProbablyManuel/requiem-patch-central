@@ -6,6 +6,13 @@ Balance-wise this patch is identical to Miss Leeches' original patch.
 
 Changelog:
 
+3.17
+
+Fixed penalties in temples. This requires a new game to take effect.
+
+Optimized some conditions.
+
+
 3.07
 
 Fixed Vampire Dust being impossible to survive.
