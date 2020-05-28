@@ -4,6 +4,8 @@ Changelog:
 
 Fixed displayed magnitude and duration of Soothe.
 
+Introduced pseudo skill scaling for Mage Coat (x2 at Alteration 30, x2.5 at Alteration 50, x3 at Alteration 70) and removed bonus from Improved Mage Armor.
+
 
 3.00
 
