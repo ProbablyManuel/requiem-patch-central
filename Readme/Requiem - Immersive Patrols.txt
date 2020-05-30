@@ -1,5 +1,12 @@
 Changelog:
 
+3.18
+
+Reqtified trading caravan guards.
+
+Trading caravans cannot be killed by NPCs.
+
+
 3.16
 
 Updated to Immersive Patrols 2.2.3.
