@@ -6,6 +6,8 @@ Reqtified trading caravan guards.
 
 Trading caravans cannot be killed by NPCs.
 
+Introduced ActorVariants to Imperial and Stormcloak soldiers. They are more specialized and have more visual variety.
+
 
 3.16
 
