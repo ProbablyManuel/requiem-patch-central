@@ -824,36 +824,6 @@ It's recommended to use Craftable Horse Barding too.
 		</installStep>
 		<installStep name="Quests">
 			<optionalFileGroups order="Explicit">
-				<group name="Alternate Start - Live Another Life" type="SelectAny">
-					<plugins order="Explicit">
-						<plugin name="Live Another Life">
-							<description>
-								Requires Alternate Start - Live Another Life.
-							</description>
-							<image path="fomod\Requiem Compatibility Patches.jpg"/>
-							<files>
-								<folder source="Requiem - Live Another Life" destination=""/>
-								<file source="Readme\Requiem - Live Another Life.txt" destination="Requiem Patches - Readme\Requiem - Live Another Life.txt"/>
-							</files>
-							<conditionFlags>
-								<flag name="Live Another Life">On</flag>
-							</conditionFlags>
-							<typeDescriptor>
-								<dependencyType>
-									<defaultType name="Optional"/>
-									<patterns>
-										<pattern>
-											<dependencies operator="And">
-												<fileDependency file="Alternate Start - Live Another Life.esp" state="Active"/>
-											</dependencies>
-											<type name="Recommended"/>
-										</pattern>
-									</patterns>
-								</dependencyType>
-							</typeDescriptor>
-						</plugin>
-					</plugins>
-				</group>
 				<group name="Timing is Everything - Quest Delay and Timing Control" type="SelectAny">
 					<plugins order="Explicit">
 						<plugin name="Timing is Everything">
@@ -1716,15 +1686,6 @@ DISABLE/DELETE "witchplate.esp".
 				</dependencies>
 				<files>
 					<file source="Modgroups\Requiem - Immersive College of Winterhold.modgroups" destination="Requiem - Immersive College of Winterhold.modgroups"/>
-				</files>
-			</pattern>
-			<pattern>
-				<dependencies operator="And">
-					<flagDependency flag="Modgroups" value="On"/>
-					<flagDependency flag="Live Another Life" value="On"/>
-				</dependencies>
-				<files>
-					<file source="Modgroups\Requiem - Live Another Life.modgroups" destination="Requiem - Live Another Life.modgroups"/>
 				</files>
 			</pattern>
 			<pattern>
