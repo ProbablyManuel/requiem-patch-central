@@ -1,8 +1,8 @@
 Changelog:
 
-3.18
+4.00
 
-Reqtified trading caravan guards.
+Trading caravan guards have proper equipment and perks to fight enemies.
 
 Trading caravans cannot be killed by NPCs.
 
