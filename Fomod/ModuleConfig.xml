@@ -1334,6 +1334,37 @@ DISABLE/DELETE "witchplate.esp".
 						</plugin>
 					</plugins>
 				</group>
+				<group name="Warmonger Armory" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Warmonger Armory">
+							<description>
+								Requires Warmonger Armory.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Warmonger Armory" destination=""/>
+								<file source="Readme\Requiem - Warmonger Armory.txt" destination="Requiem Patches - Readme\Requiem - Warmonger Armory.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Warmonger Armory">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="WarmongerArmory_DLC.esp" state="Active"/>
+												<fileDependency file="WarmongerArmory_Vanilla.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
 			</optionalFileGroups>
 		</installStep>
 		<installStep name="Weapons">
@@ -1859,6 +1890,15 @@ DISABLE/DELETE "witchplate.esp".
 				</dependencies>
 				<files>
 					<file source="Modgroups\Requiem - Runic Armor.modgroups" destination="Requiem - Runic Armor.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Warmonger Armory" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Warmonger Armory.modgroups" destination="Requiem - Warmonger Armory.modgroups"/>
 				</files>
 			</pattern>
 			<pattern>

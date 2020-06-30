@@ -1,0 +1,47 @@
+Info:
+
+All armors and weapons are distributed to unique NPCs with the aim of visual storystelling. They are neither craftable nor found in random loot.
+
+The table below uses the original names, but most items are renamed to match the new implementation.
+
+NPC                   Armor                      Stats
+Alain Dufont          Shadow Warlock Armor       Nightingale Armor
+Bujold the Unworthy   Netch Leather Armor        Leather Armor
+Eisa Blackthorn       Pathfinder Armor           Steel Armor
+Galmar Stone-Fist     Nord Hero Armor            Nordic Armor 
+Irileth               Soul Ripper Armor          Ebony Armor
+Keeper Carcette       Vigilant Robes             -
+Kematu and his guards Sand Assassin Armor        Penitus Oculatus Armor
+Linwe                 Rogue Thief Armor          Guard Armor
+Neloth                Telvanni Master Robes      -
+Talvas Fathryon       Telvanni Apprentice Robes  -
+Vigilants of Stendarr Wandering Knight Armor     Vigilant's Armor
+
+NPC                   Weapons                    Stats
+Angarvunde treasure   Frost Fang + Ysmir Fang    Ebony
+Eisa Blackthorn       Pathfinder Sword           Iron
+Irileth               Dunmer Ebony Sword         Ebony
+Kematu and his guards Alik'r Saber               Skyforge Steel Sword
+
+Belt worn dragon priest masks are hilariously overpowered. Use at your own discretion.
+
+
+
+Changelog:
+
+
+4.00	Initial Release
+
+Adjusted stats of armors and weapons and distributed them to unique NPCs.
+
+Skipped Soul Ripper Boots, Pathfinder Hood, Nord Hero Helmet and Nord Hero Shield because they are exact copies of vanilla assets.
+
+Skipped Alik'r Dagger, Soul Ripper Sword and Nord Hero Armor with Skull because they look weird.
+
+Disabled all crafting recipes.
+
+Added perk requirement to all tempering recipes.
+
+Halbarn Iron-Fur sells Netch Leather Armor after retaking Thirsk Mead Hall.
+
+Promoted Eisa Blackthorn to a bandit miniboss.
