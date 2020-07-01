@@ -1,0 +1,15 @@
+Info:
+
+The patch requires the No Immersive Armors version.
+
+
+
+Changelog:
+
+4.00	Initial Release
+
+Adjusted stats of armors and weapons.
+
+Disabled crafting recipes for enchanted armors and weapons. Umana and Villtr have items with standard enchantments instead.
+
+Added perk requirement to all tempering recipes.

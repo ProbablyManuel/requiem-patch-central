@@ -1274,6 +1274,36 @@ DISABLE/DELETE "witchplate.esp".
 						</plugin>
 					</plugins>
 				</group>
+				<group name="Ulag's Legacy" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Ulag's Legacy">
+							<description>
+								Requires Ulag's Legacy. You need the No Immersive Armors version.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Ulag's Legacy" destination=""/>
+								<file source="Readme\Requiem - Ulag's Legacy.txt" destination="Requiem Patches - Readme\Requiem - Ulag's Legacy.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Ulag's Legacy">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="Ulags Legacy.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
 				<group name="Warmonger Armory" type="SelectAny">
 					<plugins order="Explicit">
 						<plugin name="Warmonger Armory">
@@ -1812,6 +1842,15 @@ DISABLE/DELETE "witchplate.esp".
 				</dependencies>
 				<files>
 					<file source="Modgroups\Requiem - Runic Armor.modgroups" destination="Requiem - Runic Armor.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Ulag's Legacy" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Ulag's Legacy.modgroups" destination="Requiem - Ulag's Legacy.modgroups"/>
 				</files>
 			</pattern>
 			<pattern>
