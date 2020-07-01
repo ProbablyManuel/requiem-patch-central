@@ -1308,7 +1308,7 @@ DISABLE/DELETE "witchplate.esp".
 					<plugins order="Explicit">
 						<plugin name="Warmonger Armory">
 							<description>
-								Requires Warmonger Armory.
+								Requires Warmonger Armory. You need the Vanilla and the DLC version.
 							</description>
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>

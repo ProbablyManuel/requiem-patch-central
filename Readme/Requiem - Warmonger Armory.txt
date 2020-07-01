@@ -1,5 +1,7 @@
 Info:
 
+The patch requires the Vanilla and the DLC version.
+
 All armors and weapons are distributed to unique NPCs with the aim of visual storystelling. They are neither craftable nor found in random loot.
 
 The table below uses the original names, but most items are renamed to match the new implementation.

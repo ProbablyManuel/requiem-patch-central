@@ -53,6 +53,7 @@
 - Miss Leeches for [Vampiric Thirst - Dawnguard Edition](https://www.nexusmods.com/skyrim/mods/24222)
 - Emma Amgepo Lycanthrops for [Vilja in Skyrim](https://www.nexusmods.com/skyrim/mods/26393)
 - Reko for [Violens - A Killmove Mod](https://www.nexusmods.com/skyrim/mods/56980)
+- Batmanna for [Warmonger Armory](https://www.nexusmods.com/skyrim/mods/50459)
 - Evrymetul for [Wild World](https://www.nexusmods.com/skyrim/mods/88642)
 - Windsong for [Windsong Skyrim Character Overhaul](https://www.nexusmods.com/skyrim/mods/52322)
 - Telthalion for [Witchplate](https://www.nexusmods.com/skyrim/mods/6685)
