@@ -12,6 +12,11 @@ Must be loaded after "Requiem_Minor_Arcana.esp".
 
 Changelog:
 
+4.00
+
+Updated to Requiem 4.0.0.
+
+
 3.05
 
 Updated to Requiem 3.1.0.
