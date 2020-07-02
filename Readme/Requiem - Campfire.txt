@@ -1,5 +1,10 @@
 Changelog:
 
+4.00
+
+Updated to Requiem 4.0.0.
+
+
 3.15
 
 The enchantments of amulets attached to backpacks have the same magnitude as the standalone amulet, but they only become active if you are currently under the blessing of that divine.
