@@ -6,6 +6,11 @@ Balance-wise this patch is identical to Miss Leeches' original patch.
 
 Changelog:
 
+4.00
+
+Updated to Requiem 4.0.0.
+
+
 3.17
 
 Fixed penalties in temples. This requires a new game to take effect.

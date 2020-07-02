@@ -1,4 +1,4 @@
-ScriptName TT_VT_AgeBuffs Extends ActiveMagicEffect
+ScriptName RPC_VT_AgeBuffs Extends ActiveMagicEffect
 {Increase Health and Stamina based on Age.}
 
 GlobalVariable Property mslVTAge Auto
