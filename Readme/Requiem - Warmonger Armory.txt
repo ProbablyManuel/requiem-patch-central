@@ -31,7 +31,6 @@ Belt worn dragon priest masks are hilariously overpowered. Use at your own discr
 
 Changelog:
 
-
 4.00	Initial Release
 
 Adjusted stats of armors and weapons and distributed them to unique NPCs.
