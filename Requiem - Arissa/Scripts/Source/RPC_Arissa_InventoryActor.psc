@@ -1,4 +1,4 @@
-ScriptName TT_Arissa_InventoryActor Extends ReferenceAlias
+ScriptName RPC_Arissa_InventoryActor Extends ReferenceAlias
 {Move lockpicks from the inventory dummy to Arissa's actual inventory to work with Requiem's lockpicking system.}
 
 MiscObject Property Lockpick Auto
