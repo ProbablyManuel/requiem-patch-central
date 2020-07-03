@@ -6,6 +6,11 @@ I know you can aquire a powerful bow for free with this mod but I won't change t
 
 Changelog:
 
+4.00
+
+Updated to Requiem 4.0.0.
+
+
 3.05
 
 Updated to Requiem 3.1.0.
