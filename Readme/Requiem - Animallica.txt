@@ -6,6 +6,11 @@ The patch requires the lore-friendly version of Animallica.
 
 Changelog:
 
+4.00
+
+Updated to Requiem 4.0.0.
+
+
 3.00
 
 Updated to Requiem 3.0.0.
