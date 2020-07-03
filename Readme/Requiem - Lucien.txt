@@ -8,6 +8,11 @@ They're only present in a new dungeon added by the mod and shouldn't be a major 
 
 Changelog:
 
+4.00
+
+Updated to Requiem 4.0.0.
+
+
 3.16
 
 Updated to Lucien 1.5.0.
