@@ -1339,36 +1339,6 @@ DISABLE/DELETE "witchplate.esp".
 		</installStep>
 		<installStep name="Weapons">
 			<optionalFileGroups order="Explicit">
-				<group name="Immersive Weapons" type="SelectAny">
-					<plugins order="Explicit">
-						<plugin name="Immersive Weapons">
-							<description>
-								Requires Immersive Weapons.
-							</description>
-							<image path="fomod\Requiem Compatibility Patches.jpg"/>
-							<files>
-								<folder source="Requiem - Immersive Weapons" destination=""/>
-								<file source="Readme\Requiem - Immersive Weapons.txt" destination="Requiem Patches - Readme\Requiem - Immersive Weapons.txt"/>
-							</files>
-							<conditionFlags>
-								<flag name="Immersive Weapons">On</flag>
-							</conditionFlags>
-							<typeDescriptor>
-								<dependencyType>
-									<defaultType name="Optional"/>
-									<patterns>
-										<pattern>
-											<dependencies operator="And">
-												<fileDependency file="Immersive Weapons.esp" state="Active"/>
-											</dependencies>
-											<type name="Recommended"/>
-										</pattern>
-									</patterns>
-								</dependencyType>
-							</typeDescriptor>
-						</plugin>
-					</plugins>
-				</group>
 				<group name="Heavy Armory - New Weapons" type="SelectAny">
 					<plugins order="Explicit">
 						<plugin name="Heavy Armory">
@@ -1860,15 +1830,6 @@ DISABLE/DELETE "witchplate.esp".
 				</dependencies>
 				<files>
 					<file source="Modgroups\Requiem - Warmonger Armory.modgroups" destination="Requiem - Warmonger Armory.modgroups"/>
-				</files>
-			</pattern>
-			<pattern>
-				<dependencies operator="And">
-					<flagDependency flag="Modgroups" value="On"/>
-					<flagDependency flag="Immersive Weapons" value="On"/>
-				</dependencies>
-				<files>
-					<file source="Modgroups\Requiem - Immersive Weapons.modgroups" destination="Requiem - Immersive Weapons.modgroups"/>
 				</files>
 			</pattern>
 			<pattern>
