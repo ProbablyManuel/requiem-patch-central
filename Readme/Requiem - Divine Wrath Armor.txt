@@ -6,6 +6,11 @@ You have to disable or delete "LpotDHorse.esp".
 
 Changelog:
 
+4.00
+
+Updated to Requiem 4.0.0.
+
+
 3.17	Initial Release
 
 Crafting and tempering requires Legendary Blacksmithing.
