@@ -23,7 +23,7 @@ NPC                   Weapons                    Stats
 Angarvunde treasure   Frost Fang + Ysmir Fang    Ebony
 Eisa Blackthorn       Pathfinder Sword           Iron
 Irileth               Dunmer Ebony Sword         Ebony
-Kematu and his guards Alik'r Saber               Skyforge Steel Sword
+Kematu and his guards Alik'r Saber               Scimitar +10% speed
 
 Belt worn dragon priest masks are hilariously overpowered. Use at your own discretion.
 
