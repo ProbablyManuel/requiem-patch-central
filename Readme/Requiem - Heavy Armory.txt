@@ -45,6 +45,11 @@ Quarterstaff (Warhammer):
 
 Changelog:
 
+4.00
+
+Updated to Requiem 4.0.0.
+
+
 3.11
 
 Reduced reach of halberds.
