@@ -1,9 +1,3 @@
-Info:
-
-Do NOT install the Faction Crossbows Compatibility patch for WAFR/CCOR. It's fully included in this patch.
-
-
-
 Changelog:
 
 4.00
