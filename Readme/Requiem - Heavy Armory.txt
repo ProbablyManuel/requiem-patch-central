@@ -1,46 +1,43 @@
 Info:
 
-Weapon Types:
-
 Glaives and (short)spears are new weapon types without proper integration to Skyrim and tridents are an exotic weapon type that's not suitable for combat.
 For the sake of simplicity they share their stats with the (great)sword of the same level. They deal piercing damage.
 NPCs won't use them because they lack proper animations.
 
-All numbers are prior to running the Reqtificator
-
-Tanto (Dagger):
-+0.5 damage, -0.1 speed, +0.1 reach, +2.5 weight
-
-Katana (Sword):
--1.5 weight
-
-Shortsword (Sword):
--1 damage, +0.15 speed, -0.1 reach, -0.15 stagger, -1 weight
-
-Wakizashi (Sword):
--1 damage, +0.15 speed, -0.1 reach, -0.15 stagger, -2.5 weight
-
-Hatchet (War Axe):
--1 damage, +0.1 speed, -0.1 reach, -0.15 stagger, -1 weight
+The stats of the new weapons types are as follows. All numbers are prior to running the Reqtificator.
 
 Club (Mace):
--1 damage, +0.05 speed, -1 weight
-
-Maul (Mace):
-+1 damage, -0.1 speed, +0.1 stagger, +1 weight
+-1 damage, -1 weight, +0.05 speed, -0.15 stagger
 
 Dai-Katana (Greatsword):
--3 weight
+-1 damage, +0.075 speed
 
 Halberd (Battleaxe):
 -0.05 speed, +0.1 reach
 
+Hatchet (War Axe):
+-1 damage, -1 weight, +0.1 speed, -0.1 reach, -0.15 stagger
+
+Katana (Sword):
+-1 damage, +0.075 speed
+
 Long Mace (Warhammer):
--1 damage, +0.05 speed, -0.15 stagger, -2 weight
+-1 damage, -2 weight, +0.05 speed, -0.15 stagger
+
+Maul (Mace):
++1 damage, +1 weight, -0.1 speed, +0.1 stagger
 
 Quarterstaff (Warhammer):
--4 damage, +0.15 speed, -6 weight
+-4 damage, -6 weight, +0.15 speed, -0.25 stagger
 
+Shortsword (Sword):
+-1 damage, -1 weight, +0.15 speed, -0.1 reach, -0.15 stagger
+
+Tanto (Dagger):
++1 damage, +2 weight, -0.1 speed, +0.1 reach
+
+Wakizashi (Sword):
+-1 damage, -1 weight, +0.15 speed, -0.1 reach, -0.15 stagger
 
 
 Changelog:
@@ -48,6 +45,10 @@ Changelog:
 4.00
 
 Updated to Requiem 4.0.0.
+
+Reduced stagger of clubs and quarterstaves.
+
+Adjusted stats of Akaviri-style blades to match Katana Crafting.
 
 
 3.11
