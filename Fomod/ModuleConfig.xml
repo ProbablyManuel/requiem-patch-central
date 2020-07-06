@@ -1339,6 +1339,36 @@ DISABLE/DELETE "witchplate.esp".
 		</installStep>
 		<installStep name="Weapons">
 			<optionalFileGroups order="Explicit">
+				<group name="Faction Crossbows" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Faction Crossbows">
+							<description>
+								Requires Faction Crossbows.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Faction Crossbows" destination=""/>
+								<file source="Readme\Requiem - Faction Crossbows.txt" destination="Requiem Patches - Readme\Requiem - Faction Crossbows.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Faction Crossbows">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="Faction Crossbows.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
 				<group name="Heavy Armory - New Weapons" type="SelectAny">
 					<plugins order="Explicit">
 						<plugin name="Heavy Armory">
@@ -1390,36 +1420,6 @@ DISABLE/DELETE "witchplate.esp".
 										<pattern>
 											<dependencies operator="And">
 												<fileDependency file="ScopedBows.esp" state="Active"/>
-											</dependencies>
-											<type name="Recommended"/>
-										</pattern>
-									</patterns>
-								</dependencyType>
-							</typeDescriptor>
-						</plugin>
-					</plugins>
-				</group>
-				<group name="Faction Crossbows" type="SelectAny">
-					<plugins order="Explicit">
-						<plugin name="Faction Crossbows">
-							<description>
-								Requires Faction Crossbows.
-							</description>
-							<image path="fomod\Requiem Compatibility Patches.jpg"/>
-							<files>
-								<folder source="Requiem - Faction Crossbows" destination=""/>
-								<file source="Readme\Requiem - Faction Crossbows.txt" destination="Requiem Patches - Readme\Requiem - Faction Crossbows.txt"/>
-							</files>
-							<conditionFlags>
-								<flag name="Faction Crossbows">On</flag>
-							</conditionFlags>
-							<typeDescriptor>
-								<dependencyType>
-									<defaultType name="Optional"/>
-									<patterns>
-										<pattern>
-											<dependencies operator="And">
-												<fileDependency file="Faction Crossbows.esp" state="Active"/>
 											</dependencies>
 											<type name="Recommended"/>
 										</pattern>
@@ -1835,6 +1835,15 @@ DISABLE/DELETE "witchplate.esp".
 			<pattern>
 				<dependencies operator="And">
 					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Faction Crossbows" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Faction Crossbows.modgroups" destination="Requiem - Faction Crossbows.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
 					<flagDependency flag="Heavy Armory" value="On"/>
 				</dependencies>
 				<files>
@@ -1848,15 +1857,6 @@ DISABLE/DELETE "witchplate.esp".
 				</dependencies>
 				<files>
 					<file source="Modgroups\Requiem - Scoped Bows.modgroups" destination="Requiem - Scoped Bows.modgroups"/>
-				</files>
-			</pattern>
-			<pattern>
-				<dependencies operator="And">
-					<flagDependency flag="Modgroups" value="On"/>
-					<flagDependency flag="Faction Crossbows" value="On"/>
-				</dependencies>
-				<files>
-					<file source="Modgroups\Requiem - Faction Crossbows.modgroups" destination="Requiem - Faction Crossbows.modgroups"/>
 				</files>
 			</pattern>
 		</patterns>
