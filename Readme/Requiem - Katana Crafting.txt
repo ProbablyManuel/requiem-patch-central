@@ -1,0 +1,76 @@
+Info:
+
+The stats of the new weapons types are as follows. All numbers are prior to running the Reqtificator.
+
+Dai-Katana (Greatsword):
+-1 damage, +0.075 speed
+
+Katana (Sword):
+-1 damage, +0.075 speed
+
+Tanto (Dagger):
++1 damage, +2 weight, -0.1 speed, +0.1 reach
+
+Wakizashi (Sword):
+-1 damage, -1 weight, +0.15 speed, -0.1 reach, -0.15 stagger
+
+
+All weapons but dragonbone and stalhrim are distributed to one unique NPC or location. They are not found in random loot.
+
+Weapon                NPC or location
+Daedric Dai-Katana    Boss chest in Vahlok's Tomb
+Daedric Katana        Velehk Sain
+Daedric Tanto         Valerica
+Daedric Wakizashi     Velehk Sain
+Dwarven Dai-Katana    Reachwind Eyrie
+Dwarven Katana        Igmund
+Dwarven Tanto         Trapped bandit in Ravenscar Hollow
+Dwarven Wakizashi     Maluril
+Ebony Dai-Katana      Chief Mauhulakh
+Ebony Katana          Champion of Boethiah
+Ebony Tanto           Serana
+Ebony Wakizashi       Laila Law-Giver
+Elven Dai-Katana      Unmid Snow-Shod
+Elven Katana          Ondolemar
+Elven Tanto           Melaran
+Elven Wakizashi       Linwe
+Glass Dai-Katana      Replaces glass sword in Reeking Cave
+Glass Katana          Replaces glass dagger in Reeking Cave
+Glass Tanto           Sybille Stentor
+Glass Wakizashi       Replaces glass dagger in Twilight Sepulcher
+Orcish Dai-Katana     Ghunzul
+Orcish Katana         Chief Burguk
+Orcish Tanto          Ghorza gra-Bagol
+Orcish Wakizashi      Moth gro-Bagol
+Silver Dai-Katana     Yngvar the Singer
+Silver Katana         Replaces silver sword in Bleak Falls Barrow
+Silver Tanto          Betrid Silver-Blood
+Silver Wakizashi      Replaces ebony dagger in Sunuarach Mine
+Steel Dai-Katana      The Butcher
+Steel Katana          Boethiah Cultist at the Sacellum of Boethiah
+Steel Tanto           Dravynea the Stoneweaver
+Steel Wakizashi       Boethiah Cultist at the Sacellum of Boethiah
+
+Ebony Dagger          Korir
+Glass Sword           Brina Merilis
+
+
+Katana Crafting - Smaller Blades (https://www.nexusmods.com/skyrim/mods/89879) is compatible and recommended.
+
+TES5Edit incorrectly displays static records (STAT) as ITMs. These edits are required to fix broken records. This also means the errors in the original mod can be ignored.
+
+
+
+Changelog:
+
+4.00	Initial Release
+
+Adjusted stats of weapons.
+
+Adjusted crafting materials and added perk requirements to all tempering recipes.
+
+Distributed all weapons but dragonbone and stalhrim to one unique NPC or location.
+
+Buffed Ghunzul, Linwe and the Butcher to be bandit minibosses.
+
+Buffed Champion of Boethiah and Velehk Sain to be formidable opponents.

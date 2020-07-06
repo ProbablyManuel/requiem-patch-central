@@ -1399,6 +1399,36 @@ DISABLE/DELETE "witchplate.esp".
 						</plugin>
 					</plugins>
 				</group>
+				<group name="Katana Crafting" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Katana Crafting">
+							<description>
+								Requires Katana Crafting.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Katana Crafting" destination=""/>
+								<file source="Readme\Requiem - Katana Crafting.txt" destination="Requiem Patches - Readme\Requiem - Katana Crafting.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Katana Crafting">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="KatanaCrafting.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
 				<group name="Scoped Bows" type="SelectAny">
 					<plugins order="Explicit">
 						<plugin name="Scoped Bows">
@@ -1848,6 +1878,15 @@ DISABLE/DELETE "witchplate.esp".
 				</dependencies>
 				<files>
 					<file source="Modgroups\Requiem - Heavy Armory.modgroups" destination="Requiem - Heavy Armory.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Katana Crafting" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Katana Crafting.modgroups" destination="Requiem - Katana Crafting.modgroups"/>
 				</files>
 			</pattern>
 			<pattern>

@@ -35,6 +35,7 @@
 - Navida1 for [Improved Closefaced Helmets](https://www.nexusmods.com/skyrim/mods/15927)
 - Ripple for [Inconsequential NPCs](https://www.nexusmods.com/skyrim/mods/36334)
 - Smartbluecat for [INIGO](https://www.nexusmods.com/skyrim/mods/40960)
+- Lautasantenni for [Katana Crafting](https://www.nexusmods.com/skyrim/mods/8489)
 - Joseph Russell for [Lucien - Fully Voiced Follower](https://www.nexusmods.com/skyrim/mods/95029)
 - Jerros for [Lost Paladins of the Divines Wrath Armor](https://www.nexusmods.com/skyrim/mods/24253)
 - KrittaKitty for [Realistic Primitive Horse Breeds](https://www.nexusmods.com/skyrim/mods/57456)
