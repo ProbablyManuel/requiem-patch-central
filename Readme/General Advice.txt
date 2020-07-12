@@ -1,7 +1,5 @@
 All plugins must be loaded after:
 - "Fozars_Dragonborn_-_Requiem_Patch.esp"
-- "KFR-Kryptopyr'sFixesReqtified.esp" and all its optional plugins
-- "COR-CraftingOverhaulReqtified.esp" and all its optional plugins
 
 All load order advice in these readmes is also known to LOOT. Make your life easier and use it.
 
