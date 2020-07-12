@@ -1429,6 +1429,36 @@ DISABLE/DELETE "witchplate.esp".
 						</plugin>
 					</plugins>
 				</group>
+				<group name="Royal Armory - New Artifacts" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Royal Armory">
+							<description>
+								Requires Royal Armory.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Royal Armory" destination=""/>
+								<file source="Readme\Requiem - Royal Armory.txt" destination="Requiem Patches - Readme\Requiem - Royal Armory.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Royal Armory">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="PrvtIRoyalArmory.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
 				<group name="Scoped Bows" type="SelectAny">
 					<plugins order="Explicit">
 						<plugin name="Scoped Bows">
@@ -1887,6 +1917,15 @@ DISABLE/DELETE "witchplate.esp".
 				</dependencies>
 				<files>
 					<file source="Modgroups\Requiem - Katana Crafting.modgroups" destination="Requiem - Katana Crafting.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Royal Armory" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Royal Armory.modgroups" destination="Requiem - Royal Armory.modgroups"/>
 				</files>
 			</pattern>
 			<pattern>

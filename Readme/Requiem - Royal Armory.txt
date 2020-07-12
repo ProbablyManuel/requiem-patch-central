@@ -1,0 +1,20 @@
+Info:
+
+Royal Armory - Reforged (https://www.nexusmods.com/skyrim/mods/98828) is compatible and recommended.
+
+
+Changelog:
+
+4.00	Initial Release
+
+Adjusted stats and enchantments of weapons.
+
+Added perk requirements to all tempering recipes.
+
+Jolhert is rewarded to the player at the end of the civil war. Reverted edits to the Blue Palace.
+
+Fixed ownership and respawn data of Harbinger's Axe.
+
+Disabled loading screens.
+
+Disabled scripted distribution and manually assigned the items to NPCs. Skipped Ancano and Ondolemar.
