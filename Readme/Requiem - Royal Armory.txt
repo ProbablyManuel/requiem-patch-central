@@ -3,6 +3,12 @@ Info:
 Royal Armory - Reforged (https://www.nexusmods.com/skyrim/mods/98828) is compatible and recommended.
 
 
+Load Order:
+
+Must be loaded after "Requiem - Warmonger Armory.esp".
+
+
+
 Changelog:
 
 4.00	Initial Release
