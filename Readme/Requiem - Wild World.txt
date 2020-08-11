@@ -6,6 +6,11 @@ Incompatible with Requiem - SkyTEST.
 
 Changelog:
 
+4.01
+
+Updated to Wild World 1.53.7.
+
+
 4.00
 
 Updated to Requiem 4.0.0.
