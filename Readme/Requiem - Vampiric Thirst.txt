@@ -6,6 +6,11 @@ Balance-wise this patch is identical to Miss Leeches' original patch.
 
 Changelog:
 
+4.01
+
+Vigor Mortis stacks with potions of fortify health regeneration.
+
+
 4.00
 
 Updated to Requiem 4.0.0.
