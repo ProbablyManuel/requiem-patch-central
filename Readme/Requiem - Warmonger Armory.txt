@@ -31,6 +31,11 @@ Belt worn dragon priest masks are hilariously overpowered. Use at your own discr
 
 Changelog:
 
+4.01
+
+Galmar's Armor is based on the Nord Hero Armor without the loins skull.
+
+
 4.00	Initial Release
 
 Adjusted stats of armors and weapons and distributed them to unique NPCs.
