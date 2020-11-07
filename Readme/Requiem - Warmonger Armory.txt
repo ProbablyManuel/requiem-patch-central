@@ -35,6 +35,20 @@ Changelog:
 
 Galmar's Armor is based on the Nord Hero Armor without the loins skull.
 
+Galmar's Boots increase shock resistance by 50%.
+
+Bujold the Unworthy wears a Necklace of the Major Knight and a Ring of the Major Knight.
+
+Eisa Blackthorn wears a Necklace of Remedy and a Ring of Recuperation.
+
+Galmar wears a Necklace of Eminent Blocking and a Ring of Eminent Sure Grip.
+
+Keeper Carcette wears a Ring of Peerless Restoration.
+
+Moric Sidrey wears a Ring of Peerless Restoration.
+
+Vigilants of Stendarr have a 25% chance of wearing a random enchanted ring.
+
 
 4.00	Initial Release
 
