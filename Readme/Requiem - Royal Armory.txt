@@ -7,9 +7,18 @@ Load Order:
 
 Must be loaded after "Requiem - Warmonger Armory.esp".
 
+Must be loaded after "Requiem - Minor Arcana - Civil War.esp".
+
+Must be loaded after "Requiem - Minor Arcana - Vigilants of Stendarr.esp".
+
 
 
 Changelog:
+
+4.01
+
+Adjusted stats and perks of Keeper Carcette.
+
 
 4.00	Initial Release
 
