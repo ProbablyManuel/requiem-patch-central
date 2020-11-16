@@ -1,4 +1,17 @@
+Load Order:
+
+Must be loaded after "Requiem - Minor Arcana - Roleplaying.esp".
+
+
+
 Changelog:
+
+4.01
+
+All notes are written in hand instead of press fonts.
+
+Set weight and price of all notes added by Requiem to zero.
+
 
 3.14
 
