@@ -29,6 +29,12 @@ Belt worn dragon priest masks are hilariously overpowered. Use at your own discr
 
 
 
+Load Order:
+
+Must be loaded after "Requiem - Minor Arcana - Vigilants of Stendarr.esp".
+
+
+
 Changelog:
 
 4.01
@@ -45,9 +51,11 @@ Galmar wears a Necklace of Eminent Blocking and a Ring of Eminent Sure Grip.
 
 Keeper Carcette wears a Ring of Peerless Restoration.
 
-Moric Sidrey wears a Ring of Peerless Restoration.
-
 Vigilants of Stendarr have a 25% chance of wearing a random enchanted ring.
+
+Adjusted stats and perks of Keeper Carcette.
+
+Removed edits to Vigilant Tolan and Moric Sidrey.
 
 
 4.00	Initial Release
