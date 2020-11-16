@@ -7,13 +7,20 @@ The requirements-only version is fully compatible with Requiem and doesn't requi
 
 Load Order:
 
-Must be loaded after "Requiem_Minor_Arcana.esp".
-
-Must be loaded after "Requiem - Immersive Weapons.esp". This doesn't fully resolve conflicts, but is better than the opposite order.
+Must be loaded after "Requiem - Minor Arcana - Roleplaying.esp".
 
 
 
 Changelog:
+
+4.01
+
+Refined stats, perks and equipment of the Companions.
+
+Aela wears studded armor instead of artificially marking her heavy armor as light.
+
+Rescue Mission starts at level 18 and tough locations are unlocked at level 24.
+
 
 3.03
 
