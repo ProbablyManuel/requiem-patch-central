@@ -4,12 +4,6 @@ Dragonborn and The Ebony Warrior are disabled by default because Requiem doesn't
 
 
 
-Load Order:
-
-Must be loaded after "Requiem_Minor_Arcana.esp".
-
-
-
 Changelog:
 
 3.00

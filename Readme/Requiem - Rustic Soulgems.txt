@@ -7,7 +7,7 @@ You have to disable or delete "RUSTIC SOULGEMS - Sorted.esp" and "RUSTIC SOULGEM
 
 Load Order:
 
-Must be loaded after "Requiem - Immersive Sounds Compendium.esp" and "ISC Requiem Patch.esp"
+Must be loaded after "Requiem - Immersive Sounds Compendium.esp".
 
 
 

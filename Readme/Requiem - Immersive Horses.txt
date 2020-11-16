@@ -14,7 +14,7 @@ Must be loaded after "Requiem - SkyTEST.esp".
 
 Must be loaded after "Requiem - Wild World.esp".
 
-Must be loaded after "Requiem_Minor_Arcana.esp".
+Must be loaded after "Requiem - Minor Arcana - Roleplaying.esp".
 
 
 
