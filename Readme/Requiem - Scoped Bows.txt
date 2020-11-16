@@ -9,7 +9,20 @@ Scoped Bows have the same stats as their Requiem counterpart +0.5 weight.
 
 
 
+Load Order:
+
+Must be loaded after "Requiem - Minor Arcana - Civil War.esp".
+
+Must be loaded after "Requiem - Minor Arcana - Roleplaying.esp".
+
+
+
 Changelog:
+
+4.01
+
+Improved compatibility with Minor Arcana.
+
 
 4.00
 
