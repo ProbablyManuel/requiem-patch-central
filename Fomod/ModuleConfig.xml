@@ -888,6 +888,36 @@ It's recommended to use Craftable Horse Barding too.
 		</installStep>
 		<installStep name="Visuals">
 			<optionalFileGroups order="Explicit">
+				<group name="ArteFakes - Unique Artifacts Replacer" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="ArteFakes">
+							<description>
+								Requires ArteFakes.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - ArteFakes" destination=""/>
+								<file source="Readme\Requiem - ArteFakes.txt" destination="Requiem Patches - Readme\Requiem - ArteFakes.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="ArteFakes">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="ArteFake.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
 				<group name="Improved Closefaced Helmets" type="SelectAny">
 					<plugins order="Explicit">
 						<plugin name="Improved Closefaced Helmets">
@@ -1773,6 +1803,15 @@ DISABLE/DELETE "witchplate.esp".
 				</dependencies>
 				<files>
 					<file source="Modgroups\Requiem - Improved Closefaced Helmets.modgroups" destination="Requiem - Improved Closefaced Helmets.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="ArteFakes" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - ArteFakes.modgroups" destination="Requiem - ArteFakes.modgroups"/>
 				</files>
 			</pattern>
 			<pattern>

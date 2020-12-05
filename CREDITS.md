@@ -4,6 +4,7 @@
 - Arthmoor for [Alternate Start - Live Another Life](https://www.nexusmods.com/skyrim/mods/9557)
 - Sliceandkill for [Animallica - Skyrim Wildlife Overhaul](https://www.nexusmods.com/skyrim/mods/57413)
 - Chesko and Nikkita for [Arissa - The Wandering Rogue](https://www.nexusmods.com/skyrim/mods/53754)
+- Deletepch and Registrant for [ArteFakes - Unique Artifacts Replacer](https://www.nexusmods.com/skyrim/mods/105029)
 - David Jegutidsefor [Audio Overhaul for Skyrim](https://www.nexusmods.com/skyrim/mods/43773)
 - Reko for [Black Mage Armor](https://www.nexusmods.com/skyrim/mods/9645)
 - DanielCoffey for [Book Covers Skyrim](https://www.nexusmods.com/skyrim/mods/35399)

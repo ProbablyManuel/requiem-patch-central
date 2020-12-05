@@ -1,0 +1,29 @@
+Info:
+
+The patch only carries over the unique models to Requiem and skips all other tweaks from ArteFakes.
+
+
+
+Load Order:
+
+Must be loaded after "Requiem - Minor Arcana - Roleplaying.esp".
+
+Must be loaded after "Requiem - ESF Companions.esp".
+
+
+
+Changelog:
+
+4.02	Initial Release
+
+Carried over unique models to Requiem. Skipped Ghostblade.
+
+Replaced Red Eagle's spear by Hjalti's sword. Replaced Hjalti's sword by Vilkas' sword.
+
+Njada Stonearm uses Aela's Shield with appropriate gear, stats and perks.
+
+Added perk requirement to all tempering recipes.
+
+Disabled crafting recipes.
+
+Disabled loading screens.
