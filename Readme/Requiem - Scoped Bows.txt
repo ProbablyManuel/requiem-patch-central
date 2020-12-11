@@ -19,6 +19,11 @@ Must be loaded after "Requiem - Minor Arcana - Roleplaying.esp".
 
 Changelog:
 
+4.03
+
+Removed edits to LItemWeaponBowTown.
+
+
 4.01
 
 Improved compatibility with Minor Arcana.
