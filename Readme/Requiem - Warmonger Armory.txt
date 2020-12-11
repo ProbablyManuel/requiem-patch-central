@@ -37,6 +37,11 @@ Must be loaded after "Requiem - Minor Arcana - Vigilants of Stendarr.esp".
 
 Changelog:
 
+4.02
+
+Fixed enchantment of belt worn Morokei and Rahgot.
+
+
 4.01
 
 Galmar's Armor is based on the Nord Hero Armor without the loins skull.
