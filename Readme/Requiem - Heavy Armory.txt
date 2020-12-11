@@ -40,6 +40,7 @@ Wakizashi (Sword):
 -1 damage, -1 weight, +0.15 speed, -0.1 reach, -0.15 stagger
 
 
+
 Changelog:
 
 4.02
