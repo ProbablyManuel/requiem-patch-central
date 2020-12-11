@@ -41,6 +41,8 @@ Changelog:
 
 Fixed enchantment of belt worn Morokei and Rahgot.
 
+Keeper Carcette wears steel gauntlets and boots.
+
 
 4.01
 
