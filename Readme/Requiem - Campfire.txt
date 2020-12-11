@@ -1,5 +1,10 @@
 Changelog:
 
+4.03
+
+Reduced weight of deadwood to 2.
+
+
 4.00
 
 Updated to Requiem 4.0.0.
