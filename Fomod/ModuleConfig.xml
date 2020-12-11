@@ -979,33 +979,6 @@ DISABLE/DELETE "imp_helm_legend.esp".
 								</dependencyType>
 							</typeDescriptor>
 						</plugin>
-						<plugin name="Unique Uniques - AOS compatible">
-							<description>
-								Requires Unique Uniques and Audio Overhaul for Skyrim.
-							</description>
-								<image path="fomod\Requiem Compatibility Patches.jpg"/>
-							<files>
-								<folder source="Requiem - Unique Uniques - AOS" destination=""/>
-								<file source="Readme\Requiem - Unique Uniques.txt" destination="Requiem Patches - Readme\Requiem - Unique Uniques.txt"/>
-							</files>
-							<conditionFlags>
-								<flag name="Unique Uniques - AOS">On</flag>
-							</conditionFlags>
-							<typeDescriptor>
-								<dependencyType>
-									<defaultType name="Optional"/>
-									<patterns>
-										<pattern>
-											<dependencies operator="And">
-												<fileDependency file="Unique Uniques.esp" state="Active"/>
-												<flagDependency flag="Audio Overhaul for Skyrim" value="On"/>
-											</dependencies>
-											<type name="Recommended"/>
-										</pattern>
-									</patterns>
-								</dependencyType>
-							</typeDescriptor>
-						</plugin>
 					</plugins>	
 				</group>
 				<group name="RUSTIC SOULGEMS" type="SelectAtMostOne">
@@ -1821,15 +1794,6 @@ DISABLE/DELETE "witchplate.esp".
 				</dependencies>
 				<files>
 					<file source="Modgroups\Requiem - Unique Uniques.modgroups" destination="Requiem - Unique Uniques.modgroups"/>
-				</files>
-			</pattern>
-			<pattern>
-				<dependencies operator="And">
-					<flagDependency flag="Modgroups" value="On"/>
-					<flagDependency flag="Unique Uniques - AOS" value="On"/>
-				</dependencies>
-				<files>
-					<file source="Modgroups\Requiem - Unique Uniques - AOS.modgroups" destination="Requiem - Unique Uniques - AOS.modgroups"/>
 				</files>
 			</pattern>
 			<pattern>
