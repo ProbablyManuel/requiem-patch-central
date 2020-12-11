@@ -13,6 +13,11 @@ Must be loaded after "Requiem - Minor Arcana - Roleplaying.esp".
 
 Changelog:
 
+4.03
+
+Removed duplicate shield from Njada Stonearm.
+
+
 4.01
 
 Refined stats, perks and equipment of the Companions.
