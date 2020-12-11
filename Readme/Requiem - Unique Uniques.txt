@@ -6,6 +6,11 @@ Must be loaded after "Requiem - Audio Overhaul for Skyrim.esp".
 
 Changelog:
 
+4.03
+
+Fixed sound data of Bloodthorn, Kahvozein's Fang and Valdr's Lucky Dagger.
+
+
 4.00
 
 Updated to Requiem 4.0.0.
