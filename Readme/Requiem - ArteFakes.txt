@@ -22,6 +22,8 @@ Carried over unique models to Requiem. Skipped Ghostblade.
 
 Replaced Red Eagle's spear by Hjalti's sword. Replaced Hjalti's sword by Vilkas' sword.
 
+Swapped model of Amren's Family Sword and Queen Freydis' Sword.
+
 Njada Stonearm uses Aela's Shield with appropriate gear, stats and perks.
 
 Added perk requirement to all tempering recipes.
