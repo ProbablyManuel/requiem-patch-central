@@ -1,5 +1,10 @@
 Changelog:
 
+4.03
+
+Fixed inverted names of Scroll of Bound Cloak.
+
+
 4.00
 
 Fixed displayed magnitude and duration of Soothe.
