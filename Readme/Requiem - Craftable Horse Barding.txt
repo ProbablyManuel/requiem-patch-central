@@ -16,6 +16,8 @@ Changelog:
 
 Worn armor weight reduction applies to horses too.
 
+Increased armor rating of the weakest saddles by 50.
+
 Fixed low armor rating of ebony, dragonbone and daedric saddle.
 
 
