@@ -37,6 +37,9 @@ Must be loaded after "Requiem - Minor Arcana - Vigilants of Stendarr.esp".
 
 Changelog:
 
+Restored Galmar's helmet.
+
+
 4.02
 
 Fixed enchantment of belt worn Morokei and Rahgot.
