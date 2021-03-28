@@ -50,6 +50,7 @@
 - EtaYorius for [SkyTEST - Realistic Animals and Predators](https://www.nexusmods.com/skyrim/mods/10175)
 - Kryptopyr for [Timing is Everything - Quest Delay and Timing Control](https://www.nexusmods.com/skyrim/mods/38151)
 - GuitunScarfin for [Ulag's Legacy](https://www.nexusmods.com/skyrim/mods/94177)
+- Maty743 for [Talos Housecarl Armor Pack](https://www.nexusmods.com/skyrim/mods/80642)
 - Kryptopyr for [Trade and Barter](https://www.nexusmods.com/skyrim/mods/34612)
 - InsanitySorrow for [Unique Uniques](https://www.nexusmods.com/skyrim/mods/33292)
 - Unofficial Patch Project Team for [Unofficial Skyrim Legendary Edition Patch](https://www.nexusmods.com/skyrim/mods/71214)

@@ -1,0 +1,15 @@
+Changelog:
+
+4.04	Initial Release
+
+Adjusted stats of armors and weapons.
+
+Added perk requirement to all tempering recipes and adjusted crafting materials.
+
+Renamed armor to Imperial Loyalist Armor.
+
+Legate Rikke wears an enchanted set.
+
+Cloaks are recognized by Frostfall.
+
+Fixed clipping with boots.
