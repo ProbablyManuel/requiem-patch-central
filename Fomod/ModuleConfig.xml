@@ -1277,6 +1277,36 @@ DISABLE/DELETE "witchplate.esp".
 						</plugin>
 					</plugins>
 				</group>
+				<group name="Scale Nord Armor" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Scale Nord Armor">
+							<description>
+								Requires Scale Nord Armor.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Scale Nord Armor" destination=""/>
+								<file source="Readme\Requiem - Scale Nord Armor.txt" destination="Requiem Patches - Readme\Requiem - Scale Nord Armor.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Scale Nord Armor">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="DIS_NordScale.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
 				<group name="Talos Housecarl Armor" type="SelectAny">
 					<plugins order="Explicit">
 						<plugin name="Talos Housecarl Armor">
@@ -1905,6 +1935,15 @@ DISABLE/DELETE "witchplate.esp".
 				</dependencies>
 				<files>
 					<file source="Modgroups\Requiem - Runic Armor.modgroups" destination="Requiem - Runic Armor.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Scale Nord Armor" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Scale Nord Armor.modgroups" destination="Requiem - Scale Nord Armor.modgroups"/>
 				</files>
 			</pattern>
 			<pattern>

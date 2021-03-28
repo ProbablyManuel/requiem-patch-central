@@ -1,0 +1,9 @@
+Changelog:
+
+4.04	Initial Release
+
+Distributed the new armor as the default scale armor throughout the world.
+
+Vanilla scale armor is now known as Nordic Scale Armor and only worn by some unique NPCs.
+
+Both scale armors are craftable and sold by blacksmiths.

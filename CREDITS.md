@@ -44,6 +44,7 @@
 - MyEvergreenHometown for [Revenge Of the Enemies](https://www.nexusmods.com/skyrim/mods/40491)
 - Ranaline for [RS Children Overhaul](https://www.nexusmods.com/skyrim/mods/55555)
 - Gamwich and Saerileth for [RUSTIC SOULGEMS](https://www.nexusmods.com/skyrim/mods/63766)
+- NordwarUA for [Scale Nord Armor](https://www.nexusmods.com/skyrim/mods/104955)
 - OutLaw666 for [Scoped Bows](https://www.nexusmods.com/skyrim/mods/50528)
 - Lifestorock and Jackstarr for [Skyrim Immersive Creatures](https://www.nexusmods.com/skyrim/mods/24913)
 - Thetrader for [Skyrim Unlocked](https://www.nexusmods.com/skyrim/mods/69420)
