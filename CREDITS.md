@@ -56,6 +56,7 @@
 - InsanitySorrow for [Unique Uniques](https://www.nexusmods.com/skyrim/mods/33292)
 - Unofficial Patch Project Team for [Unofficial Skyrim Legendary Edition Patch](https://www.nexusmods.com/skyrim/mods/71214)
 - Miss Leeches for [Vampiric Thirst - Dawnguard Edition](https://www.nexusmods.com/skyrim/mods/24222)
+- NordWarUA for [Vanilla Armor Replacer](https://www.nexusmods.com/skyrimspecialedition/mods/31679)
 - Emma Amgepo Lycanthrops for [Vilja in Skyrim](https://www.nexusmods.com/skyrim/mods/26393)
 - Reko for [Violens - A Killmove Mod](https://www.nexusmods.com/skyrim/mods/56980)
 - Batmanna for [Warmonger Armory](https://www.nexusmods.com/skyrim/mods/50459)

@@ -1,0 +1,14 @@
+Info:
+
+The patch replaces the original plugin because this is a select cut instead of a comprehensive patch.
+You have to disable or delete "DIS_Replacer.esp".
+
+
+
+Changelog:
+
+4.04	Initial Release
+
+Replaced models of dwarven, steel plate and wolf armor.
+
+Added steel plate shield with proper crafting and tempering recipes.
