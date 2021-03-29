@@ -18,7 +18,7 @@ Wakizashi (Sword):
 All weapons but dragonbone and stalhrim are distributed to one unique NPC or location. They are not found in random loot.
 
 Weapon                NPC or location
-Daedric Dai-Katana    Boss chest in Vahlok's Tomb
+Daedric Dai-Katana    Fura Bloodmouth
 Daedric Katana        Velehk Sain
 Daedric Tanto         Valerica
 Daedric Wakizashi     Velehk Sain
@@ -62,6 +62,11 @@ TES5Edit incorrectly displays static records (STAT) as ITMs. These edits are req
 
 
 Changelog:
+
+4.04
+
+Relocated Daedric Dai-Katana to Fura Bloodmouth.
+
 
 4.00	Initial Release
 
