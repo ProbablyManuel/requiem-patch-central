@@ -6,6 +6,8 @@ Adjusted stats of armors and weapons.
 
 Added perk requirement to all tempering recipes and adjusted crafting materials.
 
+Cloaks are crafted at a tanning rack.
+
 Renamed armor to Imperial Loyalist Armor.
 
 Legate Rikke wears an enchanted set.
