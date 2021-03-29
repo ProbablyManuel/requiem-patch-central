@@ -1,5 +1,10 @@
 Changelog:
 
+4.04
+
+Reduced weight of all cloaks by 2.
+
+
 4.00
 
 Updated to Requiem 4.0.0.
