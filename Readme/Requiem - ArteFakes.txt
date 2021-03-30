@@ -18,6 +18,11 @@ Should be loaded after "Requiem - Immersive Sounds Compendium.esp". Manual confl
 
 Changelog:
 
+4.04
+
+Tempered Njada Stonearm's sword.
+
+
 4.02	Initial Release
 
 Carried over unique models to Requiem. Skipped Ghostblade.
