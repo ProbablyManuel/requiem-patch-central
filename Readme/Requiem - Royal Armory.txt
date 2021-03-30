@@ -5,11 +5,11 @@ Royal Armory - Reforged (https://www.nexusmods.com/skyrim/mods/98828) is compati
 
 Load Order:
 
+Must be loaded after "Requiem - Minor Arcana - Vigilants of Stendarr.esp".
+
 Must be loaded after "Requiem - Warmonger Armory.esp".
 
-Must be loaded after "Requiem - Minor Arcana - Civil War.esp".
-
-Must be loaded after "Requiem - Minor Arcana - Vigilants of Stendarr.esp".
+Should be loaded after "Requiem - Minor Arcana - Civil War.esp". Manual conflict resolution is advised for advanced users.
 
 
 

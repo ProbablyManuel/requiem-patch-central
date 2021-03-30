@@ -1,6 +1,6 @@
 Load Order:
 
-Must be loaded after "Requiem - Audio Overhaul for Skyrim.esp".
+Should be loaded after "Requiem - Audio Overhaul for Skyrim.esp". Manual conflict resolution is advised for advanced users.
 
 
 

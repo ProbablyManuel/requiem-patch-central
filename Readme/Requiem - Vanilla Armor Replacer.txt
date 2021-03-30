@@ -5,6 +5,12 @@ You have to disable or delete "DIS_Replacer.esp".
 
 
 
+Load Order:
+
+Must be loaded after "Requiem - Improved Closefaced Helmets.esp".
+
+
+
 Changelog:
 
 4.04	Initial Release

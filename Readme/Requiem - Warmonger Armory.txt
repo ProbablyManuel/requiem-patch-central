@@ -33,9 +33,13 @@ Load Order:
 
 Must be loaded after "Requiem - Minor Arcana - Vigilants of Stendarr.esp".
 
+Must be loaded after "Requiem - Scale Nord Armor.esp".
+
 
 
 Changelog:
+
+4.04
 
 Restored Galmar's helmet.
 

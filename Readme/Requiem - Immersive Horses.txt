@@ -10,11 +10,11 @@ The "open inventory" option from Immersive Horses acts just like the "search" op
 
 Load Order:
 
-Must be loaded after "Requiem - SkyTEST.esp".
-
-Must be loaded after "Requiem - Wild World.esp".
-
 Must be loaded after "Requiem - Minor Arcana - Roleplaying.esp".
+
+Should be loaded after "Requiem - SkyTEST.esp". Manual conflict resolution is advised for advanced users.
+
+Should be loaded after "Requiem - Wild World.esp". Manual conflict resolution is advised for advanced users.
 
 
 

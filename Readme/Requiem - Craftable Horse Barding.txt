@@ -1,12 +1,8 @@
 Load Order:
 
-Must be loaded after "Requiem - Immersive Horses.esp".
-
-Must be loaded after "Requiem - SkyTEST.esp".
-
-Must be loaded after "Requiem - Wild World.esp".
-
 Must be loaded after "Requiem - Minor Arcana - Roleplaying.esp".
+
+Must be loaded after "Requiem - Immersive Horses.esp".
 
 
 

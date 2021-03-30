@@ -5,12 +5,6 @@ You have to disable or delete "imp_helm_legend.esp".
 
 
 
-Load Order:
-
-In general should be loaded as one of the last Requiem patches/addons.
-
-
-
 Changelog:
 
 4.00

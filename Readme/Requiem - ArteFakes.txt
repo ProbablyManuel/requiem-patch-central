@@ -6,11 +6,13 @@ The patch only carries over the unique models to Requiem and skips all other twe
 
 Load Order:
 
-Must be loaded after "Requiem - Audio Overhaul for Skyrim.esp".
-
-Must be loaded after "Requiem - Minor Arcana - Roleplaying.esp". The edits to Eduj and Okin will overlap regardless of load order.
-
 Must be loaded after "Requiem - ESF Companions.esp".
+
+Should be loaded after "Requiem - Minor Arcana - Roleplaying.esp". Manual conflict resolution is advised for advanced users.
+
+Should be loaded after "Requiem - Audio Overhaul for Skyrim.esp". Manual conflict resolution is advised for advanced users.
+
+Should be loaded after "Requiem - Immersive Sounds Compendium.esp". Manual conflict resolution is advised for advanced users.
 
 
 
