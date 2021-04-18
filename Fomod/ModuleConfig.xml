@@ -1402,6 +1402,8 @@ DISABLE/DELETE "witchplate.esp".
 						<plugin name="Vanilla Armor Replacer">
 							<description>
 								Requires NordWarUA's Vanilla Armor Replacer.
+
+DISABLE/DELETE "DIS_Replacer.esp".
 							</description>
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
