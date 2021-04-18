@@ -1244,6 +1244,36 @@ DISABLE/DELETE "LpotDHorse.esp".
 						</plugin>
 					</plugins>
 				</group>
+				<group name="Rough Leather Armor" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Rough Leather Armor">
+							<description>
+								Requires Rough Leather Armor.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Rough Leather Armor" destination=""/>
+								<file source="Readme\Requiem - Rough Leather Armor.txt" destination="Requiem Patches - Readme\Requiem - Rough Leather Armor.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="Rough Leather Armor">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="Rough Leather Armor.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
 				<group name="Runic Armor (Witchplate)" type="SelectAny">
 					<plugins order="Explicit">
 						<plugin name="Runic Armor">
@@ -1957,6 +1987,15 @@ DISABLE/DELETE "witchplate.esp".
 				</dependencies>
 				<files>
 					<file source="Modgroups\Requiem - Divine Wrath Armor.modgroups" destination="Requiem - Divine Wrath Armor.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="Rough Leather Armor" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - Rough Leather Armor.modgroups" destination="Requiem - Rough Leather Armor.modgroups"/>
 				</files>
 			</pattern>
 			<pattern>

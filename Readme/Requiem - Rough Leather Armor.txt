@@ -1,0 +1,9 @@
+Changelog:
+
+4.04	Initial Release
+
+Adjusted stats of armor.
+
+Added perk requirement to tempering recipes and adjusted crafting materials.
+
+Replaced model of Blackguard Armor.

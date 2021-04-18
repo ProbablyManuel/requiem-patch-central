@@ -39,6 +39,7 @@
 - Lautasantenni for [Katana Crafting](https://www.nexusmods.com/skyrim/mods/8489)
 - Joseph Russell for [Lucien - Fully Voiced Follower](https://www.nexusmods.com/skyrim/mods/95029)
 - Jerros for [Lost Paladins of the Divines Wrath Armor](https://www.nexusmods.com/skyrim/mods/24253)
+- Atomec for [Rough Leather Armor](https://www.nexusmods.com/skyrim/mods/54672)
 - PrivateEye for [Royal Armory - New Artifacts](https://www.nexusmods.com/skyrim/mods/81118)
 - KrittaKitty for [Realistic Primitive Horse Breeds](https://www.nexusmods.com/skyrim/mods/57456)
 - MyEvergreenHometown for [Revenge Of the Enemies](https://www.nexusmods.com/skyrim/mods/40491)
