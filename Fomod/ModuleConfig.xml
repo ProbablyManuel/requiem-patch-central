@@ -1397,39 +1397,6 @@ DISABLE/DELETE "witchplate.esp".
 						</plugin>
 					</plugins>
 				</group>
-				<group name="Vanilla Armor Replacer" type="SelectAny">
-					<plugins order="Explicit">
-						<plugin name="Vanilla Armor Replacer">
-							<description>
-								Requires NordWarUA's Vanilla Armor Replacer.
-
-DISABLE/DELETE "DIS_Replacer.esp".
-							</description>
-							<image path="fomod\Requiem Compatibility Patches.jpg"/>
-							<files>
-								<folder source="Requiem - Vanilla Armor Replacer" destination=""/>
-								<file source="Readme\Requiem - Vanilla Armor Replacer.txt" destination="Requiem Patches - Readme\Requiem - Vanilla Armor Replacer.txt"/>
-							</files>
-							<conditionFlags>
-								<flag name="Vanilla Armor Replacer">On</flag>
-							</conditionFlags>
-							<typeDescriptor>
-								<dependencyType>
-									<defaultType name="Optional"/>
-									<patterns>
-										<pattern>
-											<dependencies operator="Or">
-												<fileDependency file="DIS_Replacer.esp" state="Active"/>
-												<fileDependency file="Requiem - Vanilla Armor Replacer.esp" state="Active"/>
-											</dependencies>
-											<type name="Recommended"/>
-										</pattern>
-									</patterns>
-								</dependencyType>
-							</typeDescriptor>
-						</plugin>
-					</plugins>
-				</group>
 				<group name="Warmonger Armory" type="SelectAny">
 					<plugins order="Explicit">
 						<plugin name="Warmonger Armory">
@@ -2034,15 +2001,6 @@ DISABLE/DELETE "DIS_Replacer.esp".
 				</dependencies>
 				<files>
 					<file source="Modgroups\Requiem - Ulag's Legacy.modgroups" destination="Requiem - Ulag's Legacy.modgroups"/>
-				</files>
-			</pattern>
-			<pattern>
-				<dependencies operator="And">
-					<flagDependency flag="Modgroups" value="On"/>
-					<flagDependency flag="Vanilla Armor Replacer" value="On"/>
-				</dependencies>
-				<files>
-					<file source="Modgroups\Requiem - Vanilla Armor Replacer.modgroups" destination="Requiem - Vanilla Armor Replacer.modgroups"/>
 				</files>
 			</pattern>
 			<pattern>
