@@ -20,7 +20,13 @@ Changelog:
 
 4.04
 
+Updated to ArteFakes 2.0.
+
+Relocated Briarheart Geis to Lost Valley Redoubt. Briarheart Geis deals 60 points of extra damage to Nords.
+
 Tempered Njada Stonearm's sword.
+
+Fixed disabled crafting recipes.
 
 
 4.02	Initial Release
