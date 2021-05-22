@@ -6,6 +6,11 @@ Do NOT install the Cutting Room Floor patch from Even Better Quest Objectives. I
 
 Changelog:
 
+4.04
+
+Synchronized Briarheart Geis with ArteFakes.
+
+
 4.00
 
 Updated to Requiem 4.0.0.

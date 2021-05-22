@@ -6,6 +6,8 @@ The patch only carries over the unique models to Requiem and skips all other twe
 
 Load Order:
 
+Must be loaded after "Requiem - Cutting Room Floor.esp".
+
 Must be loaded after "Requiem - ESF Companions.esp".
 
 Should be loaded after "Requiem - Minor Arcana - Roleplaying.esp". Manual conflict resolution is advised for advanced users.
