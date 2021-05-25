@@ -20,6 +20,14 @@ Should be loaded after "Requiem - Immersive Sounds Compendium.esp". Manual confl
 
 Changelog:
 
+4.05
+
+Restored Requiem's Dragonbane.
+
+Replaced Dexion's Katana by ArteFake's Dragonbane.
+
+
+
 4.04
 
 Updated to ArteFakes 2.0.
