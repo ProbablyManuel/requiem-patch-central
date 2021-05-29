@@ -14,6 +14,11 @@ Should be loaded as one of the first Requiem patches/addons.
 
 Changelog:
 
+4.05
+
+Fixed sound of frostburst enchantment.
+
+
 4.02
 
 Removed SPIKE keywords.
