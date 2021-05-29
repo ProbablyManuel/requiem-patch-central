@@ -1,14 +1,6 @@
-Info:
-
-Do NOT install the Guard Dialogue Overhaul patch from Audio Overhaul for Skyrim. It's fully included in this patch.
-
-
-
 Load Order:
 
 Must be loaded after "Requiem - Cutting Room Floor.esp".
-
-Should be loaded as one of the first Requiem patches/addons.
 
 
 

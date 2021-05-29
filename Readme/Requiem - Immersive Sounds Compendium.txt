@@ -2,8 +2,6 @@ Load Order:
 
 Must be loaded after "Requiem - Cutting Room Floor.esp".
 
-Should be loaded as one of the first Requiem patches/addons.
-
 
 
 Changelog:
