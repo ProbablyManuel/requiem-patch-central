@@ -922,75 +922,6 @@ DISABLE/DELETE "imp_helm_legend.esp".
 						</plugin>
 					</plugins>
 				</group>
-				<group name="RUSTIC SOULGEMS" type="SelectAtMostOne">
-					<plugins order="Explicit">
-						<plugin name="RUSTIC SOULGEMS">
-							<description>
-								Requires RUSTIC SOULGEMS.
-
-DISABLE/DELETE "RUSTIC SOULGEMS - Sorted.esp" and "RUSTIC SOULGEMS - Unsorted.esp".
-							</description>
-							<image path="fomod\Requiem Compatibility Patches.jpg"/>
-							<files>
-								<folder source="Requiem - Rustic Soulgems" destination=""/>
-								<file source="Readme\Requiem - Rustic Soulgems.txt" destination="Requiem Patches - Readme\Requiem - Rustic Soulgems.txt"/>
-							</files>
-							<conditionFlags>
-								<flag name="Rustic Soulgems">On</flag>
-							</conditionFlags>
-							<typeDescriptor>
-								<dependencyType>
-									<defaultType name="Optional"/>
-									<patterns>
-										<pattern>
-											<dependencies operator="Or">
-												<fileDependency file="RUSTIC SOULGEMS - Sorted.esp" state="Active"/>
-												<fileDependency file="RUSTIC SOULGEMS - Unsorted.esp" state="Active"/>
-												<fileDependency file="Requiem - Rustic Soulgems.esp" state="Active"/>
-												<fileDependency file="Requiem - Rustic Soulgems - ISC.esp" state="Active"/>
-											</dependencies>
-											<type name="Recommended"/>
-										</pattern>
-									</patterns>
-								</dependencyType>
-							</typeDescriptor>
-						</plugin>
-						<plugin name="RUSTIC SOULGEMS - ISC compatible">
-							<description>
-								Requires RUSTIC SOULGEMS and Immersive Sounds Compendium.
-
-DISABLE/DELETE "RUSTIC SOULGEMS - Sorted.esp" and "RUSTIC SOULGEMS - Unsorted.esp".
-							</description>
-							<image path="fomod\Requiem Compatibility Patches.jpg"/>
-							<files>
-								<folder source="Requiem - Rustic Soulgems - ISC" destination=""/>
-								<file source="Readme\Requiem - Rustic Soulgems.txt" destination="Requiem Patches - Readme\Requiem - Rustic Soulgems.txt"/>
-							</files>
-							<conditionFlags>
-								<flag name="Rustic Soulgems - ISC">On</flag>
-							</conditionFlags>
-							<typeDescriptor>
-								<dependencyType>
-									<defaultType name="Optional"/>
-									<patterns>
-										<pattern>
-											<dependencies operator="And">
-												<flagDependency flag="Immersive Sounds Compendium" value="On"/>
-												<dependencies operator="Or">
-													<fileDependency file="RUSTIC SOULGEMS - Sorted.esp" state="Active"/>
-													<fileDependency file="RUSTIC SOULGEMS - Unsorted.esp" state="Active"/>
-													<fileDependency file="Requiem - Rustic Soulgems.esp" state="Active"/>
-													<fileDependency file="Requiem - Rustic Soulgems - ISC.esp" state="Active"/>
-												</dependencies>
-											</dependencies>
-											<type name="Recommended"/>
-										</pattern>
-									</patterns>
-								</dependencyType>
-							</typeDescriptor>
-						</plugin>
-					</plugins>
-				</group>
 			</optionalFileGroups>
 		</installStep>
 		<installStep name="Books">
@@ -1807,24 +1738,6 @@ DISABLE/DELETE "witchplate.esp".
 				</dependencies>
 				<files>
 					<file source="Modgroups\Requiem - ArteFakes.modgroups" destination="Requiem - ArteFakes.modgroups"/>
-				</files>
-			</pattern>
-			<pattern>
-				<dependencies operator="And">
-					<flagDependency flag="Modgroups" value="On"/>
-					<flagDependency flag="Rustic Soulgems" value="On"/>
-				</dependencies>
-				<files>
-					<file source="Modgroups\Requiem - Rustic Soulgems.modgroups" destination="Requiem - Rustic Soulgems.modgroups"/>
-				</files>
-			</pattern>
-			<pattern>
-				<dependencies operator="And">
-					<flagDependency flag="Modgroups" value="On"/>
-					<flagDependency flag="Rustic Soulgems - ISC" value="On"/>
-				</dependencies>
-				<files>
-					<file source="Modgroups\Requiem - Rustic Soulgems - ISC.modgroups" destination="Requiem - Rustic Soulgems - ISC.modgroups"/>
 				</files>
 			</pattern>
 			<pattern>
