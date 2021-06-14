@@ -22,6 +22,8 @@ Changelog:
 
 4.05
 
+Updated to Requiem 4.0.2.
+
 Restored Requiem's Dragonbane.
 
 Replaced Dexion's Katana by ArteFake's Dragonbane.
