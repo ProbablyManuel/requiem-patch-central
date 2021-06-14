@@ -951,36 +951,6 @@ DISABLE/DELETE "imp_helm_legend.esp".
 						</plugin>
 					</plugins>
 				</group>
-				<group name="Unique Uniques" type="SelectAtMostOne">
-					<plugins order="Explicit">
-						<plugin name="Unique Uniques">
-							<description>
-								Requires Unique Uniques.
-							</description>
-							<image path="fomod\Requiem Compatibility Patches.jpg"/>
-							<files>
-								<folder source="Requiem - Unique Uniques" destination=""/>
-								<file source="Readme\Requiem - Unique Uniques.txt" destination="Requiem Patches - Readme\Requiem - Unique Uniques.txt"/>
-							</files>
-							<conditionFlags>
-								<flag name="Unique Uniques">On</flag>
-							</conditionFlags>
-							<typeDescriptor>
-								<dependencyType>
-									<defaultType name="Optional"/>
-									<patterns>
-										<pattern>
-											<dependencies operator="And">
-												<fileDependency file="Unique Uniques.esp" state="Active"/>
-											</dependencies>
-											<type name="Recommended"/>
-										</pattern>
-									</patterns>
-								</dependencyType>
-							</typeDescriptor>
-						</plugin>
-					</plugins>	
-				</group>
 				<group name="RUSTIC SOULGEMS" type="SelectAtMostOne">
 					<plugins order="Explicit">
 						<plugin name="RUSTIC SOULGEMS">
@@ -1875,15 +1845,6 @@ DISABLE/DELETE "witchplate.esp".
 				</dependencies>
 				<files>
 					<file source="Modgroups\Requiem - ArteFakes.modgroups" destination="Requiem - ArteFakes.modgroups"/>
-				</files>
-			</pattern>
-			<pattern>
-				<dependencies operator="And">
-					<flagDependency flag="Modgroups" value="On"/>
-					<flagDependency flag="Unique Uniques" value="On"/>
-				</dependencies>
-				<files>
-					<file source="Modgroups\Requiem - Unique Uniques.modgroups" destination="Requiem - Unique Uniques.modgroups"/>
 				</files>
 			</pattern>
 			<pattern>
