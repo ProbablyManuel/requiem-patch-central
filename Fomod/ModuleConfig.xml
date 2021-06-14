@@ -226,35 +226,6 @@
 								</dependencyType>
 							</typeDescriptor>
 						</plugin>
-						<plugin name="Deadly Dragons - AOS compatible">
-							<description>
-								Requires Deadly Dragons and Audio Overhaul for Skyrim. This replaces the Deadly Dragons patch from AOS.
-
-DISABLE/DELETE "AOS2_DD Patch.esp".
-							</description>
-							<image path="fomod\Requiem Compatibility Patches.jpg"/>
-							<files>
-								<folder source="Requiem - Deadly Dragons - AOS" destination=""/>
-								<file source="Readme\Requiem - Deadly Dragons.txt" destination="Requiem Patches - Readme\Requiem - Deadly Dragons.txt"/>
-							</files>
-							<conditionFlags>
-								<flag name="Deadly Dragons - AOS">On</flag>
-							</conditionFlags>
-							<typeDescriptor>
-								<dependencyType>
-									<defaultType name="Optional"/>
-									<patterns>
-										<pattern>
-											<dependencies operator="And">
-												<fileDependency file="DeadlyDragons.esp" state="Active"/>
-												<flagDependency flag="Audio Overhaul for Skyrim" value="On"/>
-											</dependencies>
-											<type name="Recommended"/>
-										</pattern>
-									</patterns>
-								</dependencyType>
-							</typeDescriptor>
-						</plugin>
 					</plugins>
 				</group>
 				<group name="Trade and Barter" type="SelectAny">
@@ -1710,15 +1681,6 @@ DISABLE/DELETE "witchplate.esp".
 				</dependencies>
 				<files>
 					<file source="Modgroups\Requiem - Craftable Horse Barding.modgroups" destination="Requiem - Craftable Horse Barding.modgroups"/>
-				</files>
-			</pattern>
-			<pattern>
-				<dependencies operator="And">
-					<flagDependency flag="Modgroups" value="On"/>
-					<flagDependency flag="Deadly Dragons - AOS" value="On"/>
-				</dependencies>
-				<files>
-					<file source="Modgroups\Requiem - Deadly Dragons - AOS.modgroups" destination="Requiem - Deadly Dragons - AOS.modgroups"/>
 				</files>
 			</pattern>
 			<pattern>
