@@ -9,6 +9,8 @@ Must be loaded after "Requiem - Minor Arcana - Vigilants of Stendarr.esp".
 
 Must be loaded after "Requiem - Warmonger Armory.esp".
 
+Should be loaded after "Requiem - Cutting Room Floor.esp". Manual conflict resolution is advised for advanced users.
+
 Should be loaded after "Requiem - Minor Arcana - Civil War.esp". Manual conflict resolution is advised for advanced users.
 
 
