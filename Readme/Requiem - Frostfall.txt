@@ -1,5 +1,10 @@
 Changelog:
 
+4.04
+
+Added Frostfall spells to the spell choices when taking a magic perk.
+
+
 4.03
 
 Fixed inverted names of Scroll of Bound Cloak.
