@@ -1,14 +1,12 @@
-All plugins must be loaded after:
-- "Fozars_Dragonborn_-_Requiem_Patch.esp"
+Load Order
 
-All load order advice in these readmes is also known to LOOT. Make your life easier and use it.
+All load order advice in these readmes is also known to LOOT (or Vortex). Make your life easier and use it.
 
-
-
-To merge edits to leveled lists from multiple plugins, you must tick Merged Leveled Characters and Merged Leveled Items in the Reqtificator.
-
-Alternatively you can use a Smashed Patch if you follow the instructions [here](https://requiem.atlassian.net/wiki/spaces/RS/pages/692257110/Bashing+Merging+and+Smashing).
+The patches are built with Fozar's Dragonborn patch in mind and should be loaded after it. However, many plugins have no overlap with Fozar's Dragonborn patch and therefore LOOT may load some plugins before it.
 
 
+Bashing, Merging, and Smashing
 
-Merging the patches is not supported.
+The official advice regarding [Bashing, Merging, and Smashing](https://requiem.atlassian.net/wiki/spaces/RS/pages/692257110/Bashing+Merging+and+Smashing) applies to the Requiem Patch Central too.
+
+The Import feature of a Bashed Patch is not supported for any types except those explicitly listed as safe in the above advice. The manner in which a Bashed Patch imports records is too limited to handle non-trivial interactions between multiple pugins even when the plugins have proper bash tags assigned.
