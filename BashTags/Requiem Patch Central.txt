@@ -1,0 +1,158 @@
+* Requiem - Animallica.esp
+    No tags
+
+* Requiem - Arissa.esp
+    No tags
+
+* Requiem - ArteFakes.esp
+  * From Plugin Description: Graphics, Invent.Add, Invent.Remove, Keywords, ObjectBounds
+  * Result: Graphics, Invent.Add, Invent.Remove, Keywords, ObjectBounds
+
+* Requiem - Audio Overhaul for Skyrim.esp
+    No tags
+
+* Requiem - Black Mage Armor.esp
+  * From Plugin Description: Outfits.Add, Outfits.Remove
+  * Result: Outfits.Add, Outfits.Remove
+
+* Requiem - Book Covers Skyrim.esp
+    No tags
+
+* Requiem - Campfire.esp
+    No tags
+
+* Requiem - Cloaks and Capes.esp
+  * From Plugin Description: Outfits.Add, Outfits.Remove
+  * Result: Outfits.Add, Outfits.Remove
+
+* Requiem - Common Clothes and Armors.esp
+    No tags
+
+* Requiem - Craftable Horse Barding.esp
+  * From Plugin Description: Factions, Invent.Add, Invent.Change, Invent.Remove, Keywords, Outfits.Add, Outfits.Remove
+  * Result: Factions, Invent.Add, Invent.Change, Invent.Remove, Keywords, Outfits.Add, Outfits.Remove
+
+* Requiem - Cutting Room Floor.esp
+  * From Plugin Description: Invent.Add, Invent.Remove, Keywords
+  * Result: Invent.Add, Invent.Remove, Keywords
+
+* Requiem - Deadly Dragons.esp
+    No tags
+
+* Requiem - Divine Wrath Armor.esp
+  * From Plugin Description: Invent.Remove, Outfits.Add, Outfits.Remove
+  * Result: Invent.Remove, Outfits.Add, Outfits.Remove
+
+* Requiem - ESF Companions.esp
+  * From Plugin Description: Invent.Add, Invent.Remove, Keywords
+  * Result: Invent.Add, Invent.Remove, Keywords
+
+* Requiem - Faction Crossbows.esp
+    No tags
+
+* Requiem - Frostfall.esp
+    No tags
+
+* Requiem - Heavy Armory.esp
+  * From Plugin Description: Invent.Add
+  * Result: Invent.Add
+
+* Requiem - Hoth.esp
+    No tags
+
+* Requiem - Immersive College of Winterhold.esp
+  * From Plugin Description: Factions, Invent.Add, Invent.Remove
+  * Result: Factions, Invent.Add, Invent.Remove
+
+* Requiem - Immersive Horses.esp
+    No tags
+
+* Requiem - Immersive Patrols.esp
+    No tags
+
+* Requiem - Immersive Sounds Compendium.esp
+    No tags
+
+* Requiem - Improved Closefaced Helmets.esp
+  * From Plugin Description: Graphics, ObjectBounds
+  * Result: Graphics, ObjectBounds
+
+* Requiem - Inconsequential NPCs.esp
+    No tags
+
+* Requiem - Inigo.esp
+    No tags
+
+* Requiem - Katana Crafting.esp
+  * From Plugin Description: Invent.Add, Invent.Remove, Keywords, Outfits.Add, Outfits.Remove
+  * Result: Invent.Add, Invent.Remove, Keywords, Outfits.Add, Outfits.Remove
+
+* Requiem - Lost Library.esp
+    No tags
+
+* Requiem - Lucien.esp
+    No tags
+
+* Requiem - Rough Leather Armor.esp
+  * From Plugin Description: Graphics, Keywords
+  * Result: Graphics, Keywords
+
+* Requiem - Royal Armory.esp
+  * From Plugin Description: Invent.Add, Invent.Remove
+  * Result: Invent.Add, Invent.Remove
+
+* Requiem - RS Children Overhaul.esp
+    No tags
+
+* Requiem - Runic Armor.esp
+  * From Plugin Description: Outfits.Add, Outfits.Remove
+  * Result: Outfits.Add, Outfits.Remove
+
+* Requiem - Scale Nord Armor.esp
+  * From Plugin Description: Graphics, Keywords, ObjectBounds, Outfits.Add, Outfits.Remove
+  * Result: Graphics, Keywords, ObjectBounds, Outfits.Add, Outfits.Remove
+
+* Requiem - Scoped Bows.esp
+  * From Plugin Description: Invent.Add, Invent.Remove
+  * Result: Invent.Add, Invent.Remove
+
+* Requiem - Skyrim Unlocked.esp
+    No tags
+
+* Requiem - SkyTEST.esp
+  * From Plugin Description: Actors.AIPackages
+  * Result: Actors.AIPackages
+
+* Requiem - Talos Housecarl Armor.esp
+  * From Plugin Description: Invent.Add, Invent.Remove, Outfits.Add, Outfits.Remove
+  * Result: Invent.Add, Invent.Remove, Outfits.Add, Outfits.Remove
+
+* Requiem - Timing is Everything.esp
+    No tags
+
+* Requiem - Trade and Barter.esp
+    No tags
+
+* Requiem - Ulag's Legacy.esp
+  * From Plugin Description: Invent.Add, Invent.Remove, Outfits.Add, Outfits.Remove
+  * Result: Invent.Add, Invent.Remove, Outfits.Add, Outfits.Remove
+
+* Requiem - Vampiric Thirst.esp
+  * From Plugin Description: Keywords
+  * Result: Keywords
+
+* Requiem - Vilja.esp
+    No tags
+
+* Requiem - VioLens.esp
+    No tags
+
+* Requiem - Warmonger Armory.esp
+  * From Plugin Description: Graphics, Invent.Add, Invent.Remove, Keywords, Outfits.Add, Outfits.Remove
+  * Result: Graphics, Invent.Add, Invent.Remove, Keywords, Outfits.Add, Outfits.Remove
+
+* Requiem - Wild World.esp
+    No tags
+
+* Requiem - WM Flora Fixes.esp
+    No tags
