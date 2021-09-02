@@ -14,7 +14,7 @@ Galmar Stone-Fist     Nord Hero Armor            Nordic Armor
 Irileth               Soul Ripper Armor          Ebony Armor
 Keeper Carcette       Vigilant Robes             -
 Kematu and his guards Sand Assassin Armor        Penitus Oculatus Armor
-Linwe                 Rogue Thief Armor          Guard Armor
+Summerset Shadows     Rogue Thief Armor          Guard Armor
 Neloth                Telvanni Master Robes      -
 Talvas Fathryon       Telvanni Apprentice Robes  -
 Vigilants of Stendarr Wandering Knight Armor     Vigilant's Armor
@@ -38,6 +38,11 @@ Must be loaded after "Requiem - Scale Nord Armor.esp".
 
 
 Changelog:
+
+4.06
+
+Replaced Summerset Shadows Armor by Rogue Thief Armor.
+
 
 4.04
 
