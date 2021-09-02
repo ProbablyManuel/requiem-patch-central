@@ -20,6 +20,11 @@ Should be loaded after "Requiem - Immersive Sounds Compendium.esp". Manual confl
 
 Changelog:
 
+4.06
+
+Forwarded descriptions from Even Better Quest Objectives.
+
+
 4.05
 
 Updated to Requiem 4.0.2.
