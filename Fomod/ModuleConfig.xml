@@ -859,6 +859,36 @@ It's recommended to use Craftable Horse Barding too.
 		</installStep>
 		<installStep name="Visuals">
 			<optionalFileGroups order="Explicit">
+				<group name="aMidianborn Book of Silence - Skyforge Weapons" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="aMidianborn Skyforge Weapons">
+							<description>
+								Requires aMidianborn Skyforge Weapons.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - aMidianborn Skyforge Weapons" destination=""/>
+								<file source="Readme\Requiem - aMidianborn Skyforge Weapons.txt" destination="Requiem Patches - Readme\Requiem - aMidianborn Skyforge Weapons.txt"/>
+							</files>
+							<conditionFlags>
+								<flag name="aMidianborn Skyforge Weapons">On</flag>
+							</conditionFlags>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="aMidianborn_Skyforge_Weapons.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
 				<group name="ArteFakes - Unique Artifacts Replacer" type="SelectAny">
 					<plugins order="Explicit">
 						<plugin name="ArteFakes">
@@ -1729,6 +1759,15 @@ DISABLE/DELETE "witchplate.esp".
 				</dependencies>
 				<files>
 					<file source="Modgroups\Requiem - Improved Closefaced Helmets.modgroups" destination="Requiem - Improved Closefaced Helmets.modgroups"/>
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="Modgroups" value="On"/>
+					<flagDependency flag="aMidianborn Skyforge Weapons" value="On"/>
+				</dependencies>
+				<files>
+					<file source="Modgroups\Requiem - aMidianborn Skyforge Weapons.modgroups" destination="Requiem - aMidianborn Skyforge Weapons.modgroups"/>
 				</files>
 			</pattern>
 			<pattern>

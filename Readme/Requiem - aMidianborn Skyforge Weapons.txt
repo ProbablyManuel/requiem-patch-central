@@ -1,0 +1,11 @@
+Changelog:
+
+4.06	Initial Release
+
+Resolved conflicting edits.
+
+Adjusted stats of new Skyforge items.
+
+Added perk requirement to all tempering recipes.
+
+Disabled scripted distribution of shields.
