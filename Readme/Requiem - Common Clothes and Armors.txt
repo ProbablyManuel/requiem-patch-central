@@ -1,5 +1,10 @@
 Changelog:
 
+4.06
+
+Updated to Common Clothes and Armors 2.0.0.
+
+
 4.00
 
 Updated to Requiem 4.0.0.
