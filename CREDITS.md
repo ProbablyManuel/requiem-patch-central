@@ -2,6 +2,7 @@
 - The Requiem Dungeon Masters for [Requiem - The Roleplaying Overhaul](https://www.nexusmods.com/skyrim/mods/19281)
 - 83Willow for [83Willows 101BugsHD Butterfly Dragonfly Luna-Moth Torchbug](https://www.nexusmods.com/skyrim/mods/4955)
 - Arthmoor for [Alternate Start - Live Another Life](https://www.nexusmods.com/skyrim/mods/9557)
+- CaBaL for [aMidianBorn Book of Silence](https://www.nexusmods.com/skyrim/mods/24909)
 - Sliceandkill for [Animallica - Skyrim Wildlife Overhaul](https://www.nexusmods.com/skyrim/mods/57413)
 - Chesko and Nikkita for [Arissa - The Wandering Rogue](https://www.nexusmods.com/skyrim/mods/53754)
 - Deletepch and Registrant for [ArteFakes - Unique Artifacts Replacer](https://www.nexusmods.com/skyrim/mods/105029)
