@@ -6,6 +6,13 @@ Must be loaded after "Requiem - Cutting Room Floor.esp".
 
 Changelog:
 
+5.00
+
+Updated to Requiem 5.0.0.
+
+Updated to Audio Overhaul Skyrim 3.3.2.
+
+
 4.06
 
 Removed edit to the acoustic space of Four Shields Tavern.

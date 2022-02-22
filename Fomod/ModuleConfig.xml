@@ -90,7 +90,7 @@
 									<patterns>
 										<pattern>
 											<dependencies operator="And">
-												<fileDependency file="AOS.esp" state="Active"/>
+												<fileDependency file="Audio Overhaul Skyrim.esp" state="Active"/>
 											</dependencies>
 											<type name="Recommended"/>
 										</pattern>
