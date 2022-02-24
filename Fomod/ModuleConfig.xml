@@ -308,7 +308,7 @@
 									<patterns>
 										<pattern>
 											<dependencies operator="And">
-												<fileDependency file="VioLens.esp" state="Active"/>
+												<fileDependency file="VioLens SE.esp" state="Active"/>
 											</dependencies>
 											<type name="Recommended"/>
 										</pattern>
