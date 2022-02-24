@@ -248,7 +248,7 @@
 									<patterns>
 										<pattern>
 											<dependencies operator="And">
-												<fileDependency file="TradeBarter.esp" state="Active"/>
+												<fileDependency file="Trade &amp; Barter.esp" state="Active"/>
 											</dependencies>
 											<type name="Recommended"/>
 										</pattern>

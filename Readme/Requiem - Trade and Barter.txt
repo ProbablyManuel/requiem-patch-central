@@ -1,7 +1,5 @@
 Info:
 
-The patch requires the Hearthfire version of Trade and Barter. It doesn't work with the vanilla version of Trade and Barter.
-
 The current situation with the MCM sliders for merchant gold is suboptimal because they don't represent the actual value.
 The shown value is multiplied by a constant factor that is set individually for each merchant by Requiem.
 However you can go down to very low values and they're proportional so I'm leaving it the way it is.
@@ -9,6 +7,13 @@ However you can go down to very low values and they're proportional so I'm leavi
 
 
 Changelog:
+
+5.00
+
+Updated to Requiem 5.0.0.
+
+Updated to Trade and Barter 2.0.0.
+
 
 4.00
 
