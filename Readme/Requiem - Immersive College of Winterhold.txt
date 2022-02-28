@@ -6,6 +6,13 @@ Tutoring only grants experience if your skill level is below 25. Toggle limitles
 
 Changelog:
 
+5.00
+
+Updated to Requiem 5.0.0.
+
+Updated to Immersive College of Winterhold 6.2.0.
+
+
 4.03
 
 Integrated The Fall of Winterhold quest as endgame challenge.
