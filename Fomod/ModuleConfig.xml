@@ -542,37 +542,6 @@ It's recommended to use Craftable Horse Barding too.
 						</plugin>
 					</plugins>	
 				</group>
-				<group name="RS Children Overhaul" type="SelectAny">
-					<plugins order="Explicit">
-						<plugin name="RS Children Overhaul">
-							<description>
-								Requires RS Children Overhaul.
-							</description>
-							<image path="fomod\Requiem Compatibility Patches.jpg"/>
-							<files>
-								<folder source="Requiem - RS Children Overhaul" destination=""/>
-								<file source="Readme\Requiem - RS Children Overhaul.txt" destination="Requiem Patches - Readme\Requiem - RS Children Overhaul.txt"/>
-							</files>
-							<conditionFlags>
-								<flag name="RS Children Overhaul">On</flag>
-							</conditionFlags>
-							<typeDescriptor>
-								<dependencyType>
-									<defaultType name="Optional"/>
-									<patterns>
-										<pattern>
-											<dependencies operator="And">
-												<fileDependency file="RSkyrimChildren.esm" state="Active"/>
-												<fileDependency file="RSChildren.esp" state="Active"/>
-											</dependencies>
-											<type name="Recommended"/>
-										</pattern>
-									</patterns>
-								</dependencyType>
-							</typeDescriptor>
-						</plugin>
-					</plugins>
-				</group>
 			</optionalFileGroups>
 		</installStep>
 		<installStep name="Follower">
