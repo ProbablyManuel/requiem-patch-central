@@ -1,5 +1,12 @@
 Changelog:
 
+5.00
+
+Updated to Requiem 5.0.0.
+
+Updated to Hoth 3.2.0.
+
+
 4.00
 
 Updated to Requiem 4.0.0.
