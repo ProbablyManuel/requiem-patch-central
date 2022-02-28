@@ -2,8 +2,6 @@ Info:
 
 This patch is meant to be used alongside Craftable Horse Barding.
 
-Do NOT install the Hearthfire patch from Immersive Horses. It's fully included in this patch.
-
 The "open inventory" option from Immersive Horses acts just like the "search" option from Requiem (when used on a horse). Use whatever method you prefer.
 
 
@@ -19,6 +17,13 @@ Should be loaded after "Requiem - Wild World.esp". Manual conflict resolution is
 
 
 Changelog:
+
+5.00
+
+Updated to Requiem 5.0.0.
+
+Updated to Immersive Horses 3.0.0.
+
 
 4.03
 

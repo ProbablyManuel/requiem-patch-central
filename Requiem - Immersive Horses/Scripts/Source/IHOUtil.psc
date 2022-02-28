@@ -1,11 +1,15 @@
-; Immersive Horses by sevencardz.
+; Immersive Horses by sevencardz
 ScriptName IHOUtil hidden
 {Utility script for Immersive Horses.}
-import JaxonzConsolePlugin
 
-; Returns the relative path to the INI file.
-String Function GetINIPath() global
-	return ".\\data\\Immersive Horses.ini"
+; Returns the relative path to the Immersive Horses.json file.
+String Function GetJSONPath() global
+	return "../Immersive Horses/Immersive Horses.json"
+EndFunction
+
+; Returns the relative path to the Horse Breeds.json file.
+String Function GetJSONBreedsPath() global
+	return "../Immersive Horses/Horse Breeds.json"
 EndFunction
 
 ; Converts a GlobalVariable to a bool type.
@@ -26,6 +30,12 @@ Function ResetFactionRank(Actor actorRef, Faction factionRef, int factionRank) g
 	actorRef.SetFactionRank(factionRef, factionRank)
 EndFunction
 
+; Returns true if the player is currently arrested. NOTE: Game.GetPlayer().IsArrested() does not work.
+bool Function IsPlayerArrested() global
+	Quest JailQuest = Quest.GetQuest("JailQuest")
+	return JailQuest.IsRunning() && JailQuest.GetStage() != 100
+EndFunction
+	
 ; The player blows his horn.
 Function BlowMyHorn() global
 	Actor playerRef = Game.GetPlayer()
@@ -37,7 +47,7 @@ Function BlowMyHorn() global
 	Debug.SendAnimationEvent(playerRef, "IdleBlowHornStormcloak")
 EndFunction
 
-; Fades the screen to black and holds it there.  Call FadeFromBlack() to reverse it.
+; Fades the screen to black and holds it there. Call FadeFromBlack() to reverse it.
 Function FadeToBlackAndHold() global
 	ImageSpaceModifier FadeToBlackImod = Game.GetFormFromFile(0x0f756d, "Skyrim.esm")\
 		as ImageSpaceModifier
@@ -48,7 +58,7 @@ Function FadeToBlackAndHold() global
 	FadeToBlackImod.PopTo(FadeToBlackHoldImod)
 EndFunction
 
-; Fades the screen from black back to normal.  Reverses the effects of FadeToBlackAndHold().
+; Fades the screen from black back to normal. Reverses the effects of FadeToBlackAndHold().
 Function FadeFromBlack() global
 	ImageSpaceModifier FadeToBlackHoldImod = Game.GetFormFromFile(0x0f756e, "Skyrim.esm")\
 		as ImageSpaceModifier
@@ -103,159 +113,129 @@ bool Function IsHorseArmorItem(Form akBaseObject) global
 	return false
 EndFunction
 
-; Returns the message text from the INI for the given message type.
-String Function GetINIMessage(String messageType) global
-	return GetPrivateINIString(GetINIPath(), "Messages", messageType)
+; Helper function to set the value of a global variable and write the value to the JSON file.
+Function SaveJSONGlobalInt(GlobalVariable glob, String variableName, int value) global
+	glob.SetValueInt(value)
+	JsonUtil.SetIntValue(GetJSONPath(), variableName, value)
 EndFunction
 
-; Loads the value for an integer variable from the given name of the variable from the INI file. 
-; Writes a warning to the log and returns errorValue if the variable name is not found in the INI.
-int Function LoadINIInt(String variableName, int errorValue = -1) global
-	String value = GetPrivateINIString(GetINIPath(), "General", variableName)
-	if value == ""
-		Debug.Trace("[IHO WARNING] variable General:" + variableName + " not found at " + GetINIPath())
-		return errorValue
+; Loads the value for an integer variable from the given name of the variable from the JSON file. 
+; Writes a warning to the log and returns defaultValue if the variable name is not found in the JSON.
+int Function LoadJSONGlobalInt(String variableName, int defaultValue = -1) global
+	int errorValue = -999
+	int value = JsonUtil.GetIntValue(GetJSONPath(), variableName, errorValue)
+	if value == errorValue
+		Debug.Trace("[IHO ERROR] variable: " + variableName + " not found at " + GetJSONPath())
+		return defaultValue
 	else
-		return value as int
+		return value
 	endIf
 EndFunction
 
-; Loads the value for a hotkey code from the given name of the variable from the INI file.  
-; Writes a warning to the log and returns -1 if the hotkey name is not found in the INI.
-int Function LoadINIHotkey(String variableName) global
-	String value = GetPrivateINIString(GetINIPath(), "Hotkeys", variableName)
-	if value == ""
-		Debug.Trace("[IHO WARNING] variable Hotkeys:" + variableName + " not found at " + GetINIPath())
-		return -1
-	else
-		return value as int
-	endIf
-EndFunction
-
-; Loads the ridable world spaces from the INI file into the given FormList.  
-; Wrties a warning to the log and returns false if the RidableWorldSpaces variable is not found in the INI.
-bool Function LoadINIRidableWorldSpaces(FormList ridableWorldSpaces, String variableName, bool removeForms = false) global
-	String worldSpaceList = GetPrivateINIString(GetINIPath(), "General", variableName)
-	if worldSpaceList == ""
-		Debug.Trace("[IHO WARNING] variable General:" + variableName + " not found at " + GetINIPath())
-		return false
-	endIf
-	int startIndex = 0
-	while startIndex > -1 ; Iterate through each item pair in the list.
-		int endIndex = StringUtil.Find(worldSpaceList, ",", startIndex)
-		int separatorIndex = StringUtil.Find(worldSpaceList, ":", startIndex)
-		int formID = RemoveSpaces(StringUtil.SubString(worldSpaceList, startIndex, separatorIndex)) as int
-		String pluginName = None
-		if endIndex == -1 ; Last or only item in the list.
-			pluginName = StringUtil.SubString(worldSpaceList, separatorIndex + 1)
-			startIndex = -1 ; Quit the loop.
-		else ; More than one item in the list.
-			int pluginNameLength = endIndex - (separatorIndex + 1)
-			pluginName = StringUtil.SubString(worldSpaceList, separatorIndex + 1, pluginNameLength)
-			startIndex = endIndex + 1 ; Continue the loop.
-		endIf
-		if Game.GetModByName(pluginName) != 255 ; Mod exists and is loaded.
-			Form world = Game.GetFormFromFile(formID, pluginName)
-			if world != None
-				if removeForms
-					ridableWorldSpaces.RemoveAddedForm(world) ; Only removes forms added by scripts.
-				else
-					ridableWorldSpaces.AddForm(world)
-				endIf
-			endIf
-		endIf
-	endWhile
-	return true
-EndFunction
-
-; Returns true if the breed name is found in the BreedList in the INI file.
-; Returns false if the breed name is not found in the BreedList in the INI file.
-bool Function HasINIHorseBreedName(String breedName) global
-	String breedList = GetPrivateINIString(GetINIPath(), "Breeds", "BreedList")
-	String currentBreed = ""
-	int startIndex = 0
-	while startIndex > -1 ; Iterate through each entry in the list.
-		int endIndex = StringUtil.Find(breedList, ",", startIndex)
-		if endIndex == -1 ; Last or only entry in the list.
-			currentBreed = StringUtil.SubString(breedList, startIndex)
-			startIndex = -1 ; Quit the loop.
-		else ; More than one entry in the list.
-			currentBreed = StringUtil.SubString(breedList, startIndex, endIndex - startIndex)
-			startIndex = endIndex + 1 ; Continue the loop.
-		endIf
-		if RemoveSpaces(currentBreed) == breedName
-			return true
-		endIf
-	endWhile
-	return false
-EndFunction
-
-; Returns the horse's breed name from the INI file based on the horse's name.
-; Returns an empty String if the breed is not found in the INI file.
-String Function GetINIHorseBreedName(Actor horseRef) global
+; Returns the horse's breed name.
+String Function GetHorseBreedName(Actor horseRef) global
 	ActorBase horseBaseRef = horseRef.GetLeveledActorBase()
-	if horseBaseRef.GetTemplate() == None
-		String actorBaseBreedName = RemoveSpaces(horseBaseRef.GetName())
-		if HasINIHorseBreedName(actorBaseBreedName)
-			return actorBaseBreedName
-		endIf
+	ActorBase horseTemplateRef = horseBaseRef.GetTemplate()
+	if horseTemplateRef == None
+		return horseBaseRef.GetName()
 	else
-		String templateBreedName = RemoveSpaces(horseBaseRef.GetTemplate().GetName())
-		if HasINIHorseBreedName(templateBreedName)
-			return templateBreedName
-		endIf
-		String actorBaseBreedName = RemoveSpaces(horseBaseRef.GetName())
-		if HasINIHorseBreedName(actorBaseBreedName)
-			return actorBaseBreedName
-		endIf
+		return horseTemplateRef.GetName()
 	endIf
-	return ""
+EndFunction
+
+; Returns the horse's breed prefix for the JSON file based on the horse's name or template name.
+; Returns an empty String if the horse's breed is not found in the JSON file.
+String Function GetJSONHorseBreedPrefix(Actor horseRef) global
+	String breedName = GetHorseBreedName(horseRef)
+	if JsonUtil.StringListHas(GetJSONBreedsPath(), "Breeds", breedName)
+		return RemoveSpaces(breedName)
+	else
+		return ""
+	endIf
 EndFunction
 
 ; Returns the perma clone for this horse breed.
-ActorBase Function GetINIPermaClone(Actor horseRef) global
-	String breedClone = GetINIHorseBreedName(horseRef) + "PermaClone"
-	int formID = GetPrivateINIString(GetINIPath(), "Breeds", breedClone) as int
-	if formID == 0
+ActorBase Function GetHorsePermaClone(Actor horseRef) global
+	ActorBase horseBaseRef = horseRef.GetLeveledActorBase()
+	String breedPrefix = GetJSONHorseBreedPrefix(horseRef)
+	int formId = 0
+	if horseBaseRef.GetSex() ; Female
+		if breedPrefix == "BlackFellPony"
+			formId = 0x055215
+		elseIf breedPrefix == "ExmoorPony"
+			formId = 0x055778
+		elseIf breedPrefix == "FjordHorse"
+			formId = 0x05577A
+		elseIf breedPrefix == "GreyFellPony"
+			formId = 0x05577B
+		elseIf breedPrefix == "HaflingerHorse"
+			formId = 0x05577C
+		endIf
+	else ; Male
+		if breedPrefix == "BlackFellPony"
+			formId = 0x05F3B3
+		elseIf breedPrefix == "ExmoorPony"
+			formId = 0x05F915
+		elseIf breedPrefix == "FjordHorse"
+			formId = 0x05F916
+		elseIf breedPrefix == "GreyFellPony"
+			formId = 0x05F917
+		elseIf breedPrefix == "HaflingerHorse"
+			formId = 0x05F918
+		endIf
+	endIf
+	if formId == 0
 		return None
 	endIf
 	return Game.GetFormFromFile(formID, "Immersive Horses.esp") as ActorBase
 EndFunction
 
-; Sets the horse's actor values based on the breed values defined in the INI file.
-Function InitHorseBreedFromINI(Actor horseRef, String breedName) global
-	String actorValueName = "Scale"
-	String variableName = breedName + actorValueName
-	float value = GetPrivateINIString(GetINIPath(), "Breeds", variableName) as float
-	if value > -1 && !horseRef.IsBeingRidden() ; Avoid Havok issues.
-		horseRef.SetScale(value)
-	endIf
-	String[] list = new String[8]
-	list[0] = "Health"
-	list[1] = "Stamina"
-	list[2] = "SpeedMult"
-	list[3] = "UnarmedDamage"
-	list[4] = "LightArmor"
-	list[5] = "HeavyArmor"
-	list[6] = "Confidence"
-	list[7] = "Aggression"
-	int i = 0
-	while i < list.Length
-		actorValueName = list[i]
-		variableName = breedName + actorValueName
-		value = GetPrivateINIString(GetINIPath(), "Breeds", variableName) as float
-		if value > -1
-			horseRef.SetActorValue(actorValueName, value) 
+; Sets the horse's actor values based on the breed values defined in the JSON file.
+Function InitHorseBreedFromJSON(Actor horseRef) global
+	String breedPrefix = GetJSONHorseBreedPrefix(horseRef)
+	if breedPrefix == ""
+		String breedName = GetHorseBreedName(horseRef)
+		Debug.Trace("[IHO WARNING] breed: " + breedName + " not found at " + GetJSONBreedsPath())
+	else
+		String actorValueName = "Scale"
+		String variableName = breedPrefix + actorValueName
+		int value = JsonUtil.GetIntValue(GetJSONBreedsPath(), variableName, 0)
+		if !horseRef.IsBeingRidden() ; Avoid Havok issues.
+			if value == 0 ; Medium (default)
+				horseRef.SetScale(1)
+			elseIf value == 1 ; Large
+				horseRef.SetScale(1.08)
+			elseIf value == -1 ; Small
+				horseRef.SetScale(0.92)
+			endif
 		endIf
-		i += 1
-	endWhile
+		String[] list = new String[8]
+		list[0] = "Health"
+		list[1] = "Stamina"
+		list[2] = "SpeedMult"
+		list[3] = "UnarmedDamage"
+		list[4] = "LightArmor"
+		list[5] = "HeavyArmor"
+		list[6] = "Confidence"
+		list[7] = "Aggression"
+		int i = 0
+		while i < list.Length
+			actorValueName = list[i]
+			variableName = breedPrefix + actorValueName
+			value = JsonUtil.GetIntValue(GetJSONBreedsPath(), variableName)
+			if value > -1
+				horseRef.SetActorValue(actorValueName, value) 
+			endIf
+			i += 1
+		endWhile
+	endIf
 EndFunction
 
 ; Restores the normal speed multiplier for the horse if the horse is trotting.
 Function RestoreSpeedMult(Actor horseRef) global
-	String breedName = GetINIHorseBreedName(horseRef)
-	if breedName != ""
-		float value = GetPrivateINIString(GetINIPath(), "Breeds", breedName + "SpeedMult") as float
+	String breedPrefix = GetJSONHorseBreedPrefix(horseRef)
+	if breedPrefix != ""
+		int value = JsonUtil.GetIntValue(GetJSONBreedsPath(), breedPrefix + "SpeedMult")
 		if value > -1
 			horseRef.SetActorValue("SpeedMult", value)
 		endIf
@@ -267,9 +247,9 @@ EndFunction
 
 ; Restores the unarmed damage actor value for the horse.
 Function RestoreUnarmedDamage(Actor horseRef) global
-	String breedName = GetINIHorseBreedName(horseRef)
-	if breedName != ""
-		float value = GetPrivateINIString(GetINIPath(), "Breeds", breedName + "UnarmedDamage") as float
+	String breedPrefix = GetJSONHorseBreedPrefix(horseRef)
+	if breedPrefix != ""
+		int value = JsonUtil.GetIntValue(GetJSONBreedsPath(), breedPrefix + "UnarmedDamage")
 		if value > -1
 			horseRef.SetActorValue("UnarmedDamage", value)
 		endIf
@@ -361,7 +341,7 @@ Function FastDismount(Actor horseRef, int dismountPosition = 0, bool drawWeapons
 		Debug.SendAnimationEvent(playerRef, "MountedSwimStop")
 	endIf
 	Debug.SendAnimationEvent(playerRef, "JumpStandingStart") ; Override the dismount animation.
-	; Equip both weapons if drawWeapons is true.  Calling DrawWeapon() is not reliable here.
+	; Equip both weapons if drawWeapons is true. Calling DrawWeapon() is not reliable here.
 	if weaponDrawn || drawWeapons
 		Debug.SendAnimationEvent(playerRef, "WeapOutLeftReplaceForceEquip") ; Left hand weapon.
 		Debug.SendAnimationEvent(playerRef, "WeapOutRightReplaceForceEquip") ; Right hand weapon.
@@ -509,39 +489,11 @@ Actor Function GetActorNearPlayer(float afRadius = 1000.0) global
 	endIf
 EndFunction
 
-; Swaps the positions of the two forms in the form array.
-Function SwapFormArrayPositions(Form[] formArrayRef, int thisFormIndex, int thatFormIndex) global
-	Form tempForm = formArrayRef[thisFormIndex]
-	formArrayRef[thisFormIndex] = formArrayRef[thatFormIndex]
-	formArrayRef[thatFormIndex] = tempForm
-EndFunction
-
-; Adds the form to the array by extending it by one cell.  Returns the newly resized array.
-Form[] Function AddFormToArray(Form formRef, Form[] formArrayRef) global
-	if formArrayRef.Find(formRef) >= 0
-		return formArrayRef
-	else
-		return Utility.ResizeFormArray(formArrayRef, formArrayRef.Length + 1, formRef)
-	endIf
-EndFunction
-
-; Removes the first instance of the given form from the form array and then shifts the remaining
-; forms over by one cell to close the gap.  Returns the newly resized array.
-Form[] Function RemoveFormFromArray(Form formRef, Form[] formArrayRef) global
-	int i = 0
-	while i < formArrayRef.Length ; Find and remove the form.
-		if formArrayRef[i] == formRef
-			int z = i + 1
-			while z < formArrayRef.Length ; Shift the remaining forms over by one cell.
-				SwapFormArrayPositions(formArrayRef, z, z - 1)
-				z += 1
-			endWhile
-			return Utility.ResizeFormArray(formArrayRef, formArrayRef.Length - 1)
-		else
-			i += 1
-		endIf
-	endWhile
-	return formArrayRef
+; Swaps the positions of the two actors in the actor array.
+Function SwapActorArrayPositions(Actor[] actorArrayRef, int thisIndex, int thatIndex) global
+	Actor tempActor = actorArrayRef[thisIndex]
+	actorArrayRef[thisIndex] = actorArrayRef[thatIndex]
+	actorArrayRef[thatIndex] = tempActor
 EndFunction
 
 ; Removes all spaces from the given String.
@@ -560,7 +512,7 @@ EndFunction
 
 ; Activates cheat mode (for testing).
 Function CheatModeCheck() global
-	if GetPrivateINIBool(GetINIPath(), "General", "CheatMode")
+	if JsonUtil.GetIntValue(GetJSONPath(), "IHOCheatMode") == 1
 		Actor playerRef = Game.GetPlayer()
 		Form gold = Game.GetFormFromFile(0x000000f, "Skyrim.esm") as Form
 		Spell summonArvak = Game.GetFormFromFile(0x00c600, "Dawnguard.esm") as Spell
