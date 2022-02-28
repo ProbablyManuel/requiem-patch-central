@@ -8,6 +8,13 @@ Must be loaded after "Requiem - Immersive Horses.esp".
 
 Changelog:
 
+5.00
+
+Updated to Requiem 5.0.0.
+
+Updated to Craftable Horse Barding 4.1.0.
+
+
 4.03
 
 Worn armor weight reduction applies to horses too.
