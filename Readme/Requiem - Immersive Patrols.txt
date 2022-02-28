@@ -1,5 +1,12 @@
 Changelog:
 
+5.00
+
+Updated to Requiem 5.0.0.
+
+Updated to Immersive Patrols 2.2.4.
+
+
 4.00
 
 Trading caravan guards have proper equipment and perks to fight enemies.
