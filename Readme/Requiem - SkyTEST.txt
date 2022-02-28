@@ -1,10 +1,19 @@
 Info:
 
+Supports both the NOSM and CCSM file.
+
 Incompatible with Requiem - Wild World.
 
 
 
 Changelog:
+
+5.00
+
+Updated to Requiem 5.0.0.
+
+Updated to SkyTEST 1.65.02.
+
 
 4.00
 
