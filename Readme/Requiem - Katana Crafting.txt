@@ -55,13 +55,15 @@ Ebony Dagger          Korir
 Glass Sword           Brina Merilis
 
 
-Katana Crafting - Smaller Blades (https://www.nexusmods.com/skyrim/mods/89879) is compatible and recommended.
-
-TES5Edit incorrectly displays static records (STAT) as ITMs. These edits are required to fix broken records. This also means the errors in the original mod can be ignored.
-
-
 
 Changelog:
+
+5.00
+
+Updated to Requiem 5.0.0.
+
+Updated to Katana Crafting 2.21c.
+
 
 4.04
 
