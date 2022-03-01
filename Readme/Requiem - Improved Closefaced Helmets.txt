@@ -1,11 +1,9 @@
-Info:
-
-The patch replaces the original plugin because it contains a few errors and ITMs and is rather small.
-You have to disable or delete "imp_helm_legend.esp".
-
-
-
 Changelog:
+
+5.00
+
+Updated to Requiem 5.0.0.
+
 
 4.00
 
