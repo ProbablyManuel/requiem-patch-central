@@ -1,6 +1,6 @@
 Info:
 
-Royal Armory - Reforged (https://www.nexusmods.com/skyrim/mods/98828) is compatible and recommended.
+Royal Armory - Reforged (https://www.nexusmods.com/skyrimspecialedition/mods/28006) is compatible and recommended.
 
 
 Load Order:
@@ -16,6 +16,11 @@ Should be loaded after "Requiem - Minor Arcana - Civil War.esp". Manual conflict
 
 
 Changelog:
+
+5.00
+
+Updated to Requiem 5.0.0.
+
 
 4.01
 
