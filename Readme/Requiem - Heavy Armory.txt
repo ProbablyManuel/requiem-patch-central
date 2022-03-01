@@ -43,6 +43,11 @@ Wakizashi (Sword):
 
 Changelog:
 
+5.00
+
+Updated to Requiem 5.0.0.
+
+
 4.02
 
 Improved SPIKE support.
