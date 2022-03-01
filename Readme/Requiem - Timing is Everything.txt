@@ -1,10 +1,11 @@
-Info:
-
-Dragonborn and The Ebony Warrior are disabled by default because Requiem doesn't support the Dragonborn DLC yet.
-
-
-
 Changelog:
+
+5.00
+
+Updated to Requiem 5.0.0.
+
+Updated to Timing is Everything 2.2.0.
+
 
 3.00
 
