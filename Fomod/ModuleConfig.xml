@@ -1264,7 +1264,7 @@ It's recommended to use Craftable Horse Barding too.
 					<plugins order="Explicit">
 						<plugin name="Warmonger Armory">
 							<description>
-								Requires Warmonger Armory. You need the Vanilla and the DLC version.
+								Requires Warmonger Armory.
 							</description>
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
@@ -1280,8 +1280,7 @@ It's recommended to use Craftable Horse Barding too.
 									<patterns>
 										<pattern>
 											<dependencies operator="And">
-												<fileDependency file="WarmongerArmory_DLC.esp" state="Active"/>
-												<fileDependency file="WarmongerArmory_Vanilla.esp" state="Active"/>
+												<fileDependency file="WarmongerArmory_SSE.esp" state="Active"/>
 											</dependencies>
 											<type name="Recommended"/>
 										</pattern>
