@@ -6,6 +6,13 @@ Must be loaded after "Requiem - Minor Arcana - Roleplaying.esp".
 
 Changelog:
 
+5.00
+
+Updated to Requiem 5.0.0.
+
+Updated to Book Covers Skyrim 4.2.0.
+
+
 4.01
 
 All notes are written in hand instead of press fonts.
