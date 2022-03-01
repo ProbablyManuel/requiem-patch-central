@@ -1,10 +1,9 @@
-Info:
-
-The patch replaces the original plugin because it is corrupted.
-You have to disable or delete "witchplate.esp".
-
-
 Changelog:
+
+5.00
+
+Updated to Requiem 5.0.0.
+
 
 4.00
 
