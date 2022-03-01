@@ -8,6 +8,11 @@ Should be loaded after "Requiem - Royal Armory.esp". Manual conflict resolution 
 
 Changelog:
 
+5.00
+
+Updated to Requiem 5.0.0.
+
+
 4.04	Initial Release
 
 Adjusted stats of armors and weapons.
