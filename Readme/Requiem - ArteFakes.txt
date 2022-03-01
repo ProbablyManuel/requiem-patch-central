@@ -2,6 +2,8 @@ Info:
 
 The patch only carries over the unique models to Requiem and skips all other tweaks from ArteFakes.
 
+Do NOT install the updated plugin which forwards USSEP changes. The patch already covers those changes.
+
 
 
 Load Order:
@@ -19,6 +21,11 @@ Should be loaded after "Requiem - Immersive Sounds Compendium.esp". Manual confl
 
 
 Changelog:
+
+5.00
+
+Updated to Requiem 5.0.0.
+
 
 4.06
 
