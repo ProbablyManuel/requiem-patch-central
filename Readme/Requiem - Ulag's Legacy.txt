@@ -6,6 +6,13 @@ The patch requires the No Immersive Armors version.
 
 Changelog:
 
+5.00
+
+Updated to Requiem 5.0.0.
+
+Updated to Ulag's Legacy 1.1.1.
+
+
 4.00	Initial Release
 
 Adjusted stats of armors and weapons.
