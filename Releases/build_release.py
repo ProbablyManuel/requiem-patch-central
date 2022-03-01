@@ -4,11 +4,6 @@ import config
 import logging
 import release
 
-bsa_exclude = ["Requiem - Immersive Horses",
-               "Requiem - Timing is Everything",
-               "Requiem - Trade and Barter",
-               "Requiem - Vampiric Thirst"]
-
 logger = logging.getLogger(release.__name__)
 logger.setLevel(logging.INFO)
 formatter = logging.Formatter("%(asctime)s %(levelname)s %(message)s")
@@ -19,7 +14,6 @@ try:
     release.build_release(dir_src=config.DIR_REPO,
                           dir_ver=config.DIR_VER,
                           bsarch=config.BSARCH,
-                          bsa_format="tes5",
-                          bsa_exclude=bsa_exclude)
+                          bsa_format="sse")
 except Exception as error:
     logger.exception(error)
