@@ -1,5 +1,12 @@
 Changelog:
 
+5.00
+
+Updated to Requiem 5.0.0.
+
+Updated to Cloaks and Capes 1.4.0.
+
+
 4.04
 
 Reduced weight of all cloaks by 2.
