@@ -893,8 +893,6 @@ It's recommended to use Craftable Horse Barding too.
 						<plugin name="Improved Closefaced Helmets">
 							<description>
 								Requires Improved Closefaced Helmets.
-
-DISABLE/DELETE "imp_helm_legend.esp".
 							</description>
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
@@ -909,9 +907,8 @@ DISABLE/DELETE "imp_helm_legend.esp".
 									<defaultType name="Optional"/>
 									<patterns>
 										<pattern>
-											<dependencies operator="Or">
+											<dependencies operator="And">
 												<fileDependency file="imp_helm_legend.esp" state="Active"/>
-												<fileDependency file="Requiem - Improved Closefaced Helmets.esp" state="Active"/>
 											</dependencies>
 											<type name="Recommended"/>
 										</pattern>
@@ -1043,7 +1040,7 @@ DISABLE/DELETE "imp_helm_legend.esp".
 									<patterns>
 										<pattern>
 											<dependencies operator="And">
-												<fileDependency file="Black Mage Armor.esp" state="Active"/>
+												<fileDependency file="Black Mage Armor SE.esp" state="Active"/>
 											</dependencies>
 											<type name="Recommended"/>
 										</pattern>
@@ -1088,8 +1085,6 @@ DISABLE/DELETE "imp_helm_legend.esp".
 						<plugin name="Divine Wrath Armor">
 							<description>
 								Requires Lost Paladins of the Divines Wrath Armor.
-
-DISABLE/DELETE "LpotDHorse.esp".
 							</description>
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
@@ -1145,30 +1140,27 @@ DISABLE/DELETE "LpotDHorse.esp".
 						</plugin>
 					</plugins>
 				</group>
-				<group name="Runic Armor (Witchplate)" type="SelectAny">
+				<group name="Witchplate Armor" type="SelectAny">
 					<plugins order="Explicit">
-						<plugin name="Runic Armor">
+						<plugin name="Witchplate Armor">
 							<description>
-								Requires Witchplate.
-
-DISABLE/DELETE "witchplate.esp".
+								Requires Witchplate Armor Set.
 							</description>
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
-								<folder source="Requiem - Runic Armor" destination=""/>
-								<file source="Readme\Requiem - Runic Armor.txt" destination="Requiem Patches - Readme\Requiem - Runic Armor.txt"/>
+								<folder source="Requiem - Witchplate Armor" destination=""/>
+								<file source="Readme\Requiem - Witchplate Armor.txt" destination="Requiem Patches - Readme\Requiem - Witchplate Armor.txt"/>
 							</files>
 							<conditionFlags>
-								<flag name="Runic Armor">On</flag>
+								<flag name="Witchplate Armor">On</flag>
 							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
 									<patterns>
 										<pattern>
-											<dependencies operator="Or">
+											<dependencies operator="And">
 												<fileDependency file="witchplate.esp" state="Active"/>
-												<fileDependency file="Requiem - Runic Armor.esp" state="Active"/>
 											</dependencies>
 											<type name="Recommended"/>
 										</pattern>
