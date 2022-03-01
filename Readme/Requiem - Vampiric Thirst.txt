@@ -2,9 +2,18 @@ Info:
 
 Balance-wise this patch is identical to Miss Leeches' original patch.
 
+You should disable or delete "Vampiric Thirst Redone.esp". It's fully included in this patch.
+
 
 
 Changelog:
+
+5.00
+
+Updated to Requiem 5.0.0.
+
+Updated to Vampiric Thirst 1.2.0.
+
 
 4.01
 
