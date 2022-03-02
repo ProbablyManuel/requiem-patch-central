@@ -17,9 +17,6 @@
 								<folder source="Requiem - Cutting Room Floor" destination=""/>
 								<file source="Docs\Requiem - Cutting Room Floor.txt" destination="Docs\Requiem - Cutting Room Floor.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Cutting Room Floor">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -47,9 +44,6 @@
 								<folder source="Requiem - WM Flora Fixes" destination=""/>
 								<file source="Docs\Requiem - WM Flora Fixes.txt" destination="Docs\Requiem - WM Flora Fixes.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="WM Flora Fixes">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -81,9 +75,6 @@
 								<folder source="Requiem - Audio Overhaul for Skyrim" destination=""/>
 								<file source="Docs\Requiem - Audio Overhaul for Skyrim.txt" destination="Docs\Requiem - Audio Overhaul for Skyrim.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Audio Overhaul for Skyrim">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -111,9 +102,6 @@
 								<folder source="Requiem - Immersive Sounds Compendium" destination=""/>
 								<file source="Docs\Requiem - Immersive Sounds Compendium.txt" destination="Docs\Requiem - Immersive Sounds Compendium.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Immersive Sounds Compendium">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -145,9 +133,6 @@
 								<folder source="Requiem - Campfire" destination=""/>
 								<file source="Docs\Requiem - Campfire.txt" destination="Docs\Requiem - Campfire.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Campfire">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -175,9 +160,6 @@
 								<folder source="Requiem - Frostfall" destination=""/>
 								<file source="Docs\Requiem - Frostfall.txt" destination="Docs\Requiem - Frostfall.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Frostfall">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -209,9 +191,6 @@
 								<folder source="Requiem - Deadly Dragons" destination=""/>
 								<file source="Docs\Requiem - Deadly Dragons.txt" destination="Docs\Requiem - Deadly Dragons.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Deadly Dragons">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -239,9 +218,6 @@
 								<folder source="Requiem - Trade and Barter" destination=""/>
 								<file source="Docs\Requiem - Trade and Barter.txt" destination="Docs\Requiem - Trade and Barter.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Trade and Barter">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -269,9 +245,6 @@
 								<folder source="Requiem - Vampiric Thirst" destination=""/>
 								<file source="Docs\Requiem - Vampiric Thirst.txt" destination="Docs\Requiem - Vampiric Thirst.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Vampiric Thirst">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -299,9 +272,6 @@
 								<folder source="Requiem - VioLens" destination=""/>
 								<file source="Docs\Requiem - VioLens.txt" destination="Docs\Requiem - VioLens.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="VioLens">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -333,9 +303,6 @@
 								<folder source="Requiem - Animallica" destination=""/>
 								<file source="Docs\Requiem - Animallica.txt" destination="Docs\Requiem - Animallica.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Animallica">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -363,9 +330,6 @@
 								<folder source="Requiem - SkyTEST" destination=""/>
 								<file source="Docs\Requiem - SkyTEST.txt" destination="Docs\Requiem - SkyTEST.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="SkyTEST">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -393,9 +357,6 @@
 								<folder source="Requiem - Wild World" destination=""/>
 								<file source="Docs\Requiem - Wild World.txt" destination="Docs\Requiem - Wild World.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Wild World">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -427,9 +388,6 @@
 								<folder source="Requiem - Immersive Horses" destination=""/>
 								<file source="Docs\Requiem - Immersive Horses.txt" destination="Docs\Requiem - Immersive Horses.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Immersive Horses">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -457,9 +415,6 @@
 								<folder source="Requiem - Craftable Horse Barding" destination=""/>
 								<file source="Docs\Requiem - Craftable Horse Barding.txt" destination="Docs\Requiem - Craftable Horse Barding.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Craftable Horse Barding">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -491,9 +446,6 @@
 								<folder source="Requiem - Immersive Patrols" destination=""/>
 								<file source="Docs\Requiem - Immersive Patrols.txt" destination="Docs\Requiem - Immersive Patrols.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Immersive Patrols">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -521,9 +473,6 @@
 								<folder source="Requiem - Inconsequential NPCs" destination=""/>
 								<file source="Docs\Requiem - Inconsequential NPCs.txt" destination="Docs\Requiem - Inconsequential NPCs.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Inconsequential NPCs">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -555,9 +504,6 @@
 								<folder source="Requiem - Arissa" destination=""/>
 								<file source="Docs\Requiem - Arissa.txt" destination="Docs\Requiem - Arissa.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Arissa">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -585,9 +531,6 @@
 								<folder source="Requiem - Inigo" destination=""/>
 								<file source="Docs\Requiem - Inigo.txt" destination="Docs\Requiem - Inigo.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Inigo">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -615,9 +558,6 @@
 								<folder source="Requiem - Lucien" destination=""/>
 								<file source="Docs\Requiem - Lucien.txt" destination="Docs\Requiem - Lucien.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Lucien">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -645,9 +585,6 @@
 								<folder source="Requiem - Vilja" destination=""/>
 								<file source="Docs\Requiem - Vilja.txt" destination="Docs\Requiem - Vilja.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Vilja">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -675,9 +612,6 @@
 								<folder source="Requiem - Hoth" destination=""/>
 								<file source="Docs\Requiem - Hoth.txt" destination="Docs\Requiem - Hoth.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Hoth">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -709,9 +643,6 @@
 								<folder source="Requiem - ESF Companions" destination=""/>
 								<file source="Docs\Requiem - ESF Companions.txt" destination="Docs\Requiem - ESF Companions.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="ESF Companions">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -739,9 +670,6 @@
 								<folder source="Requiem - Immersive College of Winterhold" destination=""/>
 								<file source="Docs\Requiem - Immersive College of Winterhold.txt" destination="Docs\Requiem - Immersive College of Winterhold.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Immersive College of Winterhold">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -773,9 +701,6 @@
 								<folder source="Requiem - Timing is Everything" destination=""/>
 								<file source="Docs\Requiem - Timing is Everything.txt" destination="Docs\Requiem - Timing is Everything.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Timing is Everything">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -803,9 +728,6 @@
 								<folder source="Requiem - Skyrim Unlocked" destination=""/>
 								<file source="Docs\Requiem - Skyrim Unlocked.txt" destination="Docs\Requiem - Skyrim Unlocked.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Skyrim Unlocked">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -837,9 +759,6 @@
 								<folder source="Requiem - aMidianborn Skyforge Weapons" destination=""/>
 								<file source="Docs\Requiem - aMidianborn Skyforge Weapons.txt" destination="Docs\Requiem - aMidianborn Skyforge Weapons.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="aMidianborn Skyforge Weapons">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -867,9 +786,6 @@
 								<folder source="Requiem - ArteFakes" destination=""/>
 								<file source="Docs\Requiem - ArteFakes.txt" destination="Docs\Requiem - ArteFakes.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="ArteFakes">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -897,9 +813,6 @@
 								<folder source="Requiem - Improved Closefaced Helmets" destination=""/>
 								<file source="Docs\Requiem - Improved Closefaced Helmets.txt" destination="Docs\Requiem - Improved Closefaced Helmets.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Improved Closefaced Helmets">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -931,9 +844,6 @@
 								<folder source="Requiem - Book Covers Skyrim" destination=""/>
 								<file source="Docs\Requiem - Book Covers Skyrim.txt" destination="Docs\Requiem - Book Covers Skyrim.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Book Covers Skyrim">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -961,9 +871,6 @@
 								<folder source="Requiem - Lost Library" destination=""/>
 								<file source="Docs\Requiem - Lost Library.txt" destination="Docs\Requiem - Lost Library.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Lost Library">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -995,9 +902,6 @@
 								<folder source="Requiem - Cloaks and Capes" destination=""/>
 								<file source="Docs\Requiem - Cloaks and Capes.txt" destination="Docs\Requiem - Cloaks and Capes.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Cloaks and Capes">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -1029,9 +933,6 @@
 								<folder source="Requiem - Black Mage Armor" destination=""/>
 								<file source="Docs\Requiem - Black Mage Armor.txt" destination="Docs\Requiem - Black Mage Armor.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Black Mage Armor">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -1059,9 +960,6 @@
 								<folder source="Requiem - Common Clothes and Armors" destination=""/>
 								<file source="Docs\Requiem - Common Clothes and Armors.txt" destination="Docs\Requiem - Common Clothes and Armors.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Common Clothes and Armors">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -1089,9 +987,6 @@
 								<folder source="Requiem - Divine Wrath Armor" destination=""/>
 								<file source="Docs\Requiem - Divine Wrath Armor.txt" destination="Docs\Requiem - Divine Wrath Armor.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Divine Wrath Armor">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -1119,9 +1014,6 @@
 								<folder source="Requiem - Rough Leather Armor" destination=""/>
 								<file source="Docs\Requiem - Rough Leather Armor.txt" destination="Docs\Requiem - Rough Leather Armor.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Rough Leather Armor">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -1149,9 +1041,6 @@
 								<folder source="Requiem - Witchplate Armor" destination=""/>
 								<file source="Docs\Requiem - Witchplate Armor.txt" destination="Docs\Requiem - Witchplate Armor.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Witchplate Armor">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -1179,9 +1068,6 @@
 								<folder source="Requiem - Scale Nord Armor" destination=""/>
 								<file source="Docs\Requiem - Scale Nord Armor.txt" destination="Docs\Requiem - Scale Nord Armor.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Scale Nord Armor">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -1209,9 +1095,6 @@
 								<folder source="Requiem - Talos Housecarl Armor" destination=""/>
 								<file source="Docs\Requiem - Talos Housecarl Armor.txt" destination="Docs\Requiem - Talos Housecarl Armor.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Talos Housecarl Armor">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -1239,9 +1122,6 @@
 								<folder source="Requiem - Ulag's Legacy" destination=""/>
 								<file source="Docs\Requiem - Ulag's Legacy.txt" destination="Docs\Requiem - Ulag's Legacy.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Ulag's Legacy">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -1269,9 +1149,6 @@
 								<folder source="Requiem - Warmonger Armory" destination=""/>
 								<file source="Docs\Requiem - Warmonger Armory.txt" destination="Docs\Requiem - Warmonger Armory.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Warmonger Armory">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -1303,9 +1180,6 @@
 								<folder source="Requiem - Faction Crossbows" destination=""/>
 								<file source="Docs\Requiem - Faction Crossbows.txt" destination="Docs\Requiem - Faction Crossbows.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Faction Crossbows">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -1333,9 +1207,6 @@
 								<folder source="Requiem - Heavy Armory" destination=""/>
 								<file source="Docs\Requiem - Heavy Armory.txt" destination="Docs\Requiem - Heavy Armory.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Heavy Armory">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -1363,9 +1234,6 @@
 								<folder source="Requiem - Katana Crafting" destination=""/>
 								<file source="Docs\Requiem - Katana Crafting.txt" destination="Docs\Requiem - Katana Crafting.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Katana Crafting">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -1393,9 +1261,6 @@
 								<folder source="Requiem - Royal Armory" destination=""/>
 								<file source="Docs\Requiem - Royal Armory.txt" destination="Docs\Requiem - Royal Armory.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Royal Armory">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
@@ -1423,9 +1288,6 @@
 								<folder source="Requiem - Scoped Bows" destination=""/>
 								<file source="Docs\Requiem - Scoped Bows.txt" destination="Docs\Requiem - Scoped Bows.txt"/>
 							</files>
-							<conditionFlags>
-								<flag name="Scoped Bows">On</flag>
-							</conditionFlags>
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
