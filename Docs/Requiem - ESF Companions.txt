@@ -1,6 +1,6 @@
 Info:
 
-The patch requires the full version of ESF Companions.
+Requires the full version of ESF Companions.
 The requirements-only version is fully compatible with Requiem and doesn't require a patch.
 
 

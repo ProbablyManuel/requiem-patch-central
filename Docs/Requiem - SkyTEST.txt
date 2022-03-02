@@ -1,6 +1,6 @@
 Info:
 
-Supports both the NOSM and CCSM file.
+Requires either the NOSM or CCSM version.
 
 Incompatible with Requiem - Wild World.
 

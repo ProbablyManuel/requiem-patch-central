@@ -1,6 +1,6 @@
 Info:
 
-The patch requires the lore-friendly version of Animallica.
+Requires the lore friendly version of Animallica.
 
 
 

@@ -1,6 +1,6 @@
 Info:
 
-The patch requires the normal version of Deadly Dragons. It doesn't work with the loremonger version.
+Requires the regular version of Deadly Dragons. The patch doesn't work with the loremonger version.
 
 
 

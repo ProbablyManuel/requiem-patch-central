@@ -1,3 +1,9 @@
+Info:
+
+Requires the complete version of aMidianBorn Book of Silence. The patch doesn't work with the CCOR Content Addon.
+
+
+
 Load Order:
 
 Should be loaded after "Requiem - Immersive Sounds Compendium.esp". Manual conflict resolution is advised for advanced users.

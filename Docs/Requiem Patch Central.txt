@@ -7,6 +7,6 @@ The patches are built with Fozar's Dragonborn patch in mind and should be loaded
 
 Bashing, Merging, and Smashing
 
-The official advice regarding [Bashing, Merging, and Smashing](https://requiem.atlassian.net/wiki/spaces/RS/pages/692257110/Bashing+Merging+and+Smashing) applies to the Requiem Patch Central too.
+The official Requiem advice regarding a [Bashed Patch](https://requiem.atlassian.net/wiki/spaces/RSSE/pages/2658828315/Bashed+Patch) applies to the Requiem Patch Central too.
 
 The Import feature of a Bashed Patch is not supported for any types except those explicitly listed as safe in the above advice. The manner in which a Bashed Patch imports records is too limited to handle non-trivial interactions between multiple pugins even when the plugins have proper bash tags assigned.

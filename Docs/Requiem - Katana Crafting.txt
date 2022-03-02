@@ -1,5 +1,7 @@
 Info:
 
+Shorter Dwarven Dai- and regular Katana (optional file) is compatible and recommended.
+
 The stats of the new weapons types are as follows. All numbers are prior to running the Reqtificator.
 
 Dai-Katana (Greatsword):

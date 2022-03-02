@@ -1,7 +1,6 @@
 Info:
 
-The patch doesn't cover the horse armor. Craftable Horse Barding should be used instead.
-You have to disable or delete "LpotDHorse.esp".
+The patch doesn't cover the horse armor. You have to disable or delete "LpotDHorse.esp".
 
 
 Changelog:

@@ -3,7 +3,7 @@ Info:
 Do NOT install the Better Eagle Eye and Faster Arrows tweak. They don't work with Requiem.
 
 The Stealth Meter Tweak conflicts with Requiem's option that hides the Activate button.
-If you intend to make extensive edits to the UI, you should consider using a dedicated UI mod such as Less Intrusive HUD II.
+If you intend to make extensive edits to the UI, you should consider using a dedicated UI mod.
 
 Scoped Bows have the same stats as their Requiem counterpart +0.5 weight.
 

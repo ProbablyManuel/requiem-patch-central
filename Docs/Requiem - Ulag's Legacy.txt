@@ -1,6 +1,6 @@
 Info:
 
-The patch requires the No Immersive Armors version.
+Requires the No Immersive Armors version.
 
 
 
