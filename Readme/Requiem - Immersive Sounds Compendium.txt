@@ -1,9 +1,3 @@
-Load Order:
-
-Must be loaded after "Requiem - Cutting Room Floor.esp".
-
-
-
 Changelog:
 
 5.00
