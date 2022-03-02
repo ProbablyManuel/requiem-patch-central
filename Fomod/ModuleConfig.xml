@@ -1,7 +1,7 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://qconsulting.ca/fo3/ModConfig5.0.xsd">
 	<moduleName>Requiem Patches</moduleName>
 	<requiredInstallFiles>
-		<file source="Readme\General Advice.txt" destination="Requiem Patches - Readme\General Advice.txt"/>
+		<file source="Docs\Requiem Patch Central.txt" destination="Docs\Requiem Patch Central.txt"/>
 	</requiredInstallFiles>
 	<installSteps order="Explicit">
 		<installStep name="Unofficial Patches">
@@ -15,7 +15,7 @@
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Cutting Room Floor" destination=""/>
-								<file source="Readme\Requiem - Cutting Room Floor.txt" destination="Requiem Patches - Readme\Requiem - Cutting Room Floor.txt"/>
+								<file source="Docs\Requiem - Cutting Room Floor.txt" destination="Docs\Requiem - Cutting Room Floor.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Cutting Room Floor">On</flag>
@@ -45,7 +45,7 @@
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - WM Flora Fixes" destination=""/>
-								<file source="Readme\Requiem - WM Flora Fixes.txt" destination="Requiem Patches - Readme\Requiem - WM Flora Fixes.txt"/>
+								<file source="Docs\Requiem - WM Flora Fixes.txt" destination="Docs\Requiem - WM Flora Fixes.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="WM Flora Fixes">On</flag>
@@ -79,7 +79,7 @@
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Audio Overhaul for Skyrim" destination=""/>
-								<file source="Readme\Requiem - Audio Overhaul for Skyrim.txt" destination="Requiem Patches - Readme\Requiem - Audio Overhaul for Skyrim.txt"/>
+								<file source="Docs\Requiem - Audio Overhaul for Skyrim.txt" destination="Docs\Requiem - Audio Overhaul for Skyrim.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Audio Overhaul for Skyrim">On</flag>
@@ -109,7 +109,7 @@
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Immersive Sounds Compendium" destination=""/>
-								<file source="Readme\Requiem - Immersive Sounds Compendium.txt" destination="Requiem Patches - Readme\Requiem - Immersive Sounds Compendium.txt"/>
+								<file source="Docs\Requiem - Immersive Sounds Compendium.txt" destination="Docs\Requiem - Immersive Sounds Compendium.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Immersive Sounds Compendium">On</flag>
@@ -143,7 +143,7 @@
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Campfire" destination=""/>
-								<file source="Readme\Requiem - Campfire.txt" destination="Requiem Patches - Readme\Requiem - Campfire.txt"/>
+								<file source="Docs\Requiem - Campfire.txt" destination="Docs\Requiem - Campfire.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Campfire">On</flag>
@@ -173,7 +173,7 @@
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Frostfall" destination=""/>
-								<file source="Readme\Requiem - Frostfall.txt" destination="Requiem Patches - Readme\Requiem - Frostfall.txt"/>
+								<file source="Docs\Requiem - Frostfall.txt" destination="Docs\Requiem - Frostfall.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Frostfall">On</flag>
@@ -207,7 +207,7 @@
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Deadly Dragons" destination=""/>
-								<file source="Readme\Requiem - Deadly Dragons.txt" destination="Requiem Patches - Readme\Requiem - Deadly Dragons.txt"/>
+								<file source="Docs\Requiem - Deadly Dragons.txt" destination="Docs\Requiem - Deadly Dragons.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Deadly Dragons">On</flag>
@@ -237,7 +237,7 @@
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Trade and Barter" destination=""/>
-								<file source="Readme\Requiem - Trade and Barter.txt" destination="Requiem Patches - Readme\Requiem - Trade and Barter.txt"/>
+								<file source="Docs\Requiem - Trade and Barter.txt" destination="Docs\Requiem - Trade and Barter.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Trade and Barter">On</flag>
@@ -267,7 +267,7 @@
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Vampiric Thirst" destination=""/>
-								<file source="Readme\Requiem - Vampiric Thirst.txt" destination="Requiem Patches - Readme\Requiem - Vampiric Thirst.txt"/>
+								<file source="Docs\Requiem - Vampiric Thirst.txt" destination="Docs\Requiem - Vampiric Thirst.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Vampiric Thirst">On</flag>
@@ -297,7 +297,7 @@
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - VioLens" destination=""/>
-								<file source="Readme\Requiem - VioLens.txt" destination="Requiem Patches - Readme\Requiem - VioLens.txt"/>
+								<file source="Docs\Requiem - VioLens.txt" destination="Docs\Requiem - VioLens.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="VioLens">On</flag>
@@ -331,7 +331,7 @@
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Animallica" destination=""/>
-								<file source="Readme\Requiem - Animallica.txt" destination="Requiem Patches - Readme\Requiem - Animallica.txt"/>
+								<file source="Docs\Requiem - Animallica.txt" destination="Docs\Requiem - Animallica.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Animallica">On</flag>
@@ -361,7 +361,7 @@
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - SkyTEST" destination=""/>
-								<file source="Readme\Requiem - SkyTEST.txt" destination="Requiem Patches - Readme\Requiem - SkyTEST.txt"/>
+								<file source="Docs\Requiem - SkyTEST.txt" destination="Docs\Requiem - SkyTEST.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="SkyTEST">On</flag>
@@ -391,7 +391,7 @@
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Wild World" destination=""/>
-								<file source="Readme\Requiem - Wild World.txt" destination="Requiem Patches - Readme\Requiem - Wild World.txt"/>
+								<file source="Docs\Requiem - Wild World.txt" destination="Docs\Requiem - Wild World.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Wild World">On</flag>
@@ -427,7 +427,7 @@ It's recommended to use Craftable Horse Barding too.
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Immersive Horses" destination=""/>
-								<file source="Readme\Requiem - Immersive Horses.txt" destination="Requiem Patches - Readme\Requiem - Immersive Horses.txt"/>
+								<file source="Docs\Requiem - Immersive Horses.txt" destination="Docs\Requiem - Immersive Horses.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Immersive Horses">On</flag>
@@ -457,7 +457,7 @@ It's recommended to use Craftable Horse Barding too.
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Craftable Horse Barding" destination=""/>
-								<file source="Readme\Requiem - Craftable Horse Barding.txt" destination="Requiem Patches - Readme\Requiem - Craftable Horse Barding.txt"/>
+								<file source="Docs\Requiem - Craftable Horse Barding.txt" destination="Docs\Requiem - Craftable Horse Barding.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Craftable Horse Barding">On</flag>
@@ -491,7 +491,7 @@ It's recommended to use Craftable Horse Barding too.
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Immersive Patrols" destination=""/>
-								<file source="Readme\Requiem - Immersive Patrols.txt" destination="Requiem Patches - Readme\Requiem - Immersive Patrols.txt"/>
+								<file source="Docs\Requiem - Immersive Patrols.txt" destination="Docs\Requiem - Immersive Patrols.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Immersive Patrols">On</flag>
@@ -521,7 +521,7 @@ It's recommended to use Craftable Horse Barding too.
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Inconsequential NPCs" destination=""/>
-								<file source="Readme\Requiem - Inconsequential NPCs.txt" destination="Requiem Patches - Readme\Requiem - Inconsequential NPCs.txt"/>
+								<file source="Docs\Requiem - Inconsequential NPCs.txt" destination="Docs\Requiem - Inconsequential NPCs.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Inconsequential NPCs">On</flag>
@@ -555,7 +555,7 @@ It's recommended to use Craftable Horse Barding too.
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Arissa" destination=""/>
-								<file source="Readme\Requiem - Arissa.txt" destination="Requiem Patches - Readme\Requiem - Arissa.txt"/>
+								<file source="Docs\Requiem - Arissa.txt" destination="Docs\Requiem - Arissa.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Arissa">On</flag>
@@ -585,7 +585,7 @@ It's recommended to use Craftable Horse Barding too.
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Inigo" destination=""/>
-								<file source="Readme\Requiem - Inigo.txt" destination="Requiem Patches - Readme\Requiem - Inigo.txt"/>
+								<file source="Docs\Requiem - Inigo.txt" destination="Docs\Requiem - Inigo.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Inigo">On</flag>
@@ -615,7 +615,7 @@ It's recommended to use Craftable Horse Barding too.
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Lucien" destination=""/>
-								<file source="Readme\Requiem - Lucien.txt" destination="Requiem Patches - Readme\Requiem - Lucien.txt"/>
+								<file source="Docs\Requiem - Lucien.txt" destination="Docs\Requiem - Lucien.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Lucien">On</flag>
@@ -645,7 +645,7 @@ It's recommended to use Craftable Horse Barding too.
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Vilja" destination=""/>
-								<file source="Readme\Requiem - Vilja.txt" destination="Requiem Patches - Readme\Requiem - Vilja.txt"/>
+								<file source="Docs\Requiem - Vilja.txt" destination="Docs\Requiem - Vilja.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Vilja">On</flag>
@@ -675,7 +675,7 @@ It's recommended to use Craftable Horse Barding too.
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Hoth" destination=""/>
-								<file source="Readme\Requiem - Hoth.txt" destination="Requiem Patches - Readme\Requiem - Hoth.txt"/>
+								<file source="Docs\Requiem - Hoth.txt" destination="Docs\Requiem - Hoth.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Hoth">On</flag>
@@ -709,7 +709,7 @@ It's recommended to use Craftable Horse Barding too.
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - ESF Companions" destination=""/>
-								<file source="Readme\Requiem - ESF Companions.txt" destination="Requiem Patches - Readme\Requiem - ESF Companions.txt"/>
+								<file source="Docs\Requiem - ESF Companions.txt" destination="Docs\Requiem - ESF Companions.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="ESF Companions">On</flag>
@@ -739,7 +739,7 @@ It's recommended to use Craftable Horse Barding too.
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Immersive College of Winterhold" destination=""/>
-								<file source="Readme\Requiem - Immersive College of Winterhold.txt" destination="Requiem Patches - Readme\Requiem - Immersive College of Winterhold.txt"/>
+								<file source="Docs\Requiem - Immersive College of Winterhold.txt" destination="Docs\Requiem - Immersive College of Winterhold.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Immersive College of Winterhold">On</flag>
@@ -773,7 +773,7 @@ It's recommended to use Craftable Horse Barding too.
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Timing is Everything" destination=""/>
-								<file source="Readme\Requiem - Timing is Everything.txt" destination="Requiem Patches - Readme\Requiem - Timing is Everything.txt"/>
+								<file source="Docs\Requiem - Timing is Everything.txt" destination="Docs\Requiem - Timing is Everything.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Timing is Everything">On</flag>
@@ -803,7 +803,7 @@ It's recommended to use Craftable Horse Barding too.
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Skyrim Unlocked" destination=""/>
-								<file source="Readme\Requiem - Skyrim Unlocked.txt" destination="Requiem Patches - Readme\Requiem - Skyrim Unlocked.txt"/>
+								<file source="Docs\Requiem - Skyrim Unlocked.txt" destination="Docs\Requiem - Skyrim Unlocked.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Skyrim Unlocked">On</flag>
@@ -837,7 +837,7 @@ It's recommended to use Craftable Horse Barding too.
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - aMidianborn Skyforge Weapons" destination=""/>
-								<file source="Readme\Requiem - aMidianborn Skyforge Weapons.txt" destination="Requiem Patches - Readme\Requiem - aMidianborn Skyforge Weapons.txt"/>
+								<file source="Docs\Requiem - aMidianborn Skyforge Weapons.txt" destination="Docs\Requiem - aMidianborn Skyforge Weapons.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="aMidianborn Skyforge Weapons">On</flag>
@@ -867,7 +867,7 @@ It's recommended to use Craftable Horse Barding too.
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - ArteFakes" destination=""/>
-								<file source="Readme\Requiem - ArteFakes.txt" destination="Requiem Patches - Readme\Requiem - ArteFakes.txt"/>
+								<file source="Docs\Requiem - ArteFakes.txt" destination="Docs\Requiem - ArteFakes.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="ArteFakes">On</flag>
@@ -897,7 +897,7 @@ It's recommended to use Craftable Horse Barding too.
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Improved Closefaced Helmets" destination=""/>
-								<file source="Readme\Requiem - Improved Closefaced Helmets.txt" destination="Requiem Patches - Readme\Requiem - Improved Closefaced Helmets.txt"/>
+								<file source="Docs\Requiem - Improved Closefaced Helmets.txt" destination="Docs\Requiem - Improved Closefaced Helmets.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Improved Closefaced Helmets">On</flag>
@@ -931,7 +931,7 @@ It's recommended to use Craftable Horse Barding too.
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Book Covers Skyrim" destination=""/>
-								<file source="Readme\Requiem - Book Covers Skyrim.txt" destination="Requiem Patches - Readme\Requiem - Book Covers Skyrim.txt"/>
+								<file source="Docs\Requiem - Book Covers Skyrim.txt" destination="Docs\Requiem - Book Covers Skyrim.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Book Covers Skyrim">On</flag>
@@ -961,7 +961,7 @@ It's recommended to use Craftable Horse Barding too.
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Lost Library" destination=""/>
-								<file source="Readme\Requiem - Lost Library.txt" destination="Requiem Patches - Readme\Requiem - Lost Library.txt"/>
+								<file source="Docs\Requiem - Lost Library.txt" destination="Docs\Requiem - Lost Library.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Lost Library">On</flag>
@@ -995,7 +995,7 @@ It's recommended to use Craftable Horse Barding too.
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Cloaks and Capes" destination=""/>
-								<file source="Readme\Requiem - Cloaks and Capes.txt" destination="Requiem Patches - Readme\Requiem - Cloaks and Capes.txt"/>
+								<file source="Docs\Requiem - Cloaks and Capes.txt" destination="Docs\Requiem - Cloaks and Capes.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Cloaks and Capes">On</flag>
@@ -1029,7 +1029,7 @@ It's recommended to use Craftable Horse Barding too.
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Black Mage Armor" destination=""/>
-								<file source="Readme\Requiem - Black Mage Armor.txt" destination="Requiem Patches - Readme\Requiem - Black Mage Armor.txt"/>
+								<file source="Docs\Requiem - Black Mage Armor.txt" destination="Docs\Requiem - Black Mage Armor.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Black Mage Armor">On</flag>
@@ -1059,7 +1059,7 @@ It's recommended to use Craftable Horse Barding too.
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Common Clothes and Armors" destination=""/>
-								<file source="Readme\Requiem - Common Clothes and Armors.txt" destination="Requiem Patches - Readme\Requiem - Common Clothes and Armors.txt"/>
+								<file source="Docs\Requiem - Common Clothes and Armors.txt" destination="Docs\Requiem - Common Clothes and Armors.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Common Clothes and Armors">On</flag>
@@ -1089,7 +1089,7 @@ It's recommended to use Craftable Horse Barding too.
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Divine Wrath Armor" destination=""/>
-								<file source="Readme\Requiem - Divine Wrath Armor.txt" destination="Requiem Patches - Readme\Requiem - Divine Wrath Armor.txt"/>
+								<file source="Docs\Requiem - Divine Wrath Armor.txt" destination="Docs\Requiem - Divine Wrath Armor.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Divine Wrath Armor">On</flag>
@@ -1119,7 +1119,7 @@ It's recommended to use Craftable Horse Barding too.
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Rough Leather Armor" destination=""/>
-								<file source="Readme\Requiem - Rough Leather Armor.txt" destination="Requiem Patches - Readme\Requiem - Rough Leather Armor.txt"/>
+								<file source="Docs\Requiem - Rough Leather Armor.txt" destination="Docs\Requiem - Rough Leather Armor.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Rough Leather Armor">On</flag>
@@ -1149,7 +1149,7 @@ It's recommended to use Craftable Horse Barding too.
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Witchplate Armor" destination=""/>
-								<file source="Readme\Requiem - Witchplate Armor.txt" destination="Requiem Patches - Readme\Requiem - Witchplate Armor.txt"/>
+								<file source="Docs\Requiem - Witchplate Armor.txt" destination="Docs\Requiem - Witchplate Armor.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Witchplate Armor">On</flag>
@@ -1179,7 +1179,7 @@ It's recommended to use Craftable Horse Barding too.
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Scale Nord Armor" destination=""/>
-								<file source="Readme\Requiem - Scale Nord Armor.txt" destination="Requiem Patches - Readme\Requiem - Scale Nord Armor.txt"/>
+								<file source="Docs\Requiem - Scale Nord Armor.txt" destination="Docs\Requiem - Scale Nord Armor.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Scale Nord Armor">On</flag>
@@ -1209,7 +1209,7 @@ It's recommended to use Craftable Horse Barding too.
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Talos Housecarl Armor" destination=""/>
-								<file source="Readme\Requiem - Talos Housecarl Armor.txt" destination="Requiem Patches - Readme\Requiem - Talos Housecarl Armor.txt"/>
+								<file source="Docs\Requiem - Talos Housecarl Armor.txt" destination="Docs\Requiem - Talos Housecarl Armor.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Talos Housecarl Armor">On</flag>
@@ -1239,7 +1239,7 @@ It's recommended to use Craftable Horse Barding too.
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Ulag's Legacy" destination=""/>
-								<file source="Readme\Requiem - Ulag's Legacy.txt" destination="Requiem Patches - Readme\Requiem - Ulag's Legacy.txt"/>
+								<file source="Docs\Requiem - Ulag's Legacy.txt" destination="Docs\Requiem - Ulag's Legacy.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Ulag's Legacy">On</flag>
@@ -1269,7 +1269,7 @@ It's recommended to use Craftable Horse Barding too.
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Warmonger Armory" destination=""/>
-								<file source="Readme\Requiem - Warmonger Armory.txt" destination="Requiem Patches - Readme\Requiem - Warmonger Armory.txt"/>
+								<file source="Docs\Requiem - Warmonger Armory.txt" destination="Docs\Requiem - Warmonger Armory.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Warmonger Armory">On</flag>
@@ -1303,7 +1303,7 @@ It's recommended to use Craftable Horse Barding too.
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Faction Crossbows" destination=""/>
-								<file source="Readme\Requiem - Faction Crossbows.txt" destination="Requiem Patches - Readme\Requiem - Faction Crossbows.txt"/>
+								<file source="Docs\Requiem - Faction Crossbows.txt" destination="Docs\Requiem - Faction Crossbows.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Faction Crossbows">On</flag>
@@ -1333,7 +1333,7 @@ It's recommended to use Craftable Horse Barding too.
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Heavy Armory" destination=""/>
-								<file source="Readme\Requiem - Heavy Armory.txt" destination="Requiem Patches - Readme\Requiem - Heavy Armory.txt"/>
+								<file source="Docs\Requiem - Heavy Armory.txt" destination="Docs\Requiem - Heavy Armory.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Heavy Armory">On</flag>
@@ -1363,7 +1363,7 @@ It's recommended to use Craftable Horse Barding too.
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Katana Crafting" destination=""/>
-								<file source="Readme\Requiem - Katana Crafting.txt" destination="Requiem Patches - Readme\Requiem - Katana Crafting.txt"/>
+								<file source="Docs\Requiem - Katana Crafting.txt" destination="Docs\Requiem - Katana Crafting.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Katana Crafting">On</flag>
@@ -1393,7 +1393,7 @@ It's recommended to use Craftable Horse Barding too.
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Royal Armory" destination=""/>
-								<file source="Readme\Requiem - Royal Armory.txt" destination="Requiem Patches - Readme\Requiem - Royal Armory.txt"/>
+								<file source="Docs\Requiem - Royal Armory.txt" destination="Docs\Requiem - Royal Armory.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Royal Armory">On</flag>
@@ -1423,7 +1423,7 @@ It's recommended to use Craftable Horse Barding too.
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
 								<folder source="Requiem - Scoped Bows" destination=""/>
-								<file source="Readme\Requiem - Scoped Bows.txt" destination="Requiem Patches - Readme\Requiem - Scoped Bows.txt"/>
+								<file source="Docs\Requiem - Scoped Bows.txt" destination="Docs\Requiem - Scoped Bows.txt"/>
 							</files>
 							<conditionFlags>
 								<flag name="Scoped Bows">On</flag>
