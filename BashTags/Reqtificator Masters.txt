@@ -1,0 +1,14 @@
+Requiem - Black Mage Armor.esp
+Requiem - Craftable Horse Barding.esp
+Requiem - Divine Wrath Armor.esp
+Requiem - Heavy Armory.esp
+Requiem - Hoth.esp
+Requiem - Immersive College of Winterhold.esp
+Requiem - Immersive Patrols.esp
+Requiem - Inigo.esp
+Requiem - Royal Armory.esp
+Requiem - Scale Nord Armor.esp
+Requiem - Scoped Bows.esp
+Requiem - Talos Housecarl Armor.esp
+Requiem - Warmonger Armory.esp
+Requiem - Witchplate Armor.esp
