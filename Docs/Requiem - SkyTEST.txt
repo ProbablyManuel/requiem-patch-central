@@ -2,7 +2,7 @@ Info:
 
 Requires either the NOSM or CCSM version.
 
-Incompatible with Requiem - Wild World.
+Incompatible with "Requiem - Wild World.esp".
 
 
 

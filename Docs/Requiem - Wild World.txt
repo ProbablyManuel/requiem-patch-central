@@ -1,6 +1,6 @@
 Info:
 
-Incompatible with Requiem - SkyTEST.
+Incompatible with "Requiem - SkyTEST.esp".
 
 
 
