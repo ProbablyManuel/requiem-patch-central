@@ -1,13 +1,10 @@
-Info:
-
-The patch doesn't cover the horse armor. You have to disable or delete "LpotDHorse.esp".
-
-
 Changelog:
 
 5.00
 
 Updated to Requiem 5.0.0.
+
+Updated to Divine Wrath Armor 2.0.0.
 
 
 4.00
