@@ -66,14 +66,14 @@
 			<optionalFileGroups order="Explicit">
 				<group name="Audio Overhaul for Skyrim" type="SelectAny">
 					<plugins order="Explicit">
-						<plugin name="Audio Overhaul for Skyrim">
+						<plugin name="Audio Overhaul Skyrim">
 							<description>
-								Requires Audio Overhaul for Skyrim.
+								Requires Audio Overhaul Skyrim.
 							</description>
 							<image path="fomod\Requiem Compatibility Patches.jpg"/>
 							<files>
-								<folder source="Requiem - Audio Overhaul for Skyrim" destination=""/>
-								<file source="Docs\Requiem - Audio Overhaul for Skyrim.txt" destination="Docs\Requiem - Audio Overhaul for Skyrim.txt"/>
+								<folder source="Requiem - Audio Overhaul Skyrim" destination=""/>
+								<file source="Docs\Requiem - Audio Overhaul Skyrim.txt" destination="Docs\Requiem - Audio Overhaul Skyrim.txt"/>
 							</files>
 							<typeDescriptor>
 								<dependencyType>
