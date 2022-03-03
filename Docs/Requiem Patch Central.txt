@@ -5,7 +5,7 @@ All load order advice in these readmes is also known to LOOT (or Vortex). Make y
 The patches are built with Fozar's Dragonborn patch in mind and should be loaded after it. However, many plugins have no overlap with Fozar's Dragonborn patch and therefore LOOT may load some plugins before it.
 
 
-Bashing, Merging, and Smashing
+Bashed Patch
 
 The official Requiem advice regarding a [Bashed Patch](https://requiem.atlassian.net/wiki/spaces/RSSE/pages/2658828315/Bashed+Patch) applies to the Requiem Patch Central too.
 
