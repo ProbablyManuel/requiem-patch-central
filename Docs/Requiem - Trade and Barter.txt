@@ -12,7 +12,7 @@ Changelog:
 
 Updated to Requiem 5.0.0.
 
-Updated to Trade and Barter 2.0.0.
+Updated to Trade and Barter 2.0.
 
 
 4.00

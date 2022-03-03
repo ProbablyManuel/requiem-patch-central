@@ -4,6 +4,8 @@ Changelog:
 
 Updated to Requiem 5.0.0.
 
+Updated to Improved Closefaced Helmets 1.58.
+
 
 4.00
 

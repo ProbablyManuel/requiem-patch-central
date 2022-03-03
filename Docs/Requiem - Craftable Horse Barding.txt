@@ -12,7 +12,7 @@ Changelog:
 
 Updated to Requiem 5.0.0.
 
-Updated to Craftable Horse Barding 4.1.0.
+Updated to Craftable Horse Barding 4.1.
 
 
 4.03

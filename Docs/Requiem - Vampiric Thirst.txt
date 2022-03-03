@@ -12,7 +12,7 @@ Changelog:
 
 Updated to Requiem 5.0.0.
 
-Updated to Vampiric Thirst 1.2.0.
+Updated to Vampiric Thirst 1.2.
 
 
 4.01

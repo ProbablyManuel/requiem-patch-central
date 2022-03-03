@@ -10,7 +10,7 @@ Changelog:
 
 Updated to Requiem 5.0.0.
 
-Updated to Immersive College of Winterhold 6.2.0.
+Updated to Immersive College of Winterhold 6.2.
 
 
 4.03

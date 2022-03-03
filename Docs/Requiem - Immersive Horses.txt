@@ -22,7 +22,7 @@ Changelog:
 
 Updated to Requiem 5.0.0.
 
-Updated to Immersive Horses 3.0.0.
+Updated to Immersive Horses 3.0.
 
 
 4.03

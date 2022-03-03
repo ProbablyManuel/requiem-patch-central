@@ -4,7 +4,7 @@ Changelog:
 
 Updated to Requiem 5.0.0.
 
-Updated to Vilja 4.3.0.
+Updated to Vilja 4.3.
 
 
 4.00

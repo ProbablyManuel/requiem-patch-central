@@ -4,7 +4,7 @@ Changelog:
 
 Updated to Requiem 5.0.0.
 
-Updated to Immersive Sounds Compendium 3.0.0.
+Updated to Immersive Sounds Compendium 3.0.
 
 
 4.00
