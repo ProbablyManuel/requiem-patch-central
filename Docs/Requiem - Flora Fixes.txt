@@ -22,4 +22,4 @@ Updated to Fozar's Dragonborn patch. Fozar's Dragonborn patch isn't required to 
 
 1.41	Initial Release
 
-Patched direct conflicts between Requiem and WM Flora Fixes.
+Patched direct conflicts between Requiem and Flora Fixes.
