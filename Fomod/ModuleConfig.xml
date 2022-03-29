@@ -33,33 +33,6 @@
 						</plugin>
 					</plugins>	
 				</group>
-				<group name="Wiseman303's Flora Fixes - Revamped" type="SelectAny">
-					<plugins order="Explicit">
-						<plugin name="Flora Fixes">
-							<description>
-								Requires Flora Fixes.
-							</description>
-							<image path="fomod\Requiem Compatibility Patches.jpg"/>
-							<files>
-								<folder source="Requiem - Flora Fixes" destination=""/>
-								<file source="Docs\Requiem - Flora Fixes.txt" destination="Docs\Requiem - Flora Fixes.txt"/>
-							</files>
-							<typeDescriptor>
-								<dependencyType>
-									<defaultType name="Optional"/>
-									<patterns>
-										<pattern>
-											<dependencies operator="And">
-												<fileDependency file="WM Flora Fixes.esp" state="Active"/>
-											</dependencies>
-											<type name="Recommended"/>
-										</pattern>
-									</patterns>
-								</dependencyType>
-							</typeDescriptor>
-						</plugin>
-					</plugins>	
-				</group>
 			</optionalFileGroups>
 		</installStep>
 		<installStep name="Audio">
