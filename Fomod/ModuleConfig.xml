@@ -868,33 +868,6 @@
 		</installStep>
 		<installStep name="Armors">
 			<optionalFileGroups order="Explicit">
-				<group name="Black Mage Armor" type="SelectAny">
-					<plugins order="Explicit">
-						<plugin name="Black Mage Armor">
-							<description>
-								Requires Black Mage Armor.
-							</description>
-							<image path="fomod\Requiem Compatibility Patches.jpg"/>
-							<files>
-								<folder source="Requiem - Black Mage Armor" destination=""/>
-								<file source="Docs\Requiem - Black Mage Armor.txt" destination="Docs\Requiem - Black Mage Armor.txt"/>
-							</files>
-							<typeDescriptor>
-								<dependencyType>
-									<defaultType name="Optional"/>
-									<patterns>
-										<pattern>
-											<dependencies operator="And">
-												<fileDependency file="Black Mage Armor SE.esp" state="Active"/>
-											</dependencies>
-											<type name="Recommended"/>
-										</pattern>
-									</patterns>
-								</dependencyType>
-							</typeDescriptor>
-						</plugin>
-					</plugins>
-				</group>
 				<group name="Common Clothes and Armors" type="SelectAny">
 					<plugins order="Explicit">
 						<plugin name="Common Clothes and Armors">
