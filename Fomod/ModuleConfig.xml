@@ -4,7 +4,7 @@
 		<file source="Docs\Requiem Patch Central.txt" destination="Docs\Requiem Patch Central.txt"/>
 	</requiredInstallFiles>
 	<installSteps order="Explicit">
-		<installStep name="Unofficial Patches">
+		<installStep name="Content Restoration">
 			<optionalFileGroups order="Explicit">
 				<group name="Cutting Room Floor" type="SelectAny">
 					<plugins order="Explicit">
