@@ -14,6 +14,11 @@ Should be loaded after "Requiem - Audio Overhaul Skyrim.esp". Manual conflict re
 
 Changelog:
 
+5.01
+
+Updated to Requiem 5.1.0.
+
+
 5.00
 
 Updated to Requiem 5.0.0.
