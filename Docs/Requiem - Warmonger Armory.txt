@@ -18,7 +18,6 @@ Talvas Fathryon       Telvanni Apprentice Robes  -
 Vigilants of Stendarr Wandering Knight Armor     Vigilant's Armor
 
 NPC                   Weapons                    Stats
-Angarvunde treasure   Frost Fang + Ysmir Fang    Ebony
 Eisa Blackthorn       Pathfinder Sword           Iron
 Irileth               Dunmer Ebony Sword         Ebony
 Kematu and his guards Alik'r Saber               Scimitar +10% speed
@@ -38,6 +37,13 @@ Must be loaded after "Requiem - Scale Nord Armor.esp".
 
 
 Changelog:
+
+5.01
+
+Updated to Requiem 5.1.0.
+
+Removed Frost Fang and Ysmir Fang.
+
 
 5.00
 
