@@ -1,5 +1,10 @@
 Changelog:
 
+5.01
+
+Updated to Requiem 5.1.0.
+
+
 5.00
 
 Updated to Requiem 5.0.0.
@@ -14,7 +19,7 @@ Updated to Requiem 4.0.0.
 
 Renamed armor to Runic Armor.
 
-Weight and additional resistances match steel armor but armor rating is on par with steel plate armor.
+Weight and additional resistances match steel armor but armor rating is on par with nordic carved armor.
 
 Crafting and tempering requires Arcane Craftsmanship.
 
