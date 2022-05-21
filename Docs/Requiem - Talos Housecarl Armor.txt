@@ -1,12 +1,9 @@
-Load Order:
-
-Should be loaded after "Requiem - Minor Arcana - Civil War.esp". Manual conflict resolution is advised for advanced users.
-
-Should be loaded after "Requiem - Royal Armory.esp". Manual conflict resolution is advised for advanced users.
-
-
-
 Changelog:
+
+5.01
+
+Updated to Requiem 5.1.0.
+
 
 5.00
 
