@@ -10,8 +10,6 @@ Load Order:
 
 Must be loaded after "Requiem - Cutting Room Floor.esp".
 
-Must be loaded after "Requiem - ESF Companions.esp".
-
 Should be loaded after "Requiem - Minor Arcana - Roleplaying.esp". Manual conflict resolution is advised for advanced users.
 
 Should be loaded after "Requiem - Audio Overhaul Skyrim.esp". Manual conflict resolution is advised for advanced users.
@@ -21,6 +19,11 @@ Should be loaded after "Requiem - Immersive Sounds Compendium.esp". Manual confl
 
 
 Changelog:
+
+5.02
+
+Updated to Requiem 5.2.0.
+
 
 5.01
 
