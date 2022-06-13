@@ -60,6 +60,11 @@ Glass Sword           Brina Merilis
 
 Changelog:
 
+5.02
+
+Updated to Requiem 5.2.0.
+
+
 5.01
 
 Updated to Requiem 5.1.0.
