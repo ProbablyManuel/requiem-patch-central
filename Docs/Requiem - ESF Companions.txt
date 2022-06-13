@@ -5,13 +5,12 @@ The requirements-only version is fully compatible with Requiem and doesn't requi
 
 
 
-Load Order:
-
-Must be loaded after "Requiem - Minor Arcana - Roleplaying.esp".
-
-
-
 Changelog:
+
+5.02
+
+Updated to Requiem 5.2.0.
+
 
 5.00
 
