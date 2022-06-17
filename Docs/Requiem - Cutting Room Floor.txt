@@ -7,6 +7,13 @@ However the patch also works with the version hosted at NexusMods.
 
 Changelog:
 
+5.03
+
+Updated to Requiem 5.2.1.
+
+Aela is assigned as your observer during Proving Honor only if you do more work for her than any other Companion.
+
+
 5.02
 
 Updated to Requiem 5.2.0.
