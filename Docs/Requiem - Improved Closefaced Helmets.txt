@@ -1,5 +1,10 @@
 Changelog:
 
+5.02
+
+Prioritized armor values from Requiem 5.1.0 over Fozar's Dragonborn patch until the patch is updated.
+
+
 5.01
 
 Updated to Requiem 5.1.0.
