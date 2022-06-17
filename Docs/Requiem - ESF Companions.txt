@@ -7,6 +7,11 @@ The requirements-only version is fully compatible with Requiem and doesn't requi
 
 Changelog:
 
+5.03
+
+Updated to Requiem 5.2.1.
+
+
 5.02
 
 Updated to Requiem 5.2.0.
