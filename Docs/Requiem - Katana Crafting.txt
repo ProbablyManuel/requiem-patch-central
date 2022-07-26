@@ -1,7 +1,5 @@
 Info:
 
-Shorter Dwarven Dai- and regular Katana (optional file) is compatible and recommended.
-
 The stats of the new weapons types are as follows. All numbers are prior to running the Reqtificator.
 
 Dai-Katana (Greatsword):
@@ -25,40 +23,53 @@ Daedric Katana        Velehk Sain
 Daedric Tanto         Valerica
 Daedric Wakizashi     Velehk Sain
 Dwarven Dai-Katana    Reachwind Eyrie
-Dwarven Katana        Igmund
+Dwarven Katana        Reachwind Eyrie
 Dwarven Tanto         Trapped bandit in Ravenscar Hollow
 Dwarven Wakizashi     Maluril
-Ebony Dai-Katana      Chief Mauhulakh
+Ebony Dai-Katana      Raldbthar
 Ebony Katana          Champion of Boethiah
 Ebony Tanto           Serana
-Ebony Wakizashi       Laila Law-Giver
+Ebony Wakizashi       Replaces ebony sword in Twilight Sepulcher
 Elven Dai-Katana      Unmid Snow-Shod
 Elven Katana          Ondolemar
 Elven Tanto           Melaran
 Elven Wakizashi       Linwe
 Glass Dai-Katana      Replaces glass sword in Reeking Cave
 Glass Katana          Replaces glass dagger in Reeking Cave
-Glass Tanto           Sybille Stentor
+Glass Tanto           Dravynea the Stoneweaver
 Glass Wakizashi       Replaces glass dagger in Twilight Sepulcher
+Nordic Dai-Katana     Halbarn Iron-Fur
+Nordic Katana         Herkja
+Nordic Tanto          Elmus
+Nordic Wakizashi      Hilund
 Orcish Dai-Katana     Ghunzul
-Orcish Katana         Chief Burguk
-Orcish Tanto          Ghorza gra-Bagol
-Orcish Wakizashi      Moth gro-Bagol
-Silver Dai-Katana     Yngvar the Singer
+Orcish Katana         Cracked Tusk Keep
+Orcish Tanto          Cracked Tusk Keep
+Orcish Wakizashi      Cracked Tusk Keep
+Silver Dai-Katana     Bleak Falls Barrow
 Silver Katana         Replaces silver sword in Bleak Falls Barrow
 Silver Tanto          Betrid Silver-Blood
 Silver Wakizashi      Replaces ebony dagger in Sunuarach Mine
 Steel Dai-Katana      The Butcher
 Steel Katana          Boethiah Cultist at the Sacellum of Boethiah
-Steel Tanto           Dravynea the Stoneweaver
+Steel Tanto           Helgen Keep
 Steel Wakizashi       Boethiah Cultist at the Sacellum of Boethiah
 
 Ebony Dagger          Korir
-Glass Sword           Brina Merilis
+Ebony Mace            Igmund
+Ebony Sword           Brina Merilis
+Ebony Shield          Raldbthar
 
 
 
 Changelog:
+
+5.03
+
+Updated to Katana Crafting 3.1.4a.
+
+Relocated various weapons.
+
 
 5.02
 
