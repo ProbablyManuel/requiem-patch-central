@@ -1,0 +1,29 @@
+Requirements:
+  - Audio Overhaul Skyrim.esp
+Explosions:
+  - Form: Skyrim.esm|104D46
+    Interior: Skyrim.esm|0C4E30
+Weapons:
+  # Frost Giant Club
+  - Form: Dawnguard.esm|012D14
+    Impact Data Set: Skyrim.esm|0193C7
+  # Awakened Blade of Woe
+  - Form: Skyrim.esm|09CCDC
+    Impact Data Set: Audio Overhaul Skyrim.esp|05B6EA
+    Equip: Skyrim.esm|03CED9
+    Unequip: Skyrim.esm|03CEDB
+  # Prelate's Dagger
+  - Form: Dawnguard.esm|01681F
+    Impact Data Set: Audio Overhaul Skyrim.esp|05B6EA
+    Equip: Skyrim.esm|03CED9
+    Unequip: Skyrim.esm|03CEDB
+  # Skyforge Steel Dagger
+  - Form: Dawnguard.esm|00CFB4
+    Impact Data Set: Audio Overhaul Skyrim.esp|05B6EA
+    Equip: Skyrim.esm|03CED9
+    Unequip: Skyrim.esm|03CEDB
+  # Daedric Dagger (non-playable)
+  - Form: Requiem.esp|AD3A8E
+    Impact Data Set: Audio Overhaul Skyrim.esp|05B6EA
+    Equip: Skyrim.esm|03CED9
+    Unequip: Skyrim.esm|03CEDB

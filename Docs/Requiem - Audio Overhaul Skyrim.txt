@@ -1,10 +1,9 @@
-Load Order:
-
-Must be loaded after "Requiem - Cutting Room Floor.esp".
-
-
-
 Changelog:
+
+5.06
+
+Updated to Audio Overhaul Skyrim 4.0.1.
+
 
 5.05
 
