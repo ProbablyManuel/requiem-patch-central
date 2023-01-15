@@ -8,6 +8,11 @@ You should disable or delete "Vampiric Thirst Redone.esp". It's fully included i
 
 Changelog:
 
+5.06
+
+Updated to Requiem 5.3.0.
+
+
 5.04
 
 Updated to Requiem 5.2.2.
