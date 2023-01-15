@@ -8,11 +8,14 @@ Load Order:
 
 Should be loaded after "Requiem - Immersive Sounds Compendium.esp". Manual conflict resolution is advised for advanced users.
 
-Should be loaded after "Requiem - Audio Overhaul Skyrim.esp". Manual conflict resolution is advised for advanced users.
-
 
 
 Changelog:
+
+5.06
+
+Updated to Requiem 5.3.0.
+
 
 5.01
 
