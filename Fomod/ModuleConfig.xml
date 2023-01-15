@@ -1115,33 +1115,6 @@
 						</plugin>
 					</plugins>
 				</group>
-				<group name="Katana Crafting" type="SelectAny">
-					<plugins order="Explicit">
-						<plugin name="Katana Crafting">
-							<description>
-								Requires Katana Crafting.
-							</description>
-							<image path="fomod\Requiem Compatibility Patches.jpg"/>
-							<files>
-								<folder source="Requiem - Katana Crafting" destination=""/>
-								<file source="Docs\Requiem - Katana Crafting.txt" destination="Docs\Requiem - Katana Crafting.txt"/>
-							</files>
-							<typeDescriptor>
-								<dependencyType>
-									<defaultType name="Optional"/>
-									<patterns>
-										<pattern>
-											<dependencies operator="And">
-												<fileDependency file="KatanaCrafting.esp" state="Active"/>
-											</dependencies>
-											<type name="Recommended"/>
-										</pattern>
-									</patterns>
-								</dependencyType>
-							</typeDescriptor>
-						</plugin>
-					</plugins>
-				</group>
 				<group name="Royal Armory - New Artifacts" type="SelectAny">
 					<plugins order="Explicit">
 						<plugin name="Royal Armory">
