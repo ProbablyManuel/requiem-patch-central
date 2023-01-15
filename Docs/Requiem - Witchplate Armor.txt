@@ -1,4 +1,14 @@
+Info:
+
+Haldyn's Quicksilver Armor is replaced with the new assets. This overlaps with the official Requiem - Creation Club patch which means load order will determine which armor appears in the game.
+
+
 Changelog:
+
+5.06
+
+Updated to Requiem 5.3.0.
+
 
 5.01
 
