@@ -6,6 +6,11 @@ Requires the No Immersive Armors version.
 
 Changelog:
 
+5.06
+
+Updated to Requiem 5.3.0.
+
+
 5.01
 
 Updated to Requiem 5.1.0.
