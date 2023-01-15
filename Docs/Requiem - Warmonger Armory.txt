@@ -2,25 +2,24 @@ Info:
 
 All armors and weapons are distributed to unique NPCs with the aim of visual storystelling. They are neither craftable nor found in random loot.
 
-The table below uses the original names, but most items are renamed to match the new implementation.
+The table below uses the original names, but most items are renamed to match the new implementation. The last column indicates whether the armor overlaps with the official Requiem - Creation Club patch which means load order will determine which armor appears in the game.
 
-NPC                   Armor                      Stats
-Alain Dufont          Shadow Warlock Armor       Nightingale Armor
-Bujold the Unworthy   Netch Leather Armor        Leather Armor
+NPC                   Armor                      Stats              Creation Club
+Amren                 Sand Assassin Armor        Leather Armor
+Brunwulf Free-Winter  Nord Hero Armor            Steel Plate Armor
+Brand-Shei            Netch Leather Armor        -                  Yes
 Eisa Blackthorn       Pathfinder Armor           Steel Armor
-Galmar Stone-Fist     Nord Hero Armor            Nordic Armor 
-Irileth               Soul Ripper Armor          Ebony Armor
-Keeper Carcette       Vigilant Robes             -
-Kematu and his guards Sand Assassin Armor        Penitus Oculatus Armor
-Summerset Shadows     Rogue Thief Armor          Guard Armor
-Neloth                Telvanni Master Robes      -
-Talvas Fathryon       Telvanni Apprentice Robes  -
-Vigilants of Stendarr Wandering Knight Armor     Vigilant's Armor
+Hamelyn               Shadow Warlock Armor       Leather Armor
+Irileth               Soul Ripper Armor          -                  Yes
+Keeper Carcette       Vigilant Robes             Clothing           Yes
+Neloth                Telvanni Master Robes      Clothing
+Summerset Shadows     Rogue Thief Armor          -                  Yes
+Talvas Fathryon       Telvanni Apprentice Robes  Clothing
+Vigilants of Stendarr Wandering Knight Armor     -                  Yes
 
 NPC                   Weapons                    Stats
 Eisa Blackthorn       Pathfinder Sword           Iron
 Irileth               Dunmer Ebony Sword         Ebony
-Kematu and his guards Alik'r Saber               Scimitar +10% speed
 
 Belt worn dragon priest masks are hilariously overpowered. Use at your own discretion.
 
@@ -35,6 +34,11 @@ Must be loaded after "Requiem - Scale Nord Armor.esp".
 
 
 Changelog:
+
+5.06
+
+Updated to Requiem 5.3.0.
+
 
 5.02
 
