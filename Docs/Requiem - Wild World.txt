@@ -6,6 +6,11 @@ Incompatible with "Requiem - SkyTEST.esp".
 
 Changelog:
 
+5.07
+
+Updated to Requiem 5.4.0.
+
+
 5.04
 
 Updated to Requiem 5.2.2.
