@@ -8,6 +8,11 @@ However you can go down to very low values and they're proportional so I'm leavi
 
 Changelog:
 
+5.07
+
+Updated to Requiem 5.4.0.
+
+
 5.00
 
 Updated to Requiem 5.0.0.
