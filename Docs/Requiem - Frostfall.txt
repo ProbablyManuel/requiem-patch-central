@@ -1,5 +1,10 @@
 Changelog:
 
+5.08
+
+Updated to Requiem 5.4.2.
+
+
 5.00
 
 Updated to Requiem 5.0.0.
