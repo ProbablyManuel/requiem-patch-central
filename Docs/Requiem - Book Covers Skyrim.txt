@@ -6,6 +6,11 @@ Must be loaded after "Requiem - Minor Arcana - Roleplaying.esp".
 
 Changelog:
 
+5.08
+
+Updated to Requiem 5.4.2.
+
+
 5.04
 
 Updated to Requiem 5.2.2.
