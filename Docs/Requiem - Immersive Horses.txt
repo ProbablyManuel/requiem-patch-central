@@ -18,6 +18,11 @@ Should be loaded after "Requiem - Wild World.esp". Manual conflict resolution is
 
 Changelog:
 
+5.08
+
+Updated to Requiem 5.4.2.
+
+
 5.07
 
 Updated to Requiem 5.4.0.
