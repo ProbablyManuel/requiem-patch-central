@@ -694,6 +694,33 @@
 		</installStep>
 		<installStep name="Visuals">
 			<optionalFileGroups order="Explicit">
+				<group name="Aetherium Armor and Weapons Compilation" type="SelectAny">
+					<plugins order="Explicit">
+						<plugin name="Aetherium Armor">
+							<description>
+								Requires Aetherium Armor and Weapons Compilation.
+							</description>
+							<image path="fomod\Requiem Compatibility Patches.jpg"/>
+							<files>
+								<folder source="Requiem - Aetherium Armor" destination=""/>
+								<file source="Docs\Requiem - Aetherium Armor.txt" destination="Docs\Requiem - Aetherium Armor.txt"/>
+							</files>
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="AetheriumSwordsnArmor.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
 				<group name="aMidianborn Book of Silence - Skyforge Weapons" type="SelectAny">
 					<plugins order="Explicit">
 						<plugin name="aMidianborn Skyforge Weapons">

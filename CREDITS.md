@@ -1,5 +1,6 @@
 - Vallen128 for the Requiem artwork
 - The Requiem Dungeon Masters for [Requiem - The Roleplaying Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/60888)
+- Lautasantenni, Darkjesusmn, and InsaneGizzardSauce for [Aetherium Armor and Weapons Compilation](https://www.nexusmods.com/skyrimspecialedition/mods/2687)
 - CaBaL for [aMidianBorn Book of Silence](https://www.nexusmods.com/skyrimspecialedition/mods/35382)
 - Sliceandkill for [Animallica - Skyrim Wildlife Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/20456)
 - Chesko and Nikkita for [Arissa - The Wandering Rogue](https://www.nexusmods.com/skyrim/mods/53754)
@@ -22,7 +23,7 @@
 - PrivateEye for [Heavy Armory - New Weapons](https://www.nexusmods.com/skyrimspecialedition/mods/6308)
 - Hothtrooper44 for [Hoth](https://www.nexusmods.com/skyrimspecialedition/mods/16137)
 - Grantyboy050 for [Immersive College of Winterhold](https://www.nexusmods.com/skyrimspecialedition/mods/17004)
-- Sevencardz and CyborgArmGun and KrittaKitty for [Immersive Horses](https://www.nexusmods.com/skyrimspecialedition/mods/13402)
+- Sevencardz, CyborgArmGun, and KrittaKitty for [Immersive Horses](https://www.nexusmods.com/skyrimspecialedition/mods/13402)
 - Scrabbulor for [Immersive Patrols](https://www.nexusmods.com/skyrimspecialedition/mods/718)
 - Lazygecko for [Immersive Sounds - Compendium](https://www.nexusmods.com/skyrimspecialedition/mods/523)
 - Navida1 for [Improved Closefaced Helmets](https://www.nexusmods.com/skyrimspecialedition/mods/824)

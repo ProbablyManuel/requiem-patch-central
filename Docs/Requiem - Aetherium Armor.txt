@@ -1,0 +1,13 @@
+Info:
+
+This patch restores the unique apperance of the Aetherium Armor as it was previously found in older Requiem version. It doesn't aim to integrate the other items.
+
+
+
+Changelog:
+
+5.09	Initial Release
+
+Restored unique apperance of the Aetherium Armor.
+
+Disabled all other items from the original mod.
