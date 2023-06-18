@@ -12,6 +12,7 @@
 - Volvaga0 for [Cloaks and Capes](https://www.nexusmods.com/skyrimspecialedition/mods/2019)
 - Franklin Zunge and Thetrader for [Common Clothes and Armors](https://www.nexusmods.com/skyrimspecialedition/mods/21305)
 - The Forever Free Horse Armor Team for [Craftable Horse Barding](https://www.nexusmods.com/skyrimspecialedition/mods/23679)
+- Imp for [Creation Club Open Helmets](https://www.nexusmods.com/skyrimspecialedition/mods/70992)
 - Arthmoor for [Cutting Room Floor](https://www.afkmods.com/index.php?/files/file/1894-cutting-room-floor/)
 - 3JIou and Redshift and I2edShift for [Deadly Dragons](https://www.nexusmods.com/skyrimspecialedition/mods/23723)
 - Deserter X for [DX Faction Crossbows](https://www.nexusmods.com/skyrimspecialedition/mods/4047)
