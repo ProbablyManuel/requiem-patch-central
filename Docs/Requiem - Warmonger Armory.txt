@@ -35,6 +35,11 @@ Must be loaded after "Requiem - Scale Nord Armor.esp".
 
 Changelog:
 
+5.10
+
+Updated to Requiem 5.4.5.
+
+
 5.06
 
 Updated to Requiem 5.3.0.
