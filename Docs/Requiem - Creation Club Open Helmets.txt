@@ -6,6 +6,11 @@ Requires the normal merged version of Creation Club Open Helmets (not the one ma
 
 Changelog:
 
+5.10
+
+Updated to Requiem 5.4.5.
+
+
 5.09	Initial Release
 
 Opened all helmets in `Requiem - Creation Club.esp`.
