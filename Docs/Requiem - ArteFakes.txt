@@ -18,6 +18,11 @@ Should be loaded after "Requiem - Immersive Sounds Compendium.esp". Manual confl
 
 Changelog:
 
+5.10
+
+Updated to Requiem 5.4.5.
+
+
 5.08
 
 Updated to Requiem 5.4.2.
