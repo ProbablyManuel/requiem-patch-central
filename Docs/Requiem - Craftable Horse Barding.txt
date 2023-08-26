@@ -8,6 +8,11 @@ Must be loaded after "Requiem - Immersive Horses.esp".
 
 Changelog:
 
+5.10
+
+Updated to Requiem 5.4.5.
+
+
 5.07
 
 Updated to Requiem 5.4.0.
