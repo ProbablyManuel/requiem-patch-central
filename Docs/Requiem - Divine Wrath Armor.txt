@@ -6,6 +6,11 @@ Tyranus' Armor is replaced with the new assets. This overlaps with the official 
 
 Changelog:
 
+5.10
+
+Updated to Requiem 5.4.5.
+
+
 5.06
 
 Updated to Requiem 5.3.0.
