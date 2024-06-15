@@ -1,5 +1,12 @@
 Changelog:
 
+5.11
+
+Backpack (Akatosh) and Backpack (Talos) match the effects of the corresponding amulet.
+
+Backpack (Kyne) is renamed to Backpack (Dragon) and has no effect.
+
+
 5.06
 
 Updated to Requiem 5.3.0.
