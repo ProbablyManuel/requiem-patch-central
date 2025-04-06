@@ -7,6 +7,11 @@ However the patch also works with the version hosted at NexusMods.
 
 Changelog:
 
+6.00
+
+Updated to Requiem 6.0.2.
+
+
 5.10
 
 Updated to Requiem 5.4.5.
