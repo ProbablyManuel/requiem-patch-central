@@ -748,33 +748,6 @@
 						</plugin>
 					</plugins>
 				</group>
-				<group name="ArteFakes - Unique Artifacts Replacer" type="SelectAny">
-					<plugins order="Explicit">
-						<plugin name="ArteFakes">
-							<description>
-								Requires ArteFakes.
-							</description>
-							<image path="fomod\Requiem Compatibility Patches.jpg"/>
-							<files>
-								<folder source="Requiem - ArteFakes" destination=""/>
-								<file source="Docs\Requiem - ArteFakes.txt" destination="Docs\Requiem - ArteFakes.txt"/>
-							</files>
-							<typeDescriptor>
-								<dependencyType>
-									<defaultType name="Optional"/>
-									<patterns>
-										<pattern>
-											<dependencies operator="And">
-												<fileDependency file="ArteFake.esp" state="Active"/>
-											</dependencies>
-											<type name="Recommended"/>
-										</pattern>
-									</patterns>
-								</dependencyType>
-							</typeDescriptor>
-						</plugin>
-					</plugins>
-				</group>
 				<group name="Creation Club Open Helmets" type="SelectAny">
 					<plugins order="Explicit">
 						<plugin name="Creation Club Open Helmets">
