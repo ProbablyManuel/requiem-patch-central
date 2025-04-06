@@ -8,6 +8,11 @@ Incompatible with "Requiem - Wild World.esp".
 
 Changelog:
 
+6.00
+
+Updated to Requiem 6.0.2.
+
+
 5.11
 
 Updated to SkyTEST 1.65.22.
