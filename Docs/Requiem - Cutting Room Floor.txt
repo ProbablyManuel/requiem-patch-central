@@ -1,15 +1,10 @@
-Info:
-
-The version hosted at AFK Mods (https://www.afkmods.com/index.php?/files/file/1894-cutting-room-floor/) is recommended.
-However the patch also works with the version hosted at NexusMods.
-
-
-
 Changelog:
 
 6.00
 
 Updated to Requiem 6.0.2.
+
+Updated to Cutting Room Floor 3.1.19.
 
 
 5.10
