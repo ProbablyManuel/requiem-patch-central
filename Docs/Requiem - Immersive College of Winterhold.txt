@@ -6,6 +6,11 @@ Tutoring only grants experience if your skill level is below 25. Toggle limitles
 
 Changelog:
 
+6.00
+
+Updated to Requiem 6.0.2.
+
+
 5.10
 
 Updated to Requiem 5.4.5.
