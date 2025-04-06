@@ -6,6 +6,11 @@ Must be loaded before "Requiem - Creation Club.esp".
 
 Changelog:
 
+6.00
+
+Updated to Requiem 6.0.2.
+
+
 5.10
 
 Updated to Requiem 5.4.5.
