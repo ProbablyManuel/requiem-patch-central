@@ -6,6 +6,11 @@ Requires the regular version of Deadly Dragons. The patch doesn't work with the 
 
 Changelog:
 
+6.00
+
+Updated to Requiem 6.0.2.
+
+
 5.08
 
 Updated to Requiem 5.4.2.
