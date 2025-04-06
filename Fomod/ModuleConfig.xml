@@ -748,33 +748,6 @@
 						</plugin>
 					</plugins>
 				</group>
-				<group name="Creation Club Open Helmets" type="SelectAny">
-					<plugins order="Explicit">
-						<plugin name="Creation Club Open Helmets">
-							<description>
-								Requires Creation Club Open Helmets. You need the merged version (not the Requiem version).
-							</description>
-							<image path="fomod\Requiem Compatibility Patches.jpg"/>
-							<files>
-								<folder source="Requiem - Creation Club Open Helmets" destination=""/>
-								<file source="Docs\Requiem - Creation Club Open Helmets.txt" destination="Docs\Requiem - Creation Club Open Helmets.txt"/>
-							</files>
-							<typeDescriptor>
-								<dependencyType>
-									<defaultType name="Optional"/>
-									<patterns>
-										<pattern>
-											<dependencies operator="And">
-												<fileDependency file="CC Open Helmets Merged.esp" state="Active"/>
-											</dependencies>
-											<type name="Recommended"/>
-										</pattern>
-									</patterns>
-								</dependencyType>
-							</typeDescriptor>
-						</plugin>
-					</plugins>
-				</group>
 				<group name="Improved Closefaced Helmets" type="SelectAny">
 					<plugins order="Explicit">
 						<plugin name="Improved Closefaced Helmets">
