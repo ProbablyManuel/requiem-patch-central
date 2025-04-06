@@ -59,8 +59,8 @@ float VampLordVal = 1.0
 float DGScoutVal = 25.0
 float DGMaxWaitVal = 20.0
 float DGMinWaitVal = 1.0
-float DBMinLevelVal = 25.0
-float DBAttackChanceVal = 0.0
+float DBMinLevelVal = 1.0
+float DBAttackChanceVal = 5.0
 float HFMinLevelVal = 50.0
 float MS06Val = 10.0
 float MS04Val = 14.0
@@ -70,7 +70,7 @@ float Favor157Val = 20.0
 float Favor109Val = 10.0
 float DragonWaitVal = 12.0
 float DragonChanceVal = 100.0
-float EbonyWarriorVal = 80.0
+float EbonyWarriorVal = 50.0
 float DeathbrandVal = 36.0
 float WEBountyAmtVal = 1000.0
 float WEBountyChanceVal = 25.0
@@ -127,7 +127,7 @@ GlobalVariable property DLC1EclipseAttackNextChanceNight auto	;v2.2
 
 string[] DLC2CultistAttackList
 int OIDDBCultAttackMenu
-int DBQuestSelection = 1
+int DBQuestSelection = 8
 int msgshown = 1
 
 BYOHHouseBuildingScript Property BYOHHouseBuilding auto
@@ -239,7 +239,7 @@ event OnOptionMenuOpen(int option)
 	if (option == OIDDBCultAttackMenu)
 		SetMenuDialogOptions(DLC2CultistAttackList)
 		SetMenuDialogStartIndex(DBQuestSelection)
-		SetMenuDialogDefaultIndex(1)
+		SetMenuDialogDefaultIndex(8)
 	endIf
 endEvent
 
@@ -380,7 +380,7 @@ event OnOptionSliderOpen(int option)
 		SetSliderDialogInterval(1.0)
 	elseIf (option == OIDDBMinLevel)
 		SetSliderDialogStartValue(DBMinLevelVal)
-		SetSliderDialogDefaultValue(25)
+		SetSliderDialogDefaultValue(1)
 		SetSliderDialogRange(0.0, 101.0)
 		SetSliderDialogInterval(1.0)
 	elseIf (option == OIDHFMinLevel)
@@ -430,7 +430,7 @@ event OnOptionSliderOpen(int option)
 		SetSliderDialogInterval(1.0)
 	elseIf (option == OIDDBRandomChance)
 		SetSliderDialogStartValue(DBAttackChanceVal)
-		SetSliderDialogDefaultValue(0)
+		SetSliderDialogDefaultValue(5.0)
 		SetSliderDialogRange(0.0, 100.0)
 		SetSliderDialogInterval(1.0)
 	elseIf (option == OIDDBDeathbrand)
@@ -440,7 +440,7 @@ event OnOptionSliderOpen(int option)
 		SetSliderDialogInterval(1.0)
 	elseIf (option == OIDDBEbonyWarrior)
 		SetSliderDialogStartValue(EbonyWarriorVal)
-		SetSliderDialogDefaultValue(80)
+		SetSliderDialogDefaultValue(50)
 		SetSliderDialogRange(0.0, 101.0)
 		SetSliderDialogInterval(1.0)
 	elseIf (option == OIDWEBountyAmount)
@@ -818,7 +818,7 @@ event OnOptionDefault(int option)
 		SetSliderOptionValue(OIDDGMaxWait, DGMaxWaitVal, "{0}")
 		DLC1EclipseAttackNextMaxWait.Setvalue(DGMaxWaitVal)
 	elseIf (option == OIDDBMinLevel)
-		DBMinLevelVal = 25
+		DBMinLevelVal = 1
 		SetSliderOptionValue(OIDDBMinLevel, DBMinLevelVal, "{0}")
 		DLC2CultistAttackMinLevel_KRY.Setvalue(DBMinLevelVal)
 	elseIf (option == OIDHFMinLevel)
@@ -858,7 +858,7 @@ event OnOptionDefault(int option)
 		SetSliderOptionValue(OIDDragonChance, DragonChanceVal, "{0}")
 		RandomDragonChance_KRY.Setvalue(DragonChanceVal)
 	elseIf (option == OIDDBRandomChance)
-		DBAttackChanceVal = 0
+		DBAttackChanceVal = 5
 		SetSliderOptionValue(OIDDBRandomChance, DBAttackChanceVal, "{0}")
 		DLC2WE09Chance.Setvalue(DBAttackChanceVal)
 	elseIf (option == OIDDBDeathbrand)
@@ -866,7 +866,7 @@ event OnOptionDefault(int option)
 		SetSliderOptionValue(OIDDBDeathbrand, DeathbrandVal, "{0}")
 		DLC2dunHaknirTreasureQSTMinLevel.Setvalue(DeathbrandVal)
 	elseIf (option == OIDDBEbonyWarrior)
-		EbonyWarriorVal = 80
+		EbonyWarriorVal = 50
 		SetSliderOptionValue(OIDDBEbonyWarrior, EbonyWarriorVal, "{0}")
 		DLC2EbonyWarriorMinLevel_KRY.Setvalue(EbonyWarriorVal)
 	elseIf (option == OIDWEBountyAmount)
