@@ -13,6 +13,11 @@ Should be loaded after "Requiem - Minor Arcana - Civil War.esp". Manual conflict
 
 Changelog:
 
+6.00
+
+Updated to Requiem 6.0.2.
+
+
 5.08
 
 Updated to Requiem 5.4.2.
