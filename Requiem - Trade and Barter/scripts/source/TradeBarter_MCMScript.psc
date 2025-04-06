@@ -165,7 +165,7 @@ float TownSmithVal = 400.0
 float OrcSmithVal = 250.0
 float SpellVal = 500.0
 float MiscVal = 300.0
-float InnVal = 200.0
+float InnVal = 100.0
 float StreetVal = 50.0
 float CaravanVal = 750.0
 float Fence00Val = 1000.0
@@ -520,7 +520,7 @@ Event OnOptionSelect(int option)
 			SetSliderOptionValue(OIDMiscGold, MiscVal, "$TB_Gold")
 			SetOptionFlags(OIDMiscGold, OPTION_FLAG_DISABLED)
 			VendorGoldInn.Revert()
-			InnVal = 200
+			InnVal = 100
 			SetSliderOptionValue(OIDInnGold, InnVal, "$TB_Gold")
 			SetOptionFlags(OIDInnGold, OPTION_FLAG_DISABLED)
 			VendorGoldStreetVendor.Revert()
@@ -565,7 +565,7 @@ Event OnOptionSelect(int option)
 			VendorGoldBlacksmithOrc.AddForm(Gold001, 1, 250)
 			VendorGoldSpells.AddForm(Gold001, 1, 500)
 			VendorGoldMisc.AddForm(Gold001, 1, 300)
-			VendorGoldInn.AddForm(Gold001, 1, 200)
+			VendorGoldInn.AddForm(Gold001, 1, 100)
 			VendorGoldStreetVendor.AddForm(Gold001, 1, 50)
 			VendorGoldCaravan.AddForm(Gold001, 1, 750)
 			VendorGoldFenceStage00.AddForm(Gold001, 1, 1000)
@@ -1032,7 +1032,7 @@ event OnOptionSliderOpen(int option)
 		SetSliderDialogInterval(50.0)
 	elseIf (option == OIDInnGold)
 		SetSliderDialogStartValue(InnVal)
-		SetSliderDialogDefaultValue(200.0)
+		SetSliderDialogDefaultValue(100.0)
 		SetSliderDialogRange(10.0, 2000.0)
 		SetSliderDialogInterval(10.0)
 	elseIf (option == OIDStreetGold)
@@ -1861,9 +1861,9 @@ Event OnOptionDefault(int option)
 		VendorGoldMisc.AddForm(KRY_RandomVendorGoldLG, 1, 4)
 	elseIf (option == OIDInnGold)
 		VendorGoldInn.Revert()
-		InnVal = 200
+		InnVal = 100
 		SetSliderOptionValue(OIDInnGold, InnVal, "$TB_Gold")
-		VendorGoldInn.AddForm(Gold001, 1, 200)
+		VendorGoldInn.AddForm(Gold001, 1, 100)
 		VendorGoldInn.AddForm(KRY_RandomVendorGoldSM, 1, 10)
 	elseIf (option == OIDStreetGold)
 		VendorGoldStreetVendor.Revert()
