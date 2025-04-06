@@ -1,6 +1,8 @@
 Changelog:
 
-5.11
+6.00
+
+Updated to Requiem 6.0.2.
 
 Backpack (Akatosh) and Backpack (Talos) match the effects of the corresponding amulet.
 
