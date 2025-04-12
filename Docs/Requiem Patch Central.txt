@@ -2,8 +2,6 @@ Load Order
 
 All load order advice in these readmes is also known to LOOT (or Vortex). Make your life easier and use it.
 
-The patches are built with Fozar's Dragonborn patch in mind and should be loaded after it. However, many plugins have no overlap with Fozar's Dragonborn patch and therefore LOOT may load some plugins before it.
-
 
 Bashed Patch
 
