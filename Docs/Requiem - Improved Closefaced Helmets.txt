@@ -6,6 +6,11 @@ Must be loaded before "Requiem - Creation Club.esp".
 
 Changelog:
 
+6.01
+
+Fixed Dwarven Helmet of Arkngthamz.
+
+
 6.00
 
 Updated to Requiem 6.0.2.
