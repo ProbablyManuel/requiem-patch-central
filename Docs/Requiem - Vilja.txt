@@ -1,5 +1,10 @@
 Changelog:
 
+6.02
+
+Updated alcohol to Requiem 6.0.2.
+
+
 5.00
 
 Updated to Requiem 5.0.0.
