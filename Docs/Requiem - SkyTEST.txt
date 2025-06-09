@@ -8,6 +8,11 @@ Incompatible with "Requiem - Wild World.esp".
 
 Changelog:
 
+6.02
+
+Updated food to Requiem 6.0.2.
+
+
 6.00
 
 Updated to Requiem 6.0.2.
